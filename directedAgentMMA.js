@@ -206,7 +206,7 @@ The clause is :
       
 ${parsed(item).text()}
 
-Return the clause and your reasoning for editing after the keyword END_RESULT. If you think the clause need editing propose some edits!`,
+Return the clause and your reasoning for editing after the keyword END_RESULT. If you think the clause is not well written, propose a rewritte and a reasoning. DO not only say that it is not well written without justification! If a clause is well written do not forget the smilley :)`,
       agentId, 1);
     logIt({ 
       type: "REWRITE",
@@ -226,7 +226,7 @@ Return the clause and your reasoning for editing after the keyword END_RESULT. I
         <div style='border-left: 2px solid #33F; padding-left : 10px'>
         ${parsed(item).html().replace(/\n/g, '<br/>').replace(/END_RESULT/g, ' ')}
         </div><br/><div style='border-left: 2px solid #F33; padding-left : 10px'>
-      ${rewrite.data.replace(/\n/g, '<br/>')}
+      ${rewrite.data.replace(/\n/g, '<br/>').replace(/END_RESULT/g, ' ')}
       </div>`);
       fs.writeFileSync('./public/' + agentId + '.html', parsed.html().replace("windows-1252", "utf8"), 'utf8');
     }
