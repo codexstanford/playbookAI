@@ -206,7 +206,7 @@ The clause is :
       
 ${parsed(item).text()}
 
-Return the clause and your reasoning for editing after the keyword END_RESULT.`,
+Return the clause and your reasoning for editing after the keyword END_RESULT. If you think the clause need editing propose some edits!`,
       agentId, 1);
     logIt({ 
       type: "REWRITE",
