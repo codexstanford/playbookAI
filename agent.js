@@ -85,6 +85,7 @@ async function agentContinue(answer, agentId, taskId) {
     answer : answer
   }, agentId);
 
+
   return think(taskId, answer, agentId, mainTools);
 
 }
@@ -127,8 +128,23 @@ You can only output one instruction. do not output multiple instructions.
   }
   let stack = MESSAGES[taskId];
 
+  let ms = 10;
   while (true) {
-
+    ms--;
+    if (ms < 0) { 
+      console.log("Timeout");
+      logIt({ 
+        type: "END_RESULT",
+        taskId: taskId,
+        goal: goal,
+        args: 'timeout'
+      }, agentId);
+      return {
+        type: 'end',
+            data : 'timeout',
+            taskId: taskId
+      };
+    }
     let answer = await(prompt([{"role": "system", "content": systemPrompt}, ...stack]));
     
     stack.push({"role": "assistant", "content": answer});
@@ -141,104 +157,71 @@ You can only output one instruction. do not output multiple instructions.
     // parse instructions!
     const lines = answer.split('\n');
     for (let line of lines) {
-        const instruction = line.split(' ')[0];
-        let args = line.split(' ').slice(1).join(' ');
-        if (args[0] == '"' && args[args.length - 1] == '"') { 
-          args = args.substring(1, args.length - 1);
-        }
+      const instruction = line.split(' ')[0];
+      let args = line.split(' ').slice(1).join(' ');
+      if (args[0] == '"' && args[args.length - 1] == '"') { 
+        args = args.substring(1, args.length - 1);
+      }
 
-        // handle tools
-        for (let tool of tools) { 
-          if (instruction === tool.keyword) {
-            const res = await tool.do(args, agentId, taskId);
-            logIt({ 
-              type: tool.keyword,
-              taskId: taskId,
-              query: args,
-              result: res
-            }, agentId);
-            stack.push({"role": "user", "content": `Result for ${tool.keyword} with ${args} : ${res}`});
-          }
-        }
-
-        if (instruction === 'RETRIEVE') { 
-          console.log(`RETRIEVE ${args} from memory`)
-          let key = args.split(' ')[0];
-          let value = STORE[key];
+      // handle tools
+      for (let tool of tools) { 
+        if (instruction === tool.keyword) {
+          const res = await tool.do(args, agentId, taskId);
           logIt({ 
-            type: "RETRIEVE",
+            type: tool.keyword,
             taskId: taskId,
-            key: key,
-            value: value
-          }, agentId);
-          stack.push({"role": "user", "content": `RETRIEVE result for ${args} : ${value}`});
-        }
-
-        if (instruction === 'ASK') {
-          const res = await agent(args, agentId, taskId);
-          logIt({ 
-            type: "ASK",
-            taskId: taskId,
-            url: args,
+            query: args,
             result: res
           }, agentId);
-          if (res.type == 'end') {
-            stack.push({"role": "user", "content": `I did ${args}. The results are: ${res}`});
-          }
-          else if (res.type == 'missingContext') {
-            stack.push({"role": "user", "content": `I'm missing context to do ${args}: ${res}. To ask me to continue this task, use the clarify instruction with id ${res.taskId}`});
-          }
+          stack.push({"role": "user", "content": `Result for ${tool.keyword} with ${args} : ${res}`});
         }
-     
-        if (instruction === 'END_RESULT') {
-          args = answer.substring(answer.indexOf('END_RESULT') + 'END_RESULT'.length);
-          logIt({ 
-            type: "END_RESULT",
-            taskId: taskId,
-            goal: goal,
-            args: args
-          }, agentId);
-          console.log(`Task #${taskId} completed successfully (${goal})with results:
-  ${args}`);
-          return {
-            type: 'end',
-            data : args,
-            taskId: taskId
-          };
-        }
-        if (instruction === 'ASK_CLARIFICATION') {
-          logIt({ 
-            type: "ASK_CLARIFICATION",
-            taskId: taskId,
-            args: args
-          }, agentId);
-          console.log(`Task #${taskId} ask clarification:
-  ${args}`);
-          return {
-            type: 'missingContext',
-            data : args,
-            taskId: taskId
-          };
-        }
-        if (instruction === 'CLARIFY') {
-          logIt({ 
-            type: "CLARIFY",
-            taskId: taskId,
-            args: args
-          }, agentId);
-          let asktaskId = args.split(' ')[0];
-          let clarification = args.split(' ').slice(1).join(' ');
+      }
 
-          const res = await think(asktaskId, clarification, agentId);
-         
-          if (res.type == 'end') {
-            stack.push({"role": "user", "content": `I did ${args}. The results are: ${res}`});
-          }
-          else if (res.type == 'missingContext') {
-            stack.push({"role": "user", "content": `I'm missing context to do ${args}: ${res}. To ask me to continue this task, use the clarify instruction with id ${res.taskId}`});
-          }
-          
+      if (instruction === 'RETRIEVE') { 
+        console.log(`RETRIEVE ${args} from memory`)
+        let key = args.split(' ')[0];
+        let value = STORE[key];
+        logIt({ 
+          type: "RETRIEVE",
+          taskId: taskId,
+          key: key,
+          value: value
+        }, agentId);
+        stack.push({"role": "user", "content": `RETRIEVE result for ${args} : ${value}`});
+      }
+
+      if (instruction === 'ASK') {
+        const res = await agent(args, agentId, taskId);
+        logIt({ 
+          type: "ASK",
+          taskId: taskId,
+          url: args,
+          result: res
+        }, agentId);
+        if (res.type == 'end') {
+          stack.push({"role": "user", "content": `I did ${args}. The results are: ${res}`});
         }
+        else if (res.type == 'missingContext') {
+          stack.push({"role": "user", "content": `I'm missing context to do ${args}: ${res}. To ask me to continue this task, use the clarify instruction with id ${res.taskId}`});
+        }
+      }
+    
+      if (instruction === 'END_RESULT' || line.indexOf('END_RESULT') > -1) {
+        args = answer.substring(answer.indexOf('END_RESULT') + 'END_RESULT'.length);
+        logIt({ 
+          type: "END_RESULT",
+          taskId: taskId,
+          goal: goal,
+          args: args
+        }, agentId);
+        console.log(`Task #${taskId} completed successfully (${goal})with results:
+${args}`);
+        return {
+          type: 'end',
+          data : args,
+          taskId: taskId
+        };
+      }
         
     }
   }
