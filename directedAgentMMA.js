@@ -217,10 +217,13 @@ Return the clause and your reasoning for editing after the keyword END_RESULT. I
     }, agentId);
 
     if (rewrite.data.trim().length  
-      && rewrite.data.indexOf("well written :)") == -1 
-      && rewrite.data.indexOf("well-written :)") == -1 
-      && rewrite.data.indexOf("well written. :)") == -1 
-      && rewrite.data.trim() != parsed(item).text().trim()) {
+      && rewrite.data.toLowerCase().indexOf("well written :)") == -1 
+      && rewrite.data.toLowerCase().indexOf("well-written :)") == -1 
+      && rewrite.data.toLowerCase().indexOf("well written. :)") == -1 
+      && rewrite.data.toLowerCase().indexOf("is well written") == -1 
+      && rewrite.data.toLowerCase().indexOf("is well-written") == -1 
+      && rewrite.data.toLowerCase().indexOf(":)") == -1
+      && rewrite.data.toLowerCase().trim() != parsed(item).text().trim()) {
  
       parsed(item).html(`<div style='border-left: 2px solid #aaa; background-color: #f8f8f8; padding: 8px; border-radius: 4px'>
         <div style='border-left: 2px solid #33F; padding-left : 10px'>
