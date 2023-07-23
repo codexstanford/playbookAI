@@ -1,0 +1,18 @@
+[
+  {
+    "type": "NEW_TASK",
+    "taskId": 1,
+    "goal": "For each country of the world identify their main legislation and where it can be access online (url). If the country have a federal organization, also identify each of the regulation of each state like administration.",
+    "parentTaskId": null
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::ASK_CLARIFICATION Is there a specific format you would like the information to be returned in? For example, should it be CSV or any other format?"
+  },
+  {
+    "type": "ASK_CLARIFICATION",
+    "taskId": 1,
+    "args": "Is there a specific format you would like the information to be returned in? For example, should it be CSV or any other format?"
+  }
+]

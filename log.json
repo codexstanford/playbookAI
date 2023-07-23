@@ -1,0 +1,447 @@
+[
+  {
+    "type": "NEW_TASK",
+    "taskId": 1,
+    "goal": "For ever country in the world, identify where the websites where their legislation can be found online. If a country have a multiple law applicable identify them all."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::PLAN First, I should find a list of all countries in the world.\n::SEARCH List of countries in the world"
+  },
+  {
+    "type": "SEARCH",
+    "taskId": 1,
+    "query": "List of countries in the world",
+    "result": "- [List of Countries of the world in alphabetical order (A to Z ...](https://www.worldometers.info/geography/alphabetical-list-of-countries/) Alphabetical list of countries ; 1, Afghanistan, 38,928,346 ; 2, Albania, 2,877,797 ; 3, Algeria, 43,851,044 ; 4, Andorra, 77,265 ...\n- [List of Countries in the World in Alphabetical Order | Britannica](https://www.britannica.com/topic/list-of-countries-1993160) May 19, 2023 ... This is an alphabetically ordered list of the countries of the world. (See also geography and government.)\n- [All Countries - Countries - Office of the Historian](https://history.state.gov/countries/all) All Countries · A. Afghanistan · Albania · Algeria · Andorra · B Baden* · Bahamas, The · Bahrain · C Cabo Verde · Cambodia · Cameroon · D Democratic Republic of ...\n- [A-Z list of Countries and Regions in the World :: Nations Online Project](https://www.nationsonline.org/oneworld/countries_of_the_world.htm) World Countries List ; Bosnia and Herzegovina, Bosnie-Herzégovine ; Botswana, Botswana ; Brazil, Brésil ; Brunei Darussalam, Brunéi Darussalam ...\n- [World Bank Country and Lending Groups – World Bank Data Help ...](https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups) World Bank Country and Lending Groups. ← Country Classification. For the current 2024 fiscal year, low-income economies are defined as those with a GNI per ...\n- [Classification of Fragile and Conflict-Affected Situations](https://www.worldbank.org/en/topic/fragilityconflictviolence/brief/harmonized-list-of-fragile-situations) The World Bank Group's (WBG) Fragile, Conflict and Violence Group (formally ... the list is not meant to be comprehensive— it does not include all countries ...\n- [WDI - The World by Income and Region](https://datatopics.worldbank.org/world-development-indicators/the-world-by-income-and-region.html) Country borders or names do not necessarily reflect the World Bank Group's official ... Click here to access the complete list of countries by income group.\n- [Countries | Data](https://data.worldbank.org/country) Countries from The World Bank: Data.\n- [List of countries and dependencies by area - Wikipedia](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area) This is a list of the world's countries and their dependencies by land, water, and total area, ranked by total area. Dymaxion map of the world with the 30 ...\n- [Countries and Areas List - United States Department of State](https://www.state.gov/countries-and-areas-list/) We organize countries and areas into six geographical regions, ... presence around the world and the organizational structure of the regional bureaus.\n"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::GET_PAGE https://www.worldometers.info/geography/alphabetical-list-of-countries/"
+  },
+  {
+    "type": "GET_PAGE",
+    "taskId": 1,
+    "url": "https://www.worldometers.info/geography/alphabetical-list-of-countries/",
+    "result": "List of Countries of the world in alphabetical order (A to Z) \nCountries and dependencies of the world in alphabetical order from A to Z and by letter, showing current population estimates for 2016, density, and land area\n<table><tr><th>#</th><th>Country</th><th>Population\n(2020)</th><th>Land Area\n (Km²)</th><th>Density\n(P/Km²)</th></tr><tr><td>1</td> <td>Afghanistan</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/afghanistan-population/')\">38,928,346</a></td> <td>652,860</td> <td>60</td></tr> <tr><td>2</td> <td>Albania</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/albania-population/')\">2,877,797</a></td> <td>27,400</td> <td>105</td></tr> <tr><td>3</td> <td>Algeria</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/algeria-population/')\">43,851,044</a></td> <td>2,381,740</td> <td>18</td></tr> <tr><td>4</td> <td>Andorra</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/andorra-population/')\">77,265</a></td> <td>470</td> <td>164</td></tr> <tr><td>5</td> <td>Angola</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/angola-population/')\">32,866,272</a></td> <td>1,246,700</td> <td>26</td></tr> <tr><td>6</td> <td>Antigua and Barbuda</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/antigua-and-barbuda-population/')\">97,929</a></td> <td>440</td> <td>223</td></tr> <tr><td>7</td> <td>Argentina</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/argentina-population/')\">45,195,774</a></td> <td>2,736,690</td> <td>17</td></tr> <tr><td>8</td> <td>Armenia</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/armenia-population/')\">2,963,243</a></td> <td>28,470</td> <td>104</td></tr> <tr><td>9</td> <td>Australia</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/australia-population/')\">25,499,884</a></td> <td>7,682,300</td> <td>3</td></tr> <tr><td>10</td> <td>Austria</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/austria-population/')\">9,006,398</a></td> <td>82,409</td> <td>109</td></tr> <tr><td>11</td> <td>Azerbaijan</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/azerbaijan-population/')\">10,139,177</a></td> <td>82,658</td> <td>123</td></tr> <tr><td>12</td> <td>Bahamas</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/bahamas-population/')\">393,244</a></td> <td>10,010</td> <td>39</td></tr> <tr><td>13</td> <td>Bahrain</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/bahrain-population/')\">1,701,575</a></td> <td>760</td> <td>2,239</td></tr> <tr><td>14</td> <td>Bangladesh</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/bangladesh-population/')\">164,689,383</a></td> <td>130,170</td> <td>1,265</td></tr> <tr><td>15</td> <td>Barbados</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/barbados-population/')\">287,375</a></td> <td>430</td> <td>668</td></tr> <tr><td>16</td> <td>Belarus</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/belarus-population/')\">9,449,323</a></td> <td>202,910</td> <td>47</td></tr> <tr><td>17</td> <td>Belgium</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/belgium-population/')\">11,589,623</a></td> <td>30,280</td> <td>383</td></tr> <tr><td>18</td> <td>Belize</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/belize-population/')\">397,628</a></td> <td>22,810</td> <td>17</td></tr> <tr><td>19</td> <td>Benin</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/benin-population/')\">12,123,200</a></td> <td>112,760</td> <td>108</td></tr> <tr><td>20</td> <td>Bhutan</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/bhutan-population/')\">771,608</a></td> <td>38,117</td> <td>20</td></tr> <tr><td>21</td> <td>Bolivia</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/bolivia-population/')\">11,673,021</a></td> <td>1,083,300</td> <td>11</td></tr> <tr><td>22</td> <td>Bosnia and Herzegovina</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/bosnia-and-herzegovina-population/')\">3,280,819</a></td> <td>51,000</td> <td>64</td></tr> <tr><td>23</td> <td>Botswana</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/botswana-population/')\">2,351,627</a></td> <td>566,730</td> <td>4</td></tr> <tr><td>24</td> <td>Brazil</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/brazil-population/')\">212,559,417</a></td> <td>8,358,140</td> <td>25</td></tr> <tr><td>25</td> <td>Brunei</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/brunei-darussalam-population/')\">437,479</a></td> <td>5,270</td> <td>83</td></tr> <tr><td>26</td> <td>Bulgaria</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/b ...."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::PLAN Extract the list of countries from the html page\n::ASK Extract list of countries from html table <table><tr><th>#</th><th>Country</th><th>Population\n(2020)</th><th>Land Area\n (Km²)</th><th>Density\n(P/Km²)</th></tr><tr><td>1</td> <td>Afghanistan</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/afghanistan-population/')\">38,928,346</a></td> <td>652,860</td> <td>60</td></tr> <tr><td>2</td> <td>Albania</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/albania-population/')\">2,877,797</a></td> <td>27,400</td> <td>105</td></tr> <tr><td>3</td> <td>Algeria</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/algeria-population/')\">43,851,044</a></td> <td>2,381,740</td> <td>18</td></tr> <tr><td>4</td> <td>Andorra</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/andorra-population/')\">77,265</a></td> <td>470</td> <td>164</td></tr> <tr><td>5</td> <td>Angola</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/angola-population/')\">32,866,272</a></td> <td>1,246,700</td> <td>26</td></tr> <tr><td>6</td> <td>Antigua and Barbuda</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/antigua-and-barbuda-population/')\">97,929</a></td> <td>440</td> <td>223</td></tr> <tr><td>7</td> <td>Argentina</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/argentina-population/')\">45,195,774</a></td> <td>2,736,690</td> <td>17</td></tr> <tr><td>8</td> <td>Armenia</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/armenia-population/')\">2,963,243</a></td> <td>28,470</td> <td>104</td></tr> <tr><td>9</td> <td>Australia</td> <td><a class=\"link\" onclick=\"Navigate('www.worldometers.info//world-population/australia-population/')\">25,499,884</a></td> <td>7,682,300</td> <td>3</td></tr> ..."
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 2,
+    "goal": "Extract list of countries from html table <table><tr><th>#</th><th>Country</th><th>Population"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 2,
+    "answer": "::ASK parse html table <table><tr><th>#</th><th>Country</th><th>Population"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 3,
+    "goal": "parse html table <table><tr><th>#</th><th>Country</th><th>Population"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 3,
+    "answer": "::ASK_CLARIFICATION The task doesn't seem to be complete. Could you provide the rest of the HTML table so I can parse it?"
+  },
+  {
+    "type": "ASK_CLARIFICATION",
+    "taskId": 3,
+    "args": "The task doesn't seem to be complete. Could you provide the rest of the HTML table so I can parse it?"
+  },
+  {
+    "type": "ASK",
+    "taskId": 2,
+    "url": "parse html table <table><tr><th>#</th><th>Country</th><th>Population",
+    "result": {
+      "type": "missingContext",
+      "data": "The task doesn't seem to be complete. Could you provide the rest of the HTML table so I can parse it?",
+      "taskId": 3
+    }
+  },
+  {
+    "type": "REASONING",
+    "taskId": 2,
+    "answer": "::ASK_CLARIFICATION Could you please provide the complete HTML of the table? It seems some information is missing."
+  },
+  {
+    "type": "ASK_CLARIFICATION",
+    "taskId": 2,
+    "args": "Could you please provide the complete HTML of the table? It seems some information is missing."
+  },
+  {
+    "type": "ASK",
+    "taskId": 1,
+    "url": "Extract list of countries from html table <table><tr><th>#</th><th>Country</th><th>Population",
+    "result": {
+      "type": "missingContext",
+      "data": "Could you please provide the complete HTML of the table? It seems some information is missing.",
+      "taskId": 2
+    }
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::CLARIFY 2 I just need to extract the all the country names from the HTML table. The other fields like population and land area are not necessary for the task. I need all the values in the \"Country\" column."
+  },
+  {
+    "type": "CLARIFY",
+    "taskId": 1,
+    "args": "2 I just need to extract the all the country names from the HTML table. The other fields like population and land area are not necessary for the task. I need all the values in the \"Country\" column."
+  },
+  {
+    "type": "REASONING",
+    "taskId": "2",
+    "answer": "::ASK parse html table and extract column \"Country\" <table><tr><th>#</th><th>Country</th><th>Population"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 4,
+    "goal": "parse html table and extract column \"Country\" <table><tr><th>#</th><th>Country</th><th>Population"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 4,
+    "answer": "::STORE html_table <table><tr><th>#</th><th>Country</th><th>Population\n::ASK parse html table in memory \"html_table\" and return column \"Country\""
+  },
+  {
+    "type": "STORE",
+    "taskId": 4,
+    "key": "html_table",
+    "value": "<table><tr><th>#</th><th>Country</th><th>Population"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 5,
+    "goal": "parse html table in memory \"html_table\" and return column \"Country\""
+  },
+  {
+    "type": "REASONING",
+    "taskId": 5,
+    "answer": "::ASK parse html table and return column \"Country\" from table \"html_table\""
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 6,
+    "goal": "parse html table and return column \"Country\" from table \"html_table\""
+  },
+  {
+    "type": "REASONING",
+    "taskId": 6,
+    "answer": "::ASK Parse the HTML of table \"html_table\" and extract all data from the column named \"Country\""
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 7,
+    "goal": "Parse the HTML of table \"html_table\" and extract all data from the column named \"Country\""
+  },
+  {
+    "type": "REASONING",
+    "taskId": 7,
+    "answer": "::ASK Parse HTML table by column name \"Country\" from \"html_table\""
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 8,
+    "goal": "Parse HTML table by column name \"Country\" from \"html_table\""
+  },
+  {
+    "type": "REASONING",
+    "taskId": 8,
+    "answer": "::ASK parse HTML table by column name from given variable"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 9,
+    "goal": "parse HTML table by column name from given variable"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 9,
+    "answer": "::ASK_CLARIFICATION What is the content of the given variable, is it entire HTML code or the URL to a webpage containing the HTML table?"
+  },
+  {
+    "type": "ASK_CLARIFICATION",
+    "taskId": 9,
+    "args": "What is the content of the given variable, is it entire HTML code or the URL to a webpage containing the HTML table?"
+  },
+  {
+    "type": "ASK",
+    "taskId": 8,
+    "url": "parse HTML table by column name from given variable",
+    "result": {
+      "type": "missingContext",
+      "data": "What is the content of the given variable, is it entire HTML code or the URL to a webpage containing the HTML table?",
+      "taskId": 9
+    }
+  },
+  {
+    "type": "REASONING",
+    "taskId": 8,
+    "answer": "::CLARIFY 9 page_content"
+  },
+  {
+    "type": "CLARIFY",
+    "taskId": 8,
+    "args": "9 page_content"
+  },
+  {
+    "type": "REASONING",
+    "taskId": "9",
+    "answer": "::ASK_CLARIFICATION What is the name of the column you want to parse?"
+  },
+  {
+    "type": "ASK_CLARIFICATION",
+    "taskId": "9",
+    "args": "What is the name of the column you want to parse?"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 8,
+    "answer": "::ASK_CLARIFICATION Can you provide the HTML content for me to parse?"
+  },
+  {
+    "type": "ASK_CLARIFICATION",
+    "taskId": 8,
+    "args": "Can you provide the HTML content for me to parse?"
+  },
+  {
+    "type": "ASK",
+    "taskId": 7,
+    "url": "Parse HTML table by column name \"Country\" from \"html_table\"",
+    "result": {
+      "type": "missingContext",
+      "data": "Can you provide the HTML content for me to parse?",
+      "taskId": 8
+    }
+  },
+  {
+    "type": "REASONING",
+    "taskId": 7,
+    "answer": "::ASK_CLARIFICATION Where can I find the \"html_table\"?"
+  },
+  {
+    "type": "ASK_CLARIFICATION",
+    "taskId": 7,
+    "args": "Where can I find the \"html_table\"?"
+  },
+  {
+    "type": "ASK",
+    "taskId": 6,
+    "url": "Parse the HTML of table \"html_table\" and extract all data from the column named \"Country\"",
+    "result": {
+      "type": "missingContext",
+      "data": "Where can I find the \"html_table\"?",
+      "taskId": 7
+    }
+  },
+  {
+    "type": "REASONING",
+    "taskId": 6,
+    "answer": "::ASK_CLARIFICATION What is the source URL of the HTML table?"
+  },
+  {
+    "type": "ASK_CLARIFICATION",
+    "taskId": 6,
+    "args": "What is the source URL of the HTML table?"
+  },
+  {
+    "type": "ASK",
+    "taskId": 5,
+    "url": "parse html table and return column \"Country\" from table \"html_table\"",
+    "result": {
+      "type": "missingContext",
+      "data": "What is the source URL of the HTML table?",
+      "taskId": 6
+    }
+  },
+  {
+    "type": "REASONING",
+    "taskId": 5,
+    "answer": "::CLARIFY 6 The HTML table is already stored in memory under the key \"html_table\". Please parse the table stored in memory and return the column \"Country\"."
+  },
+  {
+    "type": "CLARIFY",
+    "taskId": 5,
+    "args": "6 The HTML table is already stored in memory under the key \"html_table\". Please parse the table stored in memory and return the column \"Country\"."
+  },
+  {
+    "type": "REASONING",
+    "taskId": "6",
+    "answer": "::RETRIEVE html_table"
+  },
+  {
+    "type": "RETRIEVE",
+    "taskId": "6",
+    "key": "html_table",
+    "value": "<table><tr><th>#</th><th>Country</th><th>Population"
+  },
+  {
+    "type": "REASONING",
+    "taskId": "6",
+    "answer": "::ASK Parse the retrived HTML data and extract all rows from the column named \"Country\""
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 10,
+    "goal": "Parse the retrived HTML data and extract all rows from the column named \"Country\""
+  },
+  {
+    "type": "REASONING",
+    "taskId": 10,
+    "answer": "::ASK_CLARIFICATION What is the URL of the webpage that contains the table with the column \"Country\"?"
+  },
+  {
+    "type": "ASK_CLARIFICATION",
+    "taskId": 10,
+    "args": "What is the URL of the webpage that contains the table with the column \"Country\"?"
+  },
+  {
+    "type": "ASK",
+    "taskId": "6",
+    "url": "Parse the retrived HTML data and extract all rows from the column named \"Country\"",
+    "result": {
+      "type": "missingContext",
+      "data": "What is the URL of the webpage that contains the table with the column \"Country\"?",
+      "taskId": 10
+    }
+  },
+  {
+    "type": "REASONING",
+    "taskId": "6",
+    "answer": "::ASK_CLARIFICATION How should I handle header row and rows where cell for \"Country\" column is empty?"
+  },
+  {
+    "type": "ASK_CLARIFICATION",
+    "taskId": "6",
+    "args": "How should I handle header row and rows where cell for \"Country\" column is empty?"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 5,
+    "answer": "::RETRIEVE html_table"
+  },
+  {
+    "type": "RETRIEVE",
+    "taskId": 5,
+    "key": "html_table",
+    "value": "<table><tr><th>#</th><th>Country</th><th>Population"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 5,
+    "answer": "::ASK parse html and return column \"Country\" from the retrieved table data"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 11,
+    "goal": "parse html and return column \"Country\" from the retrieved table data"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 11,
+    "answer": "::ASK_CLARIFICATION What is the URL of the webpage containing the table data?"
+  },
+  {
+    "type": "ASK_CLARIFICATION",
+    "taskId": 11,
+    "args": "What is the URL of the webpage containing the table data?"
+  },
+  {
+    "type": "ASK",
+    "taskId": 5,
+    "url": "parse html and return column \"Country\" from the retrieved table data",
+    "result": {
+      "type": "missingContext",
+      "data": "What is the URL of the webpage containing the table data?",
+      "taskId": 11
+    }
+  },
+  {
+    "type": "REASONING",
+    "taskId": 5,
+    "answer": "::CLARIFY 11 The table data retrieved should be parsed as HTML and the values under the column \"Country\" should be returned."
+  },
+  {
+    "type": "CLARIFY",
+    "taskId": 5,
+    "args": "11 The table data retrieved should be parsed as HTML and the values under the column \"Country\" should be returned."
+  },
+  {
+    "type": "REASONING",
+    "taskId": "11",
+    "answer": "::ASK_CLARIFICATION Can you provide the url of the webpage containing the table with column \"Country\"?"
+  },
+  {
+    "type": "ASK_CLARIFICATION",
+    "taskId": "11",
+    "args": "Can you provide the url of the webpage containing the table with column \"Country\"?"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 5,
+    "answer": "::ASK parse the retrieved HTML table and extract values from the \"Country\" column"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 12,
+    "goal": "parse the retrieved HTML table and extract values from the \"Country\" column"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 12,
+    "answer": "::ASK_PARSE_HTML_TABLE <tableHTML> \"Country\""
+  },
+  {
+    "type": "REASONING",
+    "taskId": 12,
+    "answer": "::ASK_PARSE_HTML_TABLE <tableHTML> \"Country\""
+  },
+  {
+    "type": "REASONING",
+    "taskId": 12,
+    "answer": "::ASK_PARSE_HTML_TABLE <tableHTML> \"Country\""
+  },
+  {
+    "type": "REASONING",
+    "taskId": 12,
+    "answer": "::ASK_PARSE_HTML_TABLE <tableHTML> \"Country\""
+  },
+  {
+    "type": "REASONING",
+    "taskId": 12,
+    "answer": "::ASK_PARSE_HTML_TABLE <tableHTML> \"Country\""
+  },
+  {
+    "type": "REASONING",
+    "taskId": 12,
+    "answer": "::ASK_PARSE_HTML_TABLE <tableHTML> \"Country\""
+  },
+  {
+    "type": "REASONING",
+    "taskId": 12,
+    "answer": "::ASK_PARSE_HTML_TABLE <tableHTML> \"Country\""
+  },
+  {
+    "type": "REASONING",
+    "taskId": 12,
+    "answer": "::ASK_PARSE_HTML_TABLE <tableHTML> \"Country\""
+  },
+  {
+    "type": "REASONING",
+    "taskId": 12,
+    "answer": "::ASK_PARSE_HTML_TABLE <tableHTML> \"Country\""
+  },
+  {
+    "type": "REASONING",
+    "taskId": 12,
+    "answer": "::ASK_PARSE_HTML_TABLE <tableHTML> \"Country\""
+  }
+]

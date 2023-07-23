@@ -1,0 +1,8 @@
+[
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "AGREEMENT\nAND PLAN OF MERGER ",
+    "result": "NO_CONTEXT"
+  }
+]

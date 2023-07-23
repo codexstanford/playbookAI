@@ -1,0 +1,12 @@
+[
+  {
+    "type": "NEW_TASK",
+    "taskId": 1,
+    "goal": "For ever country in the world, identify where the websites where their legislation can be found online. If a country have a multiple law applicable identify them all."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::SEARCH \"list of countries in the world\" on the internet"
+  }
+]

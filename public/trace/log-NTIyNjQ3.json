@@ -1,0 +1,41 @@
+[
+  {
+    "type": "NEW_TASK",
+    "taskId": 1,
+    "goal": "For each country of the world identify their main legislation and where it can be access online (url). If the country have a federal organization, also identify each of the regulation of each state like administration.",
+    "parentTaskId": null
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::SEARCH \"list of countries in the world\""
+  },
+  {
+    "type": "SEARCH",
+    "taskId": 1,
+    "query": "list of countries in the world",
+    "result": "- [List of Countries of the world in alphabetical order (A to Z ...](https://www.worldometers.info/geography/alphabetical-list-of-countries/) Alphabetical list of countries ; 1, Afghanistan, 38,928,346 ; 2, Albania, 2,877,797 ; 3, Algeria, 43,851,044 ; 4, Andorra, 77,265 ...\n- [List of Countries in the World in Alphabetical Order | Britannica](https://www.britannica.com/topic/list-of-countries-1993160) A · Afghanistan · Albania · Algeria · Andorra · Angola · Antigua and Barbuda · Argentina · Armenia.\n- [A-Z list of Countries and Regions in the World :: Nations Online Project](https://www.nationsonline.org/oneworld/countries_of_the_world.htm) World Countries List ; Bosnia and Herzegovina, Bosnie-Herzégovine ; Botswana, Botswana ; Brazil, Brésil ; Brunei Darussalam, Brunéi Darussalam ...\n- [All Countries - Countries - Office of the Historian](https://history.state.gov/countries/all) All Countries · A. Afghanistan · Albania · Algeria · Andorra · B Baden* · Bahamas, The · Bahrain · C Cabo Verde · Cambodia · Cameroon · D Democratic Republic of ...\n- [World Bank Country and Lending Groups – World Bank Data Help ...](https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups) Click here for information about how the World Bank classifies countries. You can also download the current classification by income in XLSX format and the ...\n- [Classification of Fragile and Conflict-Affected Situations](https://www.worldbank.org/en/topic/fragilityconflictviolence/brief/harmonized-list-of-fragile-situations) The World Bank Group's (WBG) Fragile, Conflict and Violence Group (formally ... the list is not meant to be comprehensive— it does not include all countries ...\n- [WDI - The World by Income and Region](https://datatopics.worldbank.org/world-development-indicators/the-world-by-income-and-region.html) Country borders or names do not necessarily reflect the World Bank Group's official ... Click here to access the complete list of countries by income group.\n- [Countries and Areas List - United States Department of State](https://www.state.gov/countries-and-areas-list/) The U.S. Department of State Facilities and Areas of Jurisdictions map visualizes the Department's official presence around the world and the organizational ...\n- [Countries | Data](https://data.worldbank.org/country) Countries from The World Bank: Data.\n- [List of countries and dependencies by area - Wikipedia](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area) This is a list of the world's countries and their dependencies by land, water, and total area, ranked by total area. Dymaxion map of the world with the 30 ...\n"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::PLAN Extract the list of countries from the search results\n::SEARCH \"legislation website\" for each country"
+  },
+  {
+    "type": "SEARCH",
+    "taskId": 1,
+    "query": "\"legislation website\" for each country",
+    "result": "- [Help](https://n-lex.europa.eu/n-lex/help/help) The first link leads you to the homepage of the country's national legislation website. ... Search results are presented by country, on the same page. You can ...\n- [Tax treaties - GOV.UK](https://www.gov.uk/government/collections/tax-treaties) Jul 28, 2014 ... For information on Statutory Instruments see the Legislation website. Countries A to C. Albania: tax treaties. 14 June 2021; International ...\n- [Regulatory Governance in the Open Government Partnership](https://www.opengovpartnership.org/documents/regulatory-governance-in-the-open-government-partnership/) Aug 10, 2020 ... The answers to these questions provide a picture of the overall availability of laws and regulations in each country. ... legislation website with ...\n- [New Zealand Legislation](https://www.legislation.govt.nz/) About secondary legislation on the NZ Legislation website. 22 October 2021 ... This site is updated regularly by the Parliamentary Counsel Office, which drafts ...\n- [Legislation Database](https://legislation.nt.gov.au/) Welcome to the Northern Territory Legislation Website. This website contains ... by the Legislative Assembly; Acts resulting from these proposals and new and ...\n- [NSW legislation: Home](https://legislation.nsw.gov.au/) The NSW legislation website is the primary source for NSW legislation. It is managed by the Parliamentary Counsel's Office. Bathurst Winter Festival 2016.\n- [Callers flood Polish abortion helpline after number sprayed during ...](https://www.reuters.com/article/us-poland-abortion-activists/callers-flood-polish-abortion-helpline-after-number-sprayed-during-protests-idUSKBN27F1K2) Oct 30, 2020 ... A post on the government legislation website says the ruling should be published and therefore effectively enforceable by Nov. 2. Many of ...\n- [Updated New Zealand Legislation Website – It's Pretty (and Useful ...](https://blogs.loc.gov/law/2012/04/updated-new-zealand-legislation-website/) Updated New Zealand Legislation Website – It's Pretty (and Useful)!. April 24, 2012. Posted by: Kelly Buchanan. Share this post: Facebook · Twitter\n- [Domestic Legislation - International Investment Law - Library Guides ...](https://unimelb.libguides.com/c.php?g=929887&p=6719579) For each country, see in particular Question 2 - Governing Legislation ... country's official legislation website) and Question 14 - Investor State Arbitrations.\n- [Policy silences: why Canada needs a National First Nations, Inuit ...](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3875351/) Dec 27, 2013 ... However, if they were not listed by department or ministry, then the government legislation website was word searched and each located document ...\n"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::PLAN Extract the URLs of the legislation websites from the search results\n::END_RESULT Legislation Website,URL\n\nThe results of the task will be outputted as a CSV with the headers \"Legislation Website\" and \"URL\"."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 1,
+    "goal": "For each country of the world identify their main legislation and where it can be access online (url). If the country have a federal organization, also identify each of the regulation of each state like administration.",
+    "args": "Legislation Website,URL"
+  }
+]

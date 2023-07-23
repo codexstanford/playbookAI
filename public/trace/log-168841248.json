@@ -1,0 +1,23 @@
+[
+  {
+    "type": "NEW_TASK",
+    "taskId": 1,
+    "goal": "For ever country in the world, identify where the websites where their legislation can be found online. If a country have a multiple law applicable identify them all."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::SEARCH legislation websites for each country in the world"
+  },
+  {
+    "type": "SEARCH",
+    "taskId": 1,
+    "query": "legislation websites for each country in the world",
+    "result": "- [International health regulations](https://www.who.int/health-topics/international-health-regulations) WHO plays the coordinating role in IHR implementation and, together with its partners, helps countries to build capacities. The IHR require that all countries ...\n- [Data Protection and Privacy Legislation Worldwide | UNCTAD](https://unctad.org/page/data-protection-and-privacy-legislation-worldwide) Africa and Asia show different level of adoption with 61 and 57 per cent of countries having adopted such legislations. The share in the least developed ...\n- [Women, Business and the Law - Gender Equality, Women Economic ...](https://wbl.worldbank.org/) The 2023 report finds that 176 countries maintain legal barriers to women's full economic ... This Brief presents data collected by the World Bank's Women, ...\n- [WGI 2022 Interactive > Home](https://info.worldbank.org/governance/wgi/) They are based on over 30 individual data sources produced by a variety of ... the World Bank, its Executive Directors, or the countries they represent.\n- [Universal Declaration of Human Rights | United Nations](https://www.un.org/en/about-us/universal-declaration-of-human-rights) Drafted by representatives with different legal and cultural backgrounds from all regions of the world, the Declaration was proclaimed by the United Nations ...\n- [United Nations Office on Drugs and Crime](https://www.unodc.org/) UNODC's mission is to contribute to global peace and security, human rights and development by making the world safer from drugs, crime, corruption and ...\n- [Act Now | United Nations](https://www.un.org/en/actnow) ActNow is the United Nations' global call to individual action on climate change. The campaign is a critical part of the UN's coordinated effort to raise ...\n- [Learn About Your Destination](https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages.html) Information by Travel Type · Traveler's Checklist · What the Department of State Can and Can't Do in a Crisis · Your Health Abroad.\n- [The Paris Agreement | United Nations](https://www.un.org/en/climatechange/paris-agreement) The Agreement sets long-term goals to guide all nations: substantially reduce global greenhouse gas emissions to limit the global temperature increase in ...\n- [The Montreal Protocol on Substances That Deplete the Ozone Layer ...](https://www.state.gov/key-topics-office-of-environmental-quality-and-transboundary-issues/the-montreal-protocol-on-substances-that-deplete-the-ozone-layer/) The Montreal Protocol has proven to be innovative and successful, and it is the first treaty to achieve universal ratification by all countries in the world ...\n"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::PLAN to extract relevant legislation websites for each country:\n1. Prepare a list of all countries in the world.\n2. For each country, search the internet for legislation websites specifically related to that country.\n3. Extract the relevant legislation websites for each country.\n4. Organize the extracted websites by country and their corresponding legislation.\n5. End the result with the list of legislation websites for each country."
+  }
+]

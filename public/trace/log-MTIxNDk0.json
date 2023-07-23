@@ -1,0 +1,910 @@
+[
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "ARTICLE V REPRESENTATIONS AND WARRANTIES OF PARENT AND ACQUISITION SUB",
+    "result": "TITLE"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "THIS AGREEMENT AND PLAN OF MERGER, dated as of April 25, 2022 (this “Agreement”), is made by and among Twitter, Inc., a\nDelaware corporation (the “Company”), X Holdings I, Inc., a Delaware corporation (“Parent”), X Holdings II, Inc., a Delaware corporation and a direct wholly owned Subsidiary of Parent (“Acquisition\nSub”), and, solely for purposes of Sections 5.4, 6.2(d), 6.3, 6.8, 6.10, 6.11, 6.12 and 9.9 (the “Specified Provisions”), Elon R. Musk (the “Equity\nInvestor”). ",
+    "result": "TITLE"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the parties desire for Parent to acquire the Company by way of a merger (the “Merger”) of Acquisition Sub with and\ninto the Company pursuant to the General Corporation Law of the State of Delaware (the “DGCL”) upon the terms and subject to the conditions set forth in this Agreement; ",
+    "result": "TITLE"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the board of directors of Acquisition Sub (the “Acquisition Sub Board”) has determined that it is advisable to, fair\nto and in the best interests of Acquisition Sub and its stockholders to effect the Merger of Acquisition Sub with and into the Company pursuant to the DGCL upon the terms and subject to the conditions set forth in this Agreement; ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the Company’s board of directors (the “Company Board”) has, by resolutions duly adopted by the unanimous vote\nof the directors at a duly held meeting (i) determined that the terms and conditions of this Agreement, the Merger and the other transactions contemplated by this Agreement are advisable and in the best interests of the Company and the\nCompany’s stockholders, (ii) authorized the execution and delivery of this Agreement and declared advisable and approved the consummation of the transactions contemplated by this Agreement, including the Merger, (iii) directed that\nthis Agreement be submitted for consideration at a meeting of the Company’s stockholders and (iv) subject to the terms of this Agreement, recommended that the Company’s stockholders adopt this Agreement and approve the transactions\ncontemplated by this Agreement, including the Merger (the “Company Board Recommendation”); ",
+    "result": "Board Reaffirmation Recommendation"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the Acquisition Sub\nBoard has, by resolutions duly adopted, (i) determined that the terms and conditions of this Agreement, the Merger and the other transactions contemplated by this Agreement are advisable and in the best interests of the Acquisition Sub and\nParent, as the sole stockholder of Acquisition Sub; (ii) authorized the execution and delivery of this Agreement and declared advisable and approved the consummation of the transactions contemplated by this Agreement, including the Merger,\n(iii) directed that this Agreement be submitted for consideration by Parent, as the sole stockholder of Acquisition Sub and (iv) recommended that Parent, as the sole stockholder of Acquisition Sub approve the Merger, and Parent, as the\nsole stockholder of Acquisition Sub, has approved this Agreement and the consummation of the transactions contemplated by this Agreement, including the Merger; ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the board of directors of Parent (the “Parent Board”) has, by resolutions duly adopted by the unanimous vote of the\ndirectors, (i) adopted this Agreement and approved the consummation of the transactions contemplated by this Agreement, including the Merger and (ii) determined that this Agreement and the transactions contemplated by this Agreement are\nadvisable and in the best interests of Parent and Elon Musk, as the sole stockholder of Parent; ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, as a material inducement to, and as a condition to, the Company entering into this\nAgreement, concurrently with the execution of this Agreement, Elon Musk (the “Guarantor”) has entered into a limited guarantee, dated as of the date hereof, guaranteeing certain of Parent’s and Acquisition Sub’s\nobligations under this Agreement (the “Parent Guarantee”); and ",
+    "result": "IRRELEVANT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, each of Parent, Acquisition Sub and the Company\ndesires to make certain representations, warranties, covenants and agreements in connection with the Merger and also to prescribe various conditions to the Merger. ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "NOW, THEREFORE, in consideration of the foregoing and the representations, warranties and covenants and subject to the conditions herein\ncontained, and intending to be legally bound hereby, the parties hereto hereby agree as follows: ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "As\nused in this Agreement, the following terms shall have the respective meanings set forth or referenced below: ",
+    "result": "DEFINED TERMS"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Acquisition\nSub” shall have the meaning set forth in the Preamble. ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Acquisition Sub Board” shall have the meaning set forth\nin the Recitals. ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Adverse Board Recommendation Change” shall have the meaning set forth in\nSection 6.5(d). ",
+    "result": "Defined term, OTHER"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Affiliate” has the meaning set forth in Rule\n12b-2 of the Exchange Act. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Aggregate Merger Consideration” shall mean the\nproduct of (x) the number of shares of Company Common Stock issued and outstanding (other than those shares canceled or retired pursuant to Section 3.1(b)) immediately prior to the Effective Time multiplied by\n(y) the Merger Consideration. ",
+    "result": "OTHER"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Alternative Financing” shall have the meaning set forth in Section 6.10(c). ",
+    "result": "Defined term referenced in Section 6.10(c)"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Alternative Financing Debt Commitment Letter” shall have the meaning set forth in Section 6.10(c).\n",
+    "result": "Defined term implicated in the “Alternative Financing Debt Commitment Letter” definition clause in the contract."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Antitrust Laws” shall have the meaning set forth in Section 4.4(b). ",
+    "result": "Defined term\n"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Bank Debt Commitment Letter” shall have the meaning set forth in Section 5.4. ",
+    "result": "Definitely a DEFINITION clause"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Bank Debt Financing” shall have the meaning set forth in\nSection 5.4. ",
+    "result": "Defined term implicated by the clause. The type of clause is \"Defined term definition\"."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Blue Sky Laws” shall mean state securities or “blue sky” laws. ",
+    "result": "Defined term implicated in the contract."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Book-Entry Shares” shall have the meaning set forth in Section 3.1(c). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Business Day” shall mean any day other than a Saturday, Sunday or a day on which all banking institutions in San Francisco,\nCalifornia or New York, New York are authorized or obligated by Law or executive order to close. ",
+    "result": "OTHER"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Certificate of Merger” shall have the meaning set forth in\nSection 2.3(a). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Certificates” shall have the meaning set forth in\nSection 3.1(c). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Closing Date” shall have the meaning set forth in\nSection 2.2. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Code” shall mean the Internal Revenue Code of 1986, as amended. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company ASR Confirmations” means (i) the Master Confirmation re Accelerated Stock Repurchases, dated February 10,\n2022, between the Company and Morgan Stanley & Co. LLC and (ii) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Wells Fargo Bank, National Association, in each case, as\namended through the date hereof. ",
+    "result": "Acquisition Proposal Definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Benefit Plan” shall mean (i) “employee benefit plan” (within the\nmeaning of Section 3(3) of ERISA, whether or not subject to ERISA), and (ii) each other employment agreement, bonus, stock option, stock purchase or other equity-based, benefit, incentive compensation, profit sharing, savings, retirement\n(including early retirement and supplemental retirement), disability, insurance, vacation, incentive, deferred compensation, supplemental retirement (including termination indemnities and seniority payments), severance, termination, retention,\nchange of control and other similar fringe, welfare or other employee benefit plans, benefit programs, benefit agreements, benefit contracts, benefit policies or benefit arrangements (whether or not in writing), in each case, (x) which is\nsponsored, maintained or contributed to for the benefit of or relating to any current or former director, officer or employee of the Company or its Subsidiaries and (y) with respect to which the Company or any of its Subsidiaries has or may\nhave any liability. ",
+    "result": "Acquisition Proposal Definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Board” shall have the meaning set forth in the Recitals. ",
+    "result": "DEFINED_TERM"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Bond Hedge Documentation” means (a)(i) the call option transaction\nconfirmation, dated June 6, 2018, between the Company and Barclays Bank PLC, (ii) the call option transaction confirmation, dated June 6, 2018, between the Company and JPMorgan Chase Bank, N.A., London Branch, (iii) the call\noption transaction confirmation, dated June 6, 2018, between the Company and Wells Fargo Bank, National Association, (iv) the additional call option transaction confirmation, dated June 7, 2018, between the Company and Barclays Bank\nPLC, (v) the additional call option transaction confirmation, dated June 7, 2018, between the Company and JPMorgan Chase Bank, N.A., London Branch, (vi) the additional call option transaction confirmation, dated June 7, 2018,\nbetween the Company and Wells Fargo Bank, National Association, and (b)(i) the call option transaction confirmation, dated March 1, 2021, between the Company and Bank of America, N.A., (ii) the call option transaction confirmation, dated\nMarch 1, 2021, between the Company and Barclays Bank PLC, (iii) the call option transaction confirmation, dated March 1, 2021, between the Company and Goldman Sachs & Co. LLC, (iv) the call option transaction\nconfirmation, dated March 1, 2021, between the Company and Wells Fargo Bank, National Association, (v) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Bank of America, N.A., (vi) the\nadditional call option transaction confirmation, dated March 12, 2021, between the Company and Barclays Bank PLC, (vii) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Goldman\nSachs & Co. LLC, (viii) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Wells Fargo Bank, National Association, (ix) the letter agreement, dated March 1, 2021, between\nthe Company and Bank of America, N.A., (x) the letter agreement, dated March 1, 2021, between the Company and Barclays Bank PLC, (xi) the letter agreement, dated March 1, 2021, between the Company and Goldman Sachs & Co. LLC,\n(xii) the letter agreement, dated March 1, 2021, between the Company and Wells Fargo Bank, National Association, (xiii) the additional letter agreement, dated March 12, 2021, between the Company and Bank of America, N.A., (xiv)\nthe additional letter agreement, dated March 12, 2021, between the Company and Barclays Bank PLC, (xv) the additional letter agreement, dated March 12, 2021, between the Company and Goldman Sachs & Co. LLC, and (xvi) the\nadditional letter agreement, dated March 12, 2021, between the Company and Wells Fargo Bank, National Association. ",
+    "result": "Acquisition Proposal Definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company\nBond Hedge Transactions” means each of the call option transactions evidenced by the Company Bond Hedge Documentation. ",
+    "result": "Defined term implicated in the \"no-shop\" and \"fiduciary out\" clauses in a merger agreement. Therefore, the type of clause is Acquisition Proposal Definition."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Bylaws” shall have the meaning set forth in Section 4.1. ",
+    "result": "IRRELEVANT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Certificate of Incorporation” shall have the meaning set forth in Section 4.1. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Common Stock” shall have the meaning set forth in Section 3.1(a). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Disclosure Letter” shall mean the disclosure letter delivered by the Company to Parent simultaneously with the\nexecution of this Agreement. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Equity Awards” shall mean, collectively, (i) Company Options,\n(ii) Company PSUs, (iii) Company RSAs, and (iv) Company RSUs. ",
+    "result": "Defined term involving the classification of different types of equity awards granted by the company."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company ESPP” shall mean the Company 2013\nEmployee Stock Purchase Plan. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Intellectual Property” shall have the meaning set forth in\nSection 4.14(a). ",
+    "result": "Defined term."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Material Adverse Effect” means any change, event, effect or\ncircumstance which, individually or in the aggregate, has resulted in or would reasonably be expected to result in a material adverse effect on the business, financial condition or results of operations of the Company and its Subsidiaries, taken as\na whole; provided, however, that changes, events, effects or circumstances which, directly or indirectly, to the extent they relate to or result from the following shall be excluded from, and not taken into account in, the\ndetermination of Company Material Adverse Effect: (i) any condition, change, effect or circumstance generally affecting any of the industries or markets in which the Company or its Subsidiaries operate; (ii) any change in any Law or GAAP\n(or changes in interpretations of any Law or GAAP); (iii) general economic, regulatory or political conditions (or changes therein) or conditions (or changes therein) in the financial, credit or securities markets (including changes in interest or\ncurrency exchange rates) in the United States or any other country or region in the world; (iv) any acts of God, force majeure events, natural disasters, terrorism, cyberattack, data breach, armed hostilities, sabotage, war or any escalation or\nworsening of any of the foregoing; (v) any epidemics, pandemics or contagious disease outbreaks (including COVID-19) and any political or social conditions, including civil unrest, protests and public\ndemonstrations or any other COVID-19 Measures that relate to, or arise out of, an epidemic, pandemic or disease outbreak (including COVID-19) or any change in such COVID-19 Measures, directive, pronouncement or guideline or interpretation thereof, or any continuation or of any of the foregoing, in the United States or any other country or region in the world; (vi) the\nnegotiation, execution, announcement, performance, consummation or existence of this Agreement or the transactions contemplated by this Agreement, including (A) by reason of the identity of Elon Musk, Parent or any of their Affiliates or their\nrespective financing sources, or any communication by Parent or any of its Affiliates or their respective financing sources, including regarding their plans or intentions with respect to the conduct of the business of the Company or any of its\nSubsidiaries and (B) any litigation, claim or legal proceeding threatened or initiated against Parent, Acquisition Sub, the Company or any of their respective Affiliates, officers or directors, in each case, arising out of or relating to the\nthis Agreement or the transactions contemplated by this Agreement, and including the impact of any of the foregoing on any relationships with customers, suppliers, vendors, collaboration partners, employees, unions or regulators; (vii) any\naction taken pursuant to the terms of this Agreement or with the consent or at the direction of Parent or Acquisition Sub (or any action not taken as a result of the failure of Parent to consent to any action requiring Parent’s consent pursuant\nto Section 6.1); (viii) any changes in the market price or trading volume of the Company Common Stock, any failure by the Company or its Subsidiaries to meet internal, analysts’ or other earnings estimates or financial\nprojections or forecasts for any period, any changes in credit ratings and any changes in any analysts’ recommendations or ratings with respect to the Company or any of its Subsidiaries (provided that the facts or occurrences giving rise\nto or contributing to such changes or failure that are not otherwise excluded from the definition of “Company Material Adverse Effect” may be taken into account in determining whether there has been a Company Material Adverse Effect); and\n(ix) any matter disclosed in the Company SEC Documents filed by the Company prior to the date of this Agreement (other than any disclosures set forth under the headings “Risk Factors” or “Forward-Looking Statements”). ",
+    "result": "Company Material Adverse Effect Definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Material Contract” shall have the meaning set forth in Section 4.16(a). ",
+    "result": "Defined term implicated in the contract. Other"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Option” shall mean each outstanding option to purchase shares of Company Common Stock granted to any employee or\ndirector of, or other Company Service Provider. ",
+    "result": "Acquisition Proposal Definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Permits” shall have the meaning set forth in\nSection 4.5(a). ",
+    "result": "Defined term implicated in the merger agreement."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company PSU” shall mean each performance-based restricted stock unit that\nvests on the basis of time and the achievement of performance metrics and was granted to any Company Service Provider. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company\nRelated Parties” shall have the meaning set forth in Section 8.3(d). ",
+    "result": "Defined term used in Section 8.3(d) to refer to parties related to the company."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company RSA”\nshall mean each share of Company Common Stock granted to any Company Service Provider that remains subject to vesting, lapse or forfeiture provisions. ",
+    "result": "Defined term."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company RSU” shall mean each time-based restricted stock unit that vests on the basis of time and was granted to any Company\nService Provider. ",
+    "result": "Defined Term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company SEC Documents” shall have the meaning set forth in Section 4.6(a).\n",
+    "result": "DEFINED TERM"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Service Provider” shall mean each current or former director, employee, consultant or independent contractor of\nthe Company or any of its Subsidiaries ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Stockholder Advisory Vote” shall have the meaning set forth in\nSection 4.3(a). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Stockholder Approval” shall have the meaning set forth in\nSection 4.20. ",
+    "result": "Shareholder Approval"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Stockholders’ Meeting” shall have the meaning set forth in\nSection 6.2(c). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Warrant Confirmations” means (a)(i) the warrant confirmation, dated\nJune 6, 2018, between the Company and Barclays Bank PLC, (ii) the warrant confirmation, dated June 6, 2018, between the Company and JPMorgan Chase Bank, N.A., London Branch, (iii) the warrant confirmation, dated June 6,\n2018, between the Company and Wells Fargo Bank, National Association, (iv) the additional warrant confirmation, dated June 7, 2018, between the Company and Barclays Bank PLC, (v) the additional warrant confirmation, dated June 7,\n2018, between the Company and JPMorgan Chase Bank, N.A., London Branch, (vi) the additional warrant confirmation, dated June 7, 2018, between the Company and Wells Fargo Bank, National Association, and (b)(i) the warrant confirmation,\ndated March 1, 2021, between the Company and Bank of America, N.A., (ii) the warrant confirmation, dated March 1, 2021, between the Company and Barclays Bank PLC, (iii) the warrant confirmation, dated March 1, 2021, between the\nCompany and Goldman Sachs & Co. LLC, (iv) the warrant confirmation, dated March 1, 2021, between the Company and Wells Fargo Bank, National Association, (v) the additional warrant confirmation, dated March 12, 2021,\nbetween the Company and Bank of America, N.A., (vi) the additional warrant confirmation, dated March 12, 2021, between the Company and Barclays Bank PLC, (vii) the additional warrant confirmation, dated March 12, 2021, between the\nCompany and Goldman Sachs & Co. LLC, and (viii) the additional warrant confirmation, dated March 12, 2021, between the Company and Wells Fargo Bank, National Association. ",
+    "result": "Acquisition Proposal Definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Competing Proposal” shall have the meaning set forth in Section 6.5(g)(i). ",
+    "result": "Defined term implicated in the \"Competing Proposal\" section of the contract."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Continuation Period” shall have the meaning set forth in\nSection 6.9(a). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Continuing Employees” shall have the meaning set forth in\nSection 6.9(a). ",
+    "result": "Defined term definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Contract” means any written contract, subcontract, lease, sublease,\nconditional sales contract, purchase order, sales order, task order, delivery order, license, indenture, note, bond, loan, instrument, understanding, permit, concession, franchise, commitment or other agreement. ",
+    "result": "Defined term that defines the term \"Contract\" and provides a list of various types of agreements that fall under the definition."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“COVID-19” means SARS-Co V-2 or COVID-19 or any evolutions, variants or mutations thereof. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“COVID-19 Measures” means quarantine, “shelter in place,” “stay\nat home,” workforce reduction, social distancing, shut down, closure, sequester, safety or similar laws, directives, restrictions, guidelines, responses or recommendations of or promulgated by any Governmental Authority, including the Centers\nfor Disease Control and Prevention and the World Health Organization, or other reasonable actions taken in response to the foregoing or otherwise, in each case, in connection with or in response to COVID-19\nand any evolutions, variants or mutations thereof or related or associated epidemics, pandemics or disease outbreaks. ",
+    "result": "Definition Clause"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“D&O\nIndemnified Parties” shall have the meaning set forth in Section 6.6(a). ",
+    "result": "Defined term used in the section titled \"D&O Indemnification\""
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Debt Commitment\nLetters” shall have the meaning set forth in Section 5.4. ",
+    "result": "Defined term implicated in the contract. Type of clause: Acquisition Proposal Definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Debt Financing” shall have\nthe meaning set forth in Section 5.4. ",
+    "result": "Defined Term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Debt Financing Source” shall mean (i) the\ncommitment parties party, as of the date hereof, to the Debt Commitment Letters that have been delivered to the Company in accordance with Section 5.4, and (ii) the Persons, in their respective capacities as such, that\nhave committed to arrange or provide or have otherwise entered into agreements (including the Debt Commitment Letters or any Financing Agreements), in each case, in connection with all or any portion of the Debt Financing or Alternative Financing in\nconnection with the transactions contemplated hereby, and any joinder agreements, indentures or credit agreements entered into pursuant thereto, together with their Affiliates, and any of their or their Affiliates’ respective, direct or\nindirect, former, current or future stockholders, managers, members, directors, officers, employees, agents, advisors, other representatives or any successors or assignees of any of the foregoing (it being understood that Parent, Acquisition Sub and\nany of their respective Affiliates shall not constitute “Debt Financing Sources” for any purposes hereunder). ",
+    "result": "Defined term implicated in the \"Debt Financing Source\" clause."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Debt\nFinancing Source Related Party” means any Debt Financing Source, together with their respective Affiliates and their and their respective Affiliates’ former, current and future officers, directors, employees, agents and representatives\nand their respective successors and assigns. ",
+    "result": "Irrelevant"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Dissenting Shares” shall have the meaning set forth in Section 3.5. ",
+    "result": "Defined term used in Section 3.5."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Effective Time” shall have the meaning set forth in\nSection 2.3(a). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Enforceability Exceptions” shall have the meaning set forth in\nSection 4.3(a). ",
+    "result": "IRRELEVANT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Equity Commitment Letter” shall have the meaning set forth in\nSection 5.4. ",
+    "result": "Defined term implicated in the contract."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“ERISA” means the Employee Retirement Income Security Act of 1974, as amended.\n",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“ERISA Affiliate” shall mean, for any Person, each trade or business, whether or not incorporated, that, together with\nsuch Person, would be deemed a “single employer” within the meaning set forth in Section 414 of the Code. ",
+    "result": "Defined Term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Exchange Act” shall mean the Securities Exchange Act of 1934, as amended. ",
+    "result": "OTHER"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Exchange Fund” shall have the meaning set forth in Section 3.2(a). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Existing Credit Agreement” shall mean that certain Revolving Credit Agreement, dated as of August 17, 2018, among the\nCompany, the lenders from time to time party thereto and JPMorgan Chase Bank, N.A. as administrative agent, as amended, amended and restated, supplemented or otherwise modified from time to time. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Existing D&O Insurance Policies” shall have the meaning set forth in Section 6.6(c). ",
+    "result": "Defined term.\n"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Existing 2027 Senior Notes” shall mean the 3.875% Senior Notes due 2027 issued pursuant to that certain Indenture, dated\nDecember 9, 2019, among the Company, as issuer, and U.S. Bank National Association, as trustee, as amended, amended and restated, supplemented or otherwise modified from time to time. ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Existing 2030 Senior Notes” shall mean the 5.000% Senior Notes due 2030 issued pursuant to that certain Indenture, dated\nFebruary 25, 2022, among the Company, as issuer, and U.S. Bank National Association, as trustee, as amended, amended and restated, supplemented or otherwise modified from time to time. ",
+    "result": "The provided text does not appear to be a full clause. Please provide another extract or a different text."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Existing Convertible Notes” shall mean the (i) 0.25% Convertible Senior Notes due 2024 issued pursuant to that certain\nIndenture, dated June 11, 2018, among the Company, as issuer, and U.S. Bank National Association, as trustee, (ii) 0.375% Convertible Senior Notes due 2025 issued pursuant to that certain Indenture, dated March 12, 2020, among the Company,\nas issuer, and U.S. Bank National Association, as trustee, and (iii) 0% Convertible Senior Notes due 2026 issued pursuant to that certain Indenture, dated March 4, 2021, among the Company, as issuer, and U.S. Bank National Association, as\ntrustee, in each case as amended, amended and restated, supplemented or otherwise modified from time to time. ",
+    "result": "Defined term that defines \"Existing Convertible Notes\" and provides a description of what it includes."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Existing Senior\nNotes” shall mean the (i) the Existing 2027 Senior Notes and (ii) the Existing 2030 Senior Notes. ",
+    "result": "Defined term."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Expenses” shall mean all out-of-pocket expenses (including all fees and expenses of counsel, accountants, investment bankers, experts and consultants to a party hereto and its Affiliates) incurred by a party or on its behalf in\nconnection with or related to the authorization, preparation, negotiation, execution and performance of this Agreement, the preparation, printing, filing and mailing of the Proxy Statement and all SEC and other regulatory filing fees incurred in\nconnection with the Proxy Statement, the solicitation of stockholder approvals, any filing with, and obtaining of any necessary action or non-action, Consent or approval from any Governmental Authority\npursuant to any Antitrust Laws or Foreign Investment Laws, engaging the services of the Paying Agent, any other filings with the SEC, and all other matters related to the Closing and the other transactions contemplated by this Agreement. ",
+    "result": "Expense Definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Final Offering Period” shall have the meaning set forth in Section 3.7. ",
+    "result": "Defined term that refers to the meaning of \"Final Offering Period\" as stated in Section 3.7."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Financing Agreements” shall have the meaning set forth in Section 6.10(a). ",
+    "result": "Defined term."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Financing Commitments” shall have the meaning set forth in Section 5.4. ",
+    "result": "Defined term definition."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Financing Sources” means the Debt Financing Sources and Elon Musk. ",
+    "result": "Defined term implicated in the “Financing Sources” clause"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Foreign Investment Laws” shall mean any Laws designed or intended to prohibit, restrict or regulate actions (i) by\nforeigners to acquire interests in or control over domestic equities, securities, entities, assets, land or interests, or (ii) to acquire interests in or control over equities, securities, entities, assets, land or interests that might harm\ndomestic national security or public interest, other than Antitrust Laws. ",
+    "result": "Acquisition Proposal Definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Foreign Plan” shall mean each Company Benefit\nPlan that primarily covers current or former employees, directors or individual service providers of the Company or any of its subsidiaries based outside of the U.S. and/or that is subject to any Law other than U.S., federal, state or local law\n(other than any plan or program that is required by statute or maintained by a Governmental Authority to which the Company or any of its subsidiaries contributes pursuant to applicable Law). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Funding Obligations” shall have the meaning set forth in Section 5.4. ",
+    "result": "Defined term: Funding Obligations"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“GAAP” shall mean the U.S. generally accepted accounting principles. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Goldman Sachs” shall have the meaning set forth in Section 4.21. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Governmental Authority” shall mean any U.S. (federal, state or local) or foreign government, or any governmental,\nregulatory, judicial or administrative authority, agency or commission. ",
+    "result": "Definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Hazardous Materials” means all substances\n(i) defined as hazardous substances, oils, pollutants or contaminants in the National Oil and Hazardous Substances Pollution Contingency Plan, 40 C.F.R. § 300.5, or (ii) defined as hazardous substances, hazardous materials,\npollutants, contaminants, toxic substances (or words of similar import) by or regulated as such under any Environmental Law. ",
+    "result": "Environmental Definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“HSR Act” shall mean the Hart-Scott-Rodino Antitrust Improvements Act of\n1976, as amended, and the rules and regulations thereunder. ",
+    "result": "Defined term."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Intellectual Property Rights” shall have the meaning set\nforth in Section 4.14(a). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Knowledge” means the actual knowledge of the directors and officers of the relevant party, following due inquiry of their\ndirect reports and others who would be reasonably expected to have knowledge of the subject matter in question. ",
+    "result": "Knowledge Definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Law”\nshall mean any and all domestic (federal, state or local) or foreign laws (including common law), rules, regulations, orders, judgments or decrees promulgated by any Governmental Authority. ",
+    "result": "IRRELEVANT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Lien” shall mean liens, claims, mortgages, encumbrances, pledges, security interests or charges of any kind. ",
+    "result": "OTHER"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Margin Loan Borrower” shall have the meaning set forth in Section 5.4. ",
+    "result": "Defined term implicated in the “Margin Loan Borrower” and defined in Section 5.4."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Margin Loan Commitment Letter” shall have the meaning set forth in Section 5.4. ",
+    "result": "Other"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Margin Loan Financing” shall have the meaning set forth in Section 5.4. ",
+    "result": "Defined term implicated in the contract. Type of clause: OTHER"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Merger Consideration” shall have the meaning set forth in Section 3.1(c). ",
+    "result": "Defined term implicated in the “no-shop” and “fiduciary out” clauses ina merger agreement. Under the “no shop,” the target agrees not to solicitbids (“Acquisition Proposals”) from third parties or to negotiated withthem. Under the “fiduciary out,” if the target receives an unsolicited bidfrom a third party that is superior to the terms of the merger agreement,then the target may be permitted to negotiate with the bidder and withdraw the board recommendation that stockholders vote in favor of themerger agreement."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Notice of Adverse Board Recommendation Change” shall have the meaning set forth in Section 6.5(d).\n",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Notice of Superior Proposal” shall have the meaning set forth in Section 6.5(d). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Order” shall mean any decree, order, judgment, injunction, temporary restraining order or other order in any suit or\nproceeding by or with any Governmental Authority. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Parent Board” shall have the meaning set forth in the Recitals. ",
+    "result": "IRRELEVANT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Parent Disclosure Letter” shall mean the disclosure letter delivered by Parent to the Company simultaneously with the\nexecution of this Agreement. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Parent Material Adverse Effect” shall mean any change, effect or circumstance which,\nindividually or in the aggregate, has prevented or materially delayed or materially impaired, or would reasonably be expected to prevent or materially delay or materially impair, the ability of Parent or Acquisition Sub to consummate the Merger and\nthe other transactions contemplated by this Agreement. ",
+    "result": "Material Adverse Effect Definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Parent Related Parties” shall have the meaning set forth in\nSection 8.3(c). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Parent Termination Fee” shall mean an amount equal to $1,000,000,000. ",
+    "result": "OTHER"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Paying Agent” shall have the meaning set forth in Section 3.2(a). ",
+    "result": "Defined term used in the section 3.2(a) of the agreement."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Paying Agent Agreement” shall have the meaning set forth in Section 3.2(a). ",
+    "result": "Defined term implicated in the contract."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Permitted Lien” shall mean (i) any Lien for Taxes not yet delinquent or that are being contested in good faith by any\nappropriate proceedings and for which adequate accruals or reserves have been established in accordance with GAAP, (ii) Liens securing indebtedness or liabilities that are reflected in the Company SEC Documents or incurred in the ordinary\ncourse of business since the end of the most recent fiscal year for which an Annual Report on Form 10-K has been filed by the Company with the SEC and Liens securing indebtedness or liabilities that have\notherwise been disclosed to Parent in writing, (iii) such Liens or other imperfections of title, if any, that do not have a Company Material Adverse Effect, including (A) easements or claims of easements whether or not shown by the public\nrecords, boundary line disputes, overlaps, encroachments and any matters not of record which would be disclosed by an accurate survey or a personal inspection of the property, (B) rights of parties in possession, (C) any supplemental Taxes\nor assessments not shown by the public records and (D) title to any portion of the premises lying within the right of way or boundary of any public road or private road, (iv) Liens imposed or promulgated by Laws with respect to real\nproperty and improvements, including zoning regulations, (v) Liens disclosed on existing title reports or existing surveys, (vi) mechanics’, carriers’, workmen’s, repairmen’s and similar Liens incurred in the ordinary\ncourse of business, (vii) Liens securing acquisition financing with respect to the applicable asset, including refinancings thereof and (viii) licenses of Intellectual Property Rights. ",
+    "result": "Permitted Lien Clause"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Person” shall mean an individual, a corporation, a limited liability company, a partnership, an association, a trust or any\nother entity or organization, including a Governmental Authority. ",
+    "result": "OTHER"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Post-Closing Plans” shall have the meaning set forth\nin Section 6.9(b). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Post-Closing Welfare Plans” shall have the meaning set forth in\nSection 6.9(c). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Proxy Statement” shall have the meaning set forth in\nSection 4.7. ",
+    "result": "Defined term definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Representatives” shall have the meaning set forth in\nSection 6.4. ",
+    "result": "Defined term: Knowledge Definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Secretary of State” shall have the meaning set forth in Section 2.3(a). ",
+    "result": "Defined term. The clause defines the meaning of \"Secretary of State\" as set forth in Section 2.3(a) of the agreement."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Securities Act” shall mean the Securities Act of 1933, as amended. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Silver Lake Investment Agreement” means the Investment Agreement, dated as of March 9, 2020, among Twitter, Inc. and\nSilver Lake Partners V DE (AIV), L.P., as amended, restated, supplemented or otherwise modified from time to time. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Specified Provisions” shall have the meaning set forth in the Preamble. ",
+    "result": "DEFINED TERM"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Stockholder Rights” means the rights distributed to the Stockholders pursuant to Company Stockholder Rights Agreement. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Stockholder Rights Plan” means the Company Stockholder Rights and the Company Stockholder Rights Agreement. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Stockholder Rights Agreement” means the Preferred Stock Rights Agreement, dated as of April 15, 2022, between the\nCompany and Computershare Trust Company, N.A., as rights agent, as amended, restated, supplemented or otherwise modified from time to time ",
+    "result": "OTHER"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Subsidiary” of any Person shall mean any corporation, partnership, joint venture or other legal entity of which such Person\n(either above or through or together with any other subsidiary) owns, directly or indirectly, more than 50% of the stock or other equity interests, the holders of which are generally entitled to vote for the election of the board of directors or\nother governing body of such corporation or other legal entity. ",
+    "result": "Definition of \"Subsidiary\""
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Superior Proposal” shall have the meaning set forth in\nSection 6.5(g)(iii). ",
+    "result": "Superior Proposal Definition"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 101,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n  It is specified that the proposal is unsolicited by Company, should be more than 50% of the Company's assets, and Board of Directors views as good faith.     \n  The clause is : \n      \n“Superior Proposal” shall have the meaning set forth in\nSection 6.5(g)(iii). \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 101,
+    "answer": "PLAN First, check the clause for any potential issues or improvements.\nEND_RESULT \"Superior Proposal\" is well written."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 101,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n  It is specified that the proposal is unsolicited by Company, should be more than 50% of the Company's assets, and Board of Directors views as good faith.     \n  The clause is : \n      \n“Superior Proposal” shall have the meaning set forth in\nSection 6.5(g)(iii). \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "\"Superior Proposal\" is well written."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Superior Proposal” shall have the meaning set forth in\nSection 6.5(g)(iii). ",
+    "result": "Superior Proposal Definition",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Superior Proposal\" is well written.",
+      "taskId": 101
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Surviving Corporation” shall have the meaning set forth in\nSection 2.1. ",
+    "result": "DEFINED TERM"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Tax” or “Taxes” shall mean all federal, state, local and\nforeign income, profits, franchise, gross receipts, customs duty, capital stock, severance, stamp, payroll, sales, employment, unemployment, disability, use, property, withholding, excise, license, production, value added, occupancy and other taxes\nof any kind whatsoever, together with all interest, penalties and additions imposed with respect thereto. ",
+    "result": "Definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Tax Returns”\nshall mean all returns and reports (including elections, declarations, disclosures, schedules, estimates and information returns) filed or required to be filed with a Tax authority. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Termination Date” shall have the meaning set forth in Section 8.1(b)(i). ",
+    "result": "Defined term."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Termination Fee” shall mean an amount equal to $1,000,000,000. ",
+    "result": "Termination Fee Definition"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Tesla Shares” means shares of common stock of Tesla, Inc., $0.001 par value. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Third Party” shall mean any Person or group other than Parent, Acquisition Sub and their respective Affiliates. ",
+    "result": "Defined term."
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“U.S.” means the United States of America and its territories, commonwealths and possessions. ",
+    "result": "IRRELEVANT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "Section 2.1 The Merger. Upon the terms and subject to the conditions of this Agreement, and in accordance with the DGCL, at the\nEffective Time, Acquisition Sub shall be merged with and into the Company, whereupon the separate existence of Acquisition Sub shall cease, and the Company shall continue under the name “Twitter, Inc.” as the surviving corporation (the\n“Surviving Corporation”) and shall continue to be governed by the laws of the State of Delaware. ",
+    "result": "TITLE"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "Section 2.2 The\nClosing. Subject to the provisions of Article VII, the closing of the Merger (the “Closing”) shall take place at 9:00 a.m. (Pacific Time) on a date to be specified by the parties hereto, but no later than the second (2nd)\nBusiness Day after the satisfaction or waiver of all of the conditions set forth in Article VII (other than those conditions that by their terms are to be satisfied at the Closing, but subject to the satisfaction or waiver of such conditions\nat the Closing). The Closing shall take place virtually by the electronic exchange of documents, unless another time, date or place is agreed to in writing by the parties hereto (such date, the “Closing Date”). ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "(a) Concurrently with the Closing, the Company, Parent and Acquisition Sub shall cause a certificate of merger with respect to the Merger (the\n“Certificate of Merger”) to be executed and filed with the Secretary of State of the State of Delaware (the “Secretary of State”) in accordance with the relevant provisions of the DGCL and any other applicable Law\nof the State of Delaware. The Merger shall become effective on the date and time at which the Certificate of Merger has been duly filed with the Secretary of State or such other date and time as may be agreed to by Parent and the Company and as set\nforth in the Certificate of Merger in accordance with the DGCL (such date and time hereinafter referred to as the “Effective Time”). ",
+    "result": "Title"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "(b) The Merger shall have the effects set forth in this Agreement and in the applicable provisions of the DGCL. Without limiting the generality\nof the foregoing, from and after the Effective Time, (i) the Company shall be the surviving corporation in the Merger, (ii) all the property, rights, privileges, immunities, powers, franchises and liabilities of the Company and Acquisition\nSub are vested in the Surviving Corporation, (iii) the separate existence of Acquisition Sub shall cease and (iv) the Company shall continue to be governed by the laws of the State of Delaware. ",
+    "result": "Title"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "Section 2.4 Certificate of Incorporation and Bylaws. The parties will take all necessary actions so that at the Effective Time, the\ncertificate of incorporation and the bylaws of Acquisition Sub, each as in effect immediately prior to the Effective Time, will be the certificate of incorporation and the bylaws, respectively, of the Surviving Corporation (except that the\ntitles thereof shall read “Certificate of Incorporation of Twitter, Inc.” and “Bylaws of Twitter, Inc.”, respectively) until, subject to Section 6.6, thereafter amended in accordance with the applicable provisions of\nthe DGCL and the certificate of incorporation and bylaws of the Surviving Corporation. ",
+    "result": "TITLE"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "Section 2.5 Board of Directors. The board of directors of the Surviving Corporation\neffective as of, and immediately following, the Effective Time shall consist of the members of the Acquisition Sub Board immediately prior to the Effective Time, each to serve in accordance with the certificate of incorporation and bylaws of the\nSurviving Corporation until their respective successors shall have been duly elected and qualified, or until their earlier death, resignation or removal in accordance with the certificate of incorporation and bylaws of the Surviving Corporation.\n",
+    "result": "OTHER"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "Section 2.6 Officers. From and after the Effective Time, the officers of the Company at the Effective Time shall be the\nofficers of the Surviving Corporation, until their respective successors are duly elected or appointed and qualified in accordance with applicable Law. ",
+    "result": "Conduct of Business in the Ordinary Course Covenants"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "Section 3.1 Effect on Securities. At the Effective Time, by virtue of the Merger and without any action on the part of the Company,\nParent, Acquisition Sub or the holders of any securities of the Company or Acquisition Sub: ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "(a) Conversion of Acquisition Sub Capital\nStock. At the Effective Time, by virtue of the Merger and without any action on the part of the holder thereof, each share of common stock, $0.01 par value per share, of Acquisition Sub issued and outstanding immediately prior to the Effective\nTime shall be converted into and become one (1) fully paid share of common stock, $0.01 par value per share, of the Surviving Corporation and constitute the only issued or outstanding shares of capital stock of the Surviving Corporation. ",
+    "result": "Share Conversion/Exchange"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 102,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n  The capital structure is well defined.     \n  The clause is : \n      \n(a) Conversion of Acquisition Sub Capital\nStock. At the Effective Time, by virtue of the Merger and without any action on the part of the holder thereof, each share of common stock, $0.01 par value per share, of Acquisition Sub issued and outstanding immediately prior to the Effective\nTime shall be converted into and become one (1) fully paid share of common stock, $0.01 par value per share, of the Surviving Corporation and constitute the only issued or outstanding shares of capital stock of the Surviving Corporation. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 102,
+    "answer": "PLAN Analyze the provided clause\nPLAN Check the capitalization, punctuation, and grammar in the clause\nPLAN Evaluate the clarity and coherence of the clause\nPLAN Determine if the clause is logically sound and legally accurate\nPLAN Suggest a new version of the clause if necessary\nEND_RESULT The clause is: \n\n(a) Conversion of Acquisition Sub Capital\nStock. At the Effective Time, by virtue of the Merger and without any action on the part of the holder thereof, each share of common stock, $0.01 par value per share, of Acquisition Sub issued and outstanding immediately prior to the Effective\nTime shall be converted into and become one (1) fully paid share of common stock, $0.01 par value per share, of the Surviving Corporation and constitute the only issued or outstanding shares of capital stock of the Surviving Corporation.\n"
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 102,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n  The capital structure is well defined.     \n  The clause is : \n      \n(a) Conversion of Acquisition Sub Capital\nStock. At the Effective Time, by virtue of the Merger and without any action on the part of the holder thereof, each share of common stock, $0.01 par value per share, of Acquisition Sub issued and outstanding immediately prior to the Effective\nTime shall be converted into and become one (1) fully paid share of common stock, $0.01 par value per share, of the Surviving Corporation and constitute the only issued or outstanding shares of capital stock of the Surviving Corporation. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "The clause is: "
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "(a) Conversion of Acquisition Sub Capital\nStock. At the Effective Time, by virtue of the Merger and without any action on the part of the holder thereof, each share of common stock, $0.01 par value per share, of Acquisition Sub issued and outstanding immediately prior to the Effective\nTime shall be converted into and become one (1) fully paid share of common stock, $0.01 par value per share, of the Surviving Corporation and constitute the only issued or outstanding shares of capital stock of the Surviving Corporation. ",
+    "result": "Share Conversion/Exchange",
+    "rewrite": {
+      "type": "end",
+      "data": "The clause is: ",
+      "taskId": 102
+    }
+  }
+]

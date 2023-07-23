@@ -1,0 +1,40 @@
+[
+  {
+    "type": "NEW_TASK",
+    "taskId": 1,
+    "goal": "For each country of the world identify their main legislation and where it can be access online (url). If the country have a federal organization, also identify each of the regulation of each state like administration.",
+    "parentTaskId": null
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::SEARCH \"List of countries in the world\" on the internet"
+  },
+  {
+    "type": "SEARCH",
+    "taskId": 1,
+    "query": "\"List of countries in the world\" on the internet",
+    "result": "- [List of Countries in the World in Alphabetical Order | Britannica](https://www.britannica.com/topic/list-of-countries-1993160) They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, ...\n- [List of countries in the world with Area](https://www.toppr.com/bytes/list-of-countries-with-area/) Jun 29, 2018 ... There are approximately 200 countries in the world. Here is a List of countries in the world with Area.\n- [List of Countries in the World - ListFist.com](https://listfist.com/list-of-countries-in-the-world) List of Countries in the World. February 7, 2022 October 2, 2019 by George K. Franklin ...\n- [Pin en USA](https://www.pinterest.com/pin/95701560824105233/) list of countries in the world List Of African Countries, World Map With Countries,. list of countries in the world ... Waiting In Line.\n- [How Many Countries Are There In The World? Total Number (2023)](https://theworldtravelguy.com/how-many-countries-are-there-world/) Full List Of Countries In The World. Here is an alphabetical list of all the countries in the world, according to the United Nations. This is the official ...\n- [Collecting Countries – What are the Rules? — Young Pioneer Tours](https://www.youngpioneertours.com/what-is-a-country/) A line has to be drawn somewhere, and. ... List of countries in the world – how many countries are there – The YPT Definitive list (this can and will ...\n- [list of countries and states in forminator](https://wpmudev.com/forums/topic/list-of-countries-and-states-in-forminator/) Aug 26, 2018 ... Hi, Does forminator have the ability to pre-populate a list of states in the united states and a list of countries in the world?\n- [List countries in world national hi-res stock photography and images ...](https://www.alamy.com/stock-photo/list-countries-in-world-national.html) List of countries in the world, national flags set on a clock face, so ... 26 percent of whom live below the national poverty line of $2 (USD) per day and ...\n- [How to Access an Exhaustive List of Geographic Entities Available ...](https://help.displayr.com/hc/en-us/articles/6824516410511-How-to-Access-an-Exhaustive-List-of-Geographic-Entities-Available-for-Geographic-Maps) Apr 21, 2023 ... For example, you would use the following code for a complete list of countries in the world: library(flipStandardCharts)\n- [USGBC Announces Expanded Support for LEED Green Building ...](https://www.usgbc.org/articles/usgbc-announces-expanded-support-leed-green-building-program-india) Jun 5, 2014 ... India Third on List of Countries in the World with Most ... they are our first line of defense in the worldwide fight to slow the impacts of ...\n"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::SEARCH \"List of countries and their legislation\" on the internet"
+  },
+  {
+    "type": "SEARCH",
+    "taskId": 1,
+    "query": "\"List of countries and their legislation\" on the internet",
+    "result": "No result found for this query"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::ASK_CLARIFICATION missing context to do task \"Identify main legislation of each country and their online access URL\""
+  },
+  {
+    "type": "ASK_CLARIFICATION",
+    "taskId": 1,
+    "args": "missing context to do task \"Identify main legislation of each country and their online access URL\""
+  }
+]

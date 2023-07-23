@@ -1,0 +1,18 @@
+[
+  {
+    "type": "NEW_TASK",
+    "taskId": 1,
+    "goal": "For each country of the world identify their main legislation and where it can be access online (url). If the country have a federal organization, also identify each of the regulation of each state like administration.",
+    "parentTaskId": null
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::ASK_CLARIFICATION More information is needed to complete the task. Could you please clarify what you mean by \"main legislation\"? Are you referring to the constitution, specific laws, or a combination of various legal documents?"
+  },
+  {
+    "type": "ASK_CLARIFICATION",
+    "taskId": 1,
+    "args": "More information is needed to complete the task. Could you please clarify what you mean by \"main legislation\"? Are you referring to the constitution, specific laws, or a combination of various legal documents?"
+  }
+]

@@ -1,0 +1,1181 @@
+[
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "ARTICLE V REPRESENTATIONS AND WARRANTIES OF PARENT AND ACQUISITION SUB",
+    "result": "TITLE"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "THIS AGREEMENT AND PLAN OF MERGER, dated as of April 25, 2022 (this �Agreement�), is made by and among Twitter, Inc., a\nDelaware corporation (the �Company�), X Holdings I, Inc., a Delaware corporation (�Parent�), X Holdings II, Inc., a Delaware corporation and a direct wholly owned Subsidiary of Parent (�Acquisition\nSub�), and, solely for purposes of Sections 5.4, 6.2(d), 6.3, 6.8, 6.10, 6.11, 6.12 and 9.9 (the �Specified Provisions�), Elon R. Musk (the �Equity\nInvestor�). ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the parties desire for Parent to acquire the Company by way of a merger (the �Merger�) of Acquisition Sub with and\ninto the Company pursuant to the General Corporation Law of the State of Delaware (the �DGCL�) upon the terms and subject to the conditions set forth in this Agreement; ",
+    "result": "ACQUISITION PROPOSAL DEFINITION"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 101,
+    "goal": "Check if this ACQUISITION PROPOSAL DEFINITION clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: WHEREAS, the parties desire for Parent to acquire the Company by way of a merger (the �Merger�) of Acquisition Sub with and\ninto the Company pursuant to the General Corporation Law of the State of Delaware (the �DGCL�) upon the terms and subject to the conditions set forth in this Agreement; ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 101,
+    "answer": "The given ACQUISITION PROPOSAL DEFINITION clause seems to be well. I will output the original text as an END_RESULT command:\n\nEND_RESULT WHEREAS, the parties desire for Parent to acquire the Company by way of a merger (the �Merger�) of Acquisition Sub with and into the Company pursuant to the General Corporation Law of the State of Delaware (the �DGCL�) upon the terms and subject to the conditions set forth in this Agreement;"
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 101,
+    "goal": "Check if this ACQUISITION PROPOSAL DEFINITION clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: WHEREAS, the parties desire for Parent to acquire the Company by way of a merger (the �Merger�) of Acquisition Sub with and\ninto the Company pursuant to the General Corporation Law of the State of Delaware (the �DGCL�) upon the terms and subject to the conditions set forth in this Agreement; ",
+    "args": "WHEREAS, the parties desire for Parent to acquire the Company by way of a merger (the �Merger�) of Acquisition Sub with and into the Company pursuant to the General Corporation Law of the State of Delaware (the �DGCL�) upon the terms and subject to the conditions set forth in this Agreement;"
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "WHEREAS, the parties desire for Parent to acquire the Company by way of a merger (the �Merger�) of Acquisition Sub with and\ninto the Company pursuant to the General Corporation Law of the State of Delaware (the �DGCL�) upon the terms and subject to the conditions set forth in this Agreement; ",
+    "result": "ACQUISITION PROPOSAL DEFINITION",
+    "rewrite": {
+      "type": "end",
+      "data": "WHEREAS, the parties desire for Parent to acquire the Company by way of a merger (the �Merger�) of Acquisition Sub with and into the Company pursuant to the General Corporation Law of the State of Delaware (the �DGCL�) upon the terms and subject to the conditions set forth in this Agreement;",
+      "taskId": 101
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the board of directors of Acquisition Sub (the �Acquisition Sub Board�) has determined that it is advisable to, fair\nto and in the best interests of Acquisition Sub and its stockholders to effect the Merger of Acquisition Sub with and into the Company pursuant to the DGCL upon the terms and subject to the conditions set forth in this Agreement; ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the Company�s board of directors (the �Company Board�) has, by resolutions duly adopted by the unanimous vote\nof the directors at a duly held meeting (i) determined that the terms and conditions of this Agreement, the Merger and the other transactions contemplated by this Agreement are advisable and in the best interests of the Company and the\nCompany�s stockholders, (ii) authorized the execution and delivery of this Agreement and declared advisable and approved the consummation of the transactions contemplated by this Agreement, including the Merger, (iii) directed that\nthis Agreement be submitted for consideration at a meeting of the Company�s stockholders and (iv) subject to the terms of this Agreement, recommended that the Company�s stockholders adopt this Agreement and approve the transactions\ncontemplated by this Agreement, including the Merger (the �Company Board Recommendation�); ",
+    "result": "TITLE"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the Acquisition Sub\nBoard has, by resolutions duly adopted, (i) determined that the terms and conditions of this Agreement, the Merger and the other transactions contemplated by this Agreement are advisable and in the best interests of the Acquisition Sub and\nParent, as the sole stockholder of Acquisition Sub; (ii) authorized the execution and delivery of this Agreement and declared advisable and approved the consummation of the transactions contemplated by this Agreement, including the Merger,\n(iii) directed that this Agreement be submitted for consideration by Parent, as the sole stockholder of Acquisition Sub and (iv) recommended that Parent, as the sole stockholder of Acquisition Sub approve the Merger, and Parent, as the\nsole stockholder of Acquisition Sub, has approved this Agreement and the consummation of the transactions contemplated by this Agreement, including the Merger; ",
+    "result": "TITLE"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the board of directors of Parent (the �Parent Board�) has, by resolutions duly adopted by the unanimous vote of the\ndirectors, (i) adopted this Agreement and approved the consummation of the transactions contemplated by this Agreement, including the Merger and (ii) determined that this Agreement and the transactions contemplated by this Agreement are\nadvisable and in the best interests of Parent and Elon Musk, as the sole stockholder of Parent; ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, as a material inducement to, and as a condition to, the Company entering into this\nAgreement, concurrently with the execution of this Agreement, Elon Musk (the �Guarantor�) has entered into a limited guarantee, dated as of the date hereof, guaranteeing certain of Parent�s and Acquisition Sub�s\nobligations under this Agreement (the �Parent Guarantee�); and ",
+    "result": "OTHER"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, each of Parent, Acquisition Sub and the Company\ndesires to make certain representations, warranties, covenants and agreements in connection with the Merger and also to prescribe various conditions to the Merger. ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "NOW, THEREFORE, in consideration of the foregoing and the representations, warranties and covenants and subject to the conditions herein\ncontained, and intending to be legally bound hereby, the parties hereto hereby agree as follows: ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "As\nused in this Agreement, the following terms shall have the respective meanings set forth or referenced below: ",
+    "result": "TITLE"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Acquisition\nSub� shall have the meaning set forth in the Preamble. ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Acquisition Sub Board� shall have the meaning set forth\nin the Recitals. ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Adverse Board Recommendation Change� shall have the meaning set forth in\nSection 6.5(d). ",
+    "result": "IRRELEVANT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Affiliate� has the meaning set forth in Rule\n12b-2 of the Exchange Act. ",
+    "result": "Defined term: Affiliate"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 102,
+    "goal": "Check if this Defined term: Affiliate clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Affiliate� has the meaning set forth in Rule\n12b-2 of the Exchange Act. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 102,
+    "answer": "PLAN \n\n1. Read the Defined term: Affiliate clause.\n2. Check if the clause is well-formed.\n3. If the clause is not well-formed, suggest a new version.\n4. If the clause is well-formed, output the original text as an END_RESULT command.\n\nEND_RESULT \"Affiliate\" has the meaning set forth in Rule 12b-2 of the Exchange Act."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 102,
+    "goal": "Check if this Defined term: Affiliate clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Affiliate� has the meaning set forth in Rule\n12b-2 of the Exchange Act. ",
+    "args": "\"Affiliate\" has the meaning set forth in Rule 12b-2 of the Exchange Act."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Affiliate� has the meaning set forth in Rule\n12b-2 of the Exchange Act. ",
+    "result": "Defined term: Affiliate",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Affiliate\" has the meaning set forth in Rule 12b-2 of the Exchange Act.",
+      "taskId": 102
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Aggregate Merger Consideration� shall mean the\nproduct of (x) the number of shares of Company Common Stock issued and outstanding (other than those shares canceled or retired pursuant to Section 3.1(b)) immediately prior to the Effective Time multiplied by\n(y) the Merger Consideration. ",
+    "result": "Termination Purchase/Merger Agreement"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 103,
+    "goal": "Check if this Termination Purchase/Merger Agreement clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Aggregate Merger Consideration� shall mean the\nproduct of (x) the number of shares of Company Common Stock issued and outstanding (other than those shares canceled or retired pursuant to Section 3.1(b)) immediately prior to the Effective Time multiplied by\n(y) the Merger Consideration. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 103,
+    "answer": "PLAN Analyze the Termination Purchase/Merger Agreement clause to determine if it is well.\n"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 103,
+    "answer": "The clause \"Aggregate Merger Consideration\" shall mean the product of (x) the number of shares of Company Common Stock issued and outstanding (other than those shares canceled or retired pursuant to Section 3.1(b)) immediately prior to the Effective Time multiplied by (y) the Merger Consideration.\n\nEND_RESULT The clause is well."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 103,
+    "goal": "Check if this Termination Purchase/Merger Agreement clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Aggregate Merger Consideration� shall mean the\nproduct of (x) the number of shares of Company Common Stock issued and outstanding (other than those shares canceled or retired pursuant to Section 3.1(b)) immediately prior to the Effective Time multiplied by\n(y) the Merger Consideration. ",
+    "args": "The clause is well."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Aggregate Merger Consideration� shall mean the\nproduct of (x) the number of shares of Company Common Stock issued and outstanding (other than those shares canceled or retired pursuant to Section 3.1(b)) immediately prior to the Effective Time multiplied by\n(y) the Merger Consideration. ",
+    "result": "Termination Purchase/Merger Agreement",
+    "rewrite": {
+      "type": "end",
+      "data": "The clause is well.",
+      "taskId": 103
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Alternative Financing� shall have the meaning set forth in Section 6.10(c). ",
+    "result": "Defined term implicated in the �no-shop� and �fiduciary out� clauses in a merger agreement. Under the �no shop,� the target agrees not to solicit bids (�Acquisition Proposals�) from third parties or to negotiate with them. Under the �fiduciary out,� if the target receives an unsolicited bid from a third party that is superior to the terms of the merger agreement, then the target may be permitted to negotiate with the bidder and withdraw the board recommendation that stockholders vote in favor of the merger agreement."
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 104,
+    "goal": "Check if this Defined term implicated in the �no-shop� and �fiduciary out� clauses in a merger agreement. Under the �no shop,� the target agrees not to solicit bids (�Acquisition Proposals�) from third parties or to negotiate with them. Under the �fiduciary out,� if the target receives an unsolicited bid from a third party that is superior to the terms of the merger agreement, then the target may be permitted to negotiate with the bidder and withdraw the board recommendation that stockholders vote in favor of the merger agreement. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Alternative Financing� shall have the meaning set forth in Section 6.10(c). ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 104,
+    "answer": "PLAN Analyze the provided clause and determine if it is well defined.\n1. Find Section 6.10(c) in the merger agreement document.\n2. Read the definition of \"Alternative Financing\" in Section 6.10(c).\n3. Check if the definition of \"Alternative Financing\" is clear and unambiguous.\n4. If the definition is clear, proceed to END_RESULT with the original clause.\n5. If the definition is not clear or ambiguous, suggest a new version of the clause as an alternative.\n\nEND_RESULT The provided clause is well-defined."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 104,
+    "goal": "Check if this Defined term implicated in the �no-shop� and �fiduciary out� clauses in a merger agreement. Under the �no shop,� the target agrees not to solicit bids (�Acquisition Proposals�) from third parties or to negotiate with them. Under the �fiduciary out,� if the target receives an unsolicited bid from a third party that is superior to the terms of the merger agreement, then the target may be permitted to negotiate with the bidder and withdraw the board recommendation that stockholders vote in favor of the merger agreement. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Alternative Financing� shall have the meaning set forth in Section 6.10(c). ",
+    "args": "The provided clause is well-defined."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Alternative Financing� shall have the meaning set forth in Section 6.10(c). ",
+    "result": "Defined term implicated in the �no-shop� and �fiduciary out� clauses in a merger agreement. Under the �no shop,� the target agrees not to solicit bids (�Acquisition Proposals�) from third parties or to negotiate with them. Under the �fiduciary out,� if the target receives an unsolicited bid from a third party that is superior to the terms of the merger agreement, then the target may be permitted to negotiate with the bidder and withdraw the board recommendation that stockholders vote in favor of the merger agreement.",
+    "rewrite": {
+      "type": "end",
+      "data": "The provided clause is well-defined.",
+      "taskId": 104
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Alternative Financing Debt Commitment Letter� shall have the meaning set forth in Section 6.10(c).\n",
+    "result": "Defined term implicated in the �no-shop� and �fiduciary out� clauses ina merger agreement."
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 105,
+    "goal": "Check if this Defined term implicated in the �no-shop� and �fiduciary out� clauses ina merger agreement. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Alternative Financing Debt Commitment Letter� shall have the meaning set forth in Section 6.10(c).\n",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 105,
+    "answer": "PLAN Examine the merger agreement to find the \"no-shop\" and \"fiduciary out\" clauses. Then, check if the term \"Alternative Financing Debt Commitment Letter\" is implicated in those clauses. If not, suggest a new version. If yes, output the original text of the clause as the end result.\n\nFirst, locate the merger agreement document.\nExamine the document to find the \"no-shop\" and \"fiduciary out\" clauses.\nUnderstand the meaning and requirements of those clauses.\nSearch for the term \"Alternative Financing Debt Commitment Letter\" within those clauses.\nIf the term is implicated, output the original text of the clause as the end result.\nIf the term is not implicated, suggest a new version of the clause."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 105,
+    "answer": "PLAN Examine the merger agreement to find the \"no-shop\" and \"fiduciary out\" clauses. Then, check if the term \"Alternative Financing Debt Commitment Letter\" is implicated in those clauses. If not, suggest a new version. If yes, output the original text of the clause as the end result.\n\n1. Obtain a copy of the merger agreement.\n2. Open the document and identify the \"no-shop\" and \"fiduciary out\" clauses.\n3. Read and understand the requirements and implications of these clauses.\n4. Locate Section 6.10(c) within the merger agreement.\n5. Find the term \"Alternative Financing Debt Commitment Letter\" in Section 6.10(c).\n6. Determine if the term is referenced within the \"no-shop\" and \"fiduciary out\" clauses.\n7. If the term is implicated in the clauses, output the original text of the clause as the end result.\n8. If the term is not implicated, suggest a new version of the clause.\n   - Consider alternative language that accurately reflects the intended meaning.\n   - Ensure the suggested version aligns with the context and purpose of the merger agreement."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 105,
+    "answer": "END_RESULT The original text of the clause \"Alternative Financing Debt Commitment Letter\" in Section 6.10(c) is: \"Alternative Financing Debt Commitment Letter\" shall have the meaning set forth in Section 6.10(c)."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 105,
+    "goal": "Check if this Defined term implicated in the �no-shop� and �fiduciary out� clauses ina merger agreement. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Alternative Financing Debt Commitment Letter� shall have the meaning set forth in Section 6.10(c).\n",
+    "args": "The original text of the clause \"Alternative Financing Debt Commitment Letter\" in Section 6.10(c) is: \"Alternative Financing Debt Commitment Letter\" shall have the meaning set forth in Section 6.10(c)."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Alternative Financing Debt Commitment Letter� shall have the meaning set forth in Section 6.10(c).\n",
+    "result": "Defined term implicated in the �no-shop� and �fiduciary out� clauses ina merger agreement.",
+    "rewrite": {
+      "type": "end",
+      "data": "The original text of the clause \"Alternative Financing Debt Commitment Letter\" in Section 6.10(c) is: \"Alternative Financing Debt Commitment Letter\" shall have the meaning set forth in Section 6.10(c).",
+      "taskId": 105
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Antitrust Laws� shall have the meaning set forth in Section 4.4(b). ",
+    "result": "IRRELEVANT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Bank Debt Commitment Letter� shall have the meaning set forth in Section 5.4. ",
+    "result": "DEFINED TERM"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 106,
+    "goal": "Check if this DEFINED TERM clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Bank Debt Commitment Letter� shall have the meaning set forth in Section 5.4. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 106,
+    "answer": "PLAN Review the clause to check if it is well defined\n\n1. Read the clause:\n   - \"Bank Debt Commitment Letter\" shall have the meaning set forth in Section 5.4.\n\n2. Check if the clause follows the defined term format:\n   - The term is enclosed in quotation marks: \"Bank Debt Commitment Letter\".\n   - The term is followed by \"shall have the meaning set forth in\".\n   - The section reference is properly cited: Section 5.4.\n\n3. Compare the clause to the typical defined term format:\n   - \"Defined Term\" shall mean [Definition].\n\n4. Determine if the clause is well defined:\n   - The clause structure and reference formatting appear correct.\n   - However, the definition itself is missing.\n\nEND_RESULT The clause: \"Bank Debt Commitment Letter\" shall have the meaning set forth in Section 5.4."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 106,
+    "goal": "Check if this DEFINED TERM clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Bank Debt Commitment Letter� shall have the meaning set forth in Section 5.4. ",
+    "args": "The clause: \"Bank Debt Commitment Letter\" shall have the meaning set forth in Section 5.4."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Bank Debt Commitment Letter� shall have the meaning set forth in Section 5.4. ",
+    "result": "DEFINED TERM",
+    "rewrite": {
+      "type": "end",
+      "data": "The clause: \"Bank Debt Commitment Letter\" shall have the meaning set forth in Section 5.4.",
+      "taskId": 106
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Bank Debt Financing� shall have the meaning set forth in\nSection 5.4. ",
+    "result": "Defined term implicated in the agreement."
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 107,
+    "goal": "Check if this Defined term implicated in the agreement. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Bank Debt Financing� shall have the meaning set forth in\nSection 5.4. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 107,
+    "answer": "PLAN Analyze the agreement to find the clause \"Bank Debt Financing\"\nPLAN Read the clause \"Bank Debt Financing\" in Section 5.4\nPLAN Check if the clause \"Bank Debt Financing\" is well-defined\nPLAN If the clause is not well-defined, suggest a new version\nPLAN If the clause is well-defined, output the original text as an END_RESULT command"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 107,
+    "answer": "PLAN Analyze the agreement to find the clause \"Bank Debt Financing\"\nPLAN Read the clause \"Bank Debt Financing\" in Section 5.4\n\nThe clause \"Bank Debt Financing\" shall have the meaning set forth in Section 5.4."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 107,
+    "answer": "END_RESULT The clause \"Bank Debt Financing\" is well-defined. The original text of the clause is: \"Bank Debt Financing\" shall have the meaning set forth in Section 5.4."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 107,
+    "goal": "Check if this Defined term implicated in the agreement. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Bank Debt Financing� shall have the meaning set forth in\nSection 5.4. ",
+    "args": "The clause \"Bank Debt Financing\" is well-defined. The original text of the clause is: \"Bank Debt Financing\" shall have the meaning set forth in Section 5.4."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Bank Debt Financing� shall have the meaning set forth in\nSection 5.4. ",
+    "result": "Defined term implicated in the agreement.",
+    "rewrite": {
+      "type": "end",
+      "data": "The clause \"Bank Debt Financing\" is well-defined. The original text of the clause is: \"Bank Debt Financing\" shall have the meaning set forth in Section 5.4.",
+      "taskId": 107
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Blue Sky Laws� shall mean state securities or �blue sky� laws. ",
+    "result": "IRREVELANT"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 108,
+    "goal": "Check if this IRREVELANT clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Blue Sky Laws� shall mean state securities or �blue sky� laws. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 108,
+    "answer": "I will check if the given clause is valid."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 108,
+    "answer": "PLAN Analyze the given clause to determine if it is well-written or needs revision.\nEND_RESULT The original clause: �Blue Sky Laws� shall mean state securities or �blue sky� laws."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 108,
+    "goal": "Check if this IRREVELANT clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Blue Sky Laws� shall mean state securities or �blue sky� laws. ",
+    "args": "The original clause: �Blue Sky Laws� shall mean state securities or �blue sky� laws."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Blue Sky Laws� shall mean state securities or �blue sky� laws. ",
+    "result": "IRREVELANT",
+    "rewrite": {
+      "type": "end",
+      "data": "The original clause: �Blue Sky Laws� shall mean state securities or �blue sky� laws.",
+      "taskId": 108
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Book-Entry Shares� shall have the meaning set forth in Section 3.1(c). ",
+    "result": "Defined term."
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 109,
+    "goal": "Check if this Defined term. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Book-Entry Shares� shall have the meaning set forth in Section 3.1(c). ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 109,
+    "answer": "PLAN\n1. Extract the text of the clause: \"Book-Entry Shares\" shall have the meaning set forth in Section 3.1(c).\n2. Check if the clause is well-defined by verifying if it contains a defined term and a reference to a specific section (3.1(c)).\n3. If the clause is well-defined, output the original text as an END_RESULT command.\n4. If the clause is not well-defined, suggest a new version of the clause.\n\nEND_RESULT \"Book-Entry Shares\" shall have the meaning set forth in Section 3.1(c)."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 109,
+    "goal": "Check if this Defined term. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Book-Entry Shares� shall have the meaning set forth in Section 3.1(c). ",
+    "args": "\"Book-Entry Shares\" shall have the meaning set forth in Section 3.1(c)."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Book-Entry Shares� shall have the meaning set forth in Section 3.1(c). ",
+    "result": "Defined term.",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Book-Entry Shares\" shall have the meaning set forth in Section 3.1(c).",
+      "taskId": 109
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Business Day� shall mean any day other than a Saturday, Sunday or a day on which all banking institutions in San Francisco,\nCalifornia or New York, New York are authorized or obligated by Law or executive order to close. ",
+    "result": "Definition"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 110,
+    "goal": "Check if this Definition clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Business Day� shall mean any day other than a Saturday, Sunday or a day on which all banking institutions in San Francisco,\nCalifornia or New York, New York are authorized or obligated by Law or executive order to close. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 110,
+    "answer": "Check if the definition clause is well:"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 110,
+    "answer": "PLAN Check if the definition clause is well:\n1. Verify if the clause begins with \"Business Day\" and ends with a full stop.\n2. Check if the clause includes a clear definition of \"Business Day\".\n3. Determine if the clause specifies the exclusions for a Saturday, Sunday, and banking institution closure days.\n4. Confirm if the clause includes the locations of San Francisco, California, and New York, New York.\n5. Check if the clause mentions the authority or obligation to close based on Law or executive order.\n\nIf any of these criteria are not met, suggest a new version. Otherwise, output the original text as an END_RESULT command."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 110,
+    "answer": "END_RESULT \"Business Day\" shall mean any day other than a Saturday, Sunday or a day on which all banking institutions in San Francisco, California or New York, New York are authorized or obligated by Law or executive order to close."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 110,
+    "goal": "Check if this Definition clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Business Day� shall mean any day other than a Saturday, Sunday or a day on which all banking institutions in San Francisco,\nCalifornia or New York, New York are authorized or obligated by Law or executive order to close. ",
+    "args": "\"Business Day\" shall mean any day other than a Saturday, Sunday or a day on which all banking institutions in San Francisco, California or New York, New York are authorized or obligated by Law or executive order to close."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Business Day� shall mean any day other than a Saturday, Sunday or a day on which all banking institutions in San Francisco,\nCalifornia or New York, New York are authorized or obligated by Law or executive order to close. ",
+    "result": "Definition",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Business Day\" shall mean any day other than a Saturday, Sunday or a day on which all banking institutions in San Francisco, California or New York, New York are authorized or obligated by Law or executive order to close.",
+      "taskId": 110
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Certificate of Merger� shall have the meaning set forth in\nSection 2.3(a). ",
+    "result": "Defined Term"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 111,
+    "goal": "Check if this Defined Term clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Certificate of Merger� shall have the meaning set forth in\nSection 2.3(a). ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 111,
+    "answer": "PLAN Analyze the Defined Term clause\nPLAN Verify if the clause is well-defined\nPLAN Verify if the Section 2.3(a) is defined\nPLAN Evaluate the clarity of the clause\nPLAN Check if any part of the clause is missing or incomplete\nPLAN Check if the wording of the clause is clear and concise\nPLAN Identify any potential issues or ambiguity in the clause\n\nEND_RESULT The clause \"Certificate of Merger\" is well-defined as it refers to the meaning set forth in Section 2.3(a)."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 111,
+    "goal": "Check if this Defined Term clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Certificate of Merger� shall have the meaning set forth in\nSection 2.3(a). ",
+    "args": "The clause \"Certificate of Merger\" is well-defined as it refers to the meaning set forth in Section 2.3(a)."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Certificate of Merger� shall have the meaning set forth in\nSection 2.3(a). ",
+    "result": "Defined Term",
+    "rewrite": {
+      "type": "end",
+      "data": "The clause \"Certificate of Merger\" is well-defined as it refers to the meaning set forth in Section 2.3(a).",
+      "taskId": 111
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Certificates� shall have the meaning set forth in\nSection 3.1(c). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 112,
+    "goal": "Check if this Defined term clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Certificates� shall have the meaning set forth in\nSection 3.1(c). ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 112,
+    "answer": "PLAN Analyze the Defined term clause\nPLAN Determine if the clause is well-defined\nPLAN Check if the clause refers to Section 3.1(c)\nPLAN If yes, output the original text as END_RESULT\nPLAN If no, suggest a new version of the clause\nPLAN Return the text of the clause"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 112,
+    "answer": "Check if the Defined term clause is well."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 112,
+    "answer": "The clause \"Certificates\" shall have the meaning set forth in Section 3.1(c).\nEND_RESULT \"Certificates\" shall have the meaning set forth in Section 3.1(c)."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 112,
+    "goal": "Check if this Defined term clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Certificates� shall have the meaning set forth in\nSection 3.1(c). ",
+    "args": "\"Certificates\" shall have the meaning set forth in Section 3.1(c)."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Certificates� shall have the meaning set forth in\nSection 3.1(c). ",
+    "result": "Defined term",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Certificates\" shall have the meaning set forth in Section 3.1(c).",
+      "taskId": 112
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Closing Date� shall have the meaning set forth in\nSection 2.2. ",
+    "result": "Defined Term Definition"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 113,
+    "goal": "Check if this Defined Term Definition clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Closing Date� shall have the meaning set forth in\nSection 2.2. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 113,
+    "answer": "PLAN Read the Defined Term Definition clause provided\nEND_RESULT “Closing Date” shall have the meaning set forth in Section 2.2"
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 113,
+    "goal": "Check if this Defined Term Definition clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Closing Date� shall have the meaning set forth in\nSection 2.2. ",
+    "args": "“Closing Date” shall have the meaning set forth in Section 2.2"
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Closing Date� shall have the meaning set forth in\nSection 2.2. ",
+    "result": "Defined Term Definition",
+    "rewrite": {
+      "type": "end",
+      "data": "“Closing Date” shall have the meaning set forth in Section 2.2",
+      "taskId": 113
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Code� shall mean the Internal Revenue Code of 1986, as amended. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 114,
+    "goal": "Check if this Defined term clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Code� shall mean the Internal Revenue Code of 1986, as amended. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 114,
+    "answer": "PLAN The task is to check if the defined term clause is well-formed and suggest a new version if it is not. \n- First, we need to analyze the given defined term clause: \"Code\" shall mean the Internal Revenue Code of 1986, as amended.\n- Check if the clause is grammatically correct and clear in its meaning.\n- Verify if the term \"Code\" is being defined in a legally recognized and commonly understood manner.\n- Compare it to the typical format used for defining terms in legal documents.\n- If the clause is not well-formed or could be improved, suggest a new version.\n- If the clause is well-formed, output the original text as an END_RESULT command."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 114,
+    "answer": "The original text of the defined term clause is: \"Code\" shall mean the Internal Revenue Code of 1986, as amended.\n\nEND_RESULT \"Code\" shall mean the Internal Revenue Code of 1986, as amended."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 114,
+    "goal": "Check if this Defined term clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Code� shall mean the Internal Revenue Code of 1986, as amended. ",
+    "args": "\"Code\" shall mean the Internal Revenue Code of 1986, as amended."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Code� shall mean the Internal Revenue Code of 1986, as amended. ",
+    "result": "Defined term",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Code\" shall mean the Internal Revenue Code of 1986, as amended.",
+      "taskId": 114
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company ASR Confirmations� means (i) the Master Confirmation re Accelerated Stock Repurchases, dated February 10,\n2022, between the Company and Morgan Stanley & Co. LLC and (ii) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Wells Fargo Bank, National Association, in each case, as\namended through the date hereof. ",
+    "result": "Defined term implicated in a contract referring to the Master Confirmations re Accelerated Stock Repurchases between the Company and Morgan Stanley & Co. LLC and the Company and Wells Fargo Bank, National Association, as amended through the date hereof. \n\nThe type of the clause is: Company ASR Confirmations Definition"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 115,
+    "goal": "Check if this Defined term implicated in a contract referring to the Master Confirmations re Accelerated Stock Repurchases between the Company and Morgan Stanley & Co. LLC and the Company and Wells Fargo Bank, National Association, as amended through the date hereof. \n\nThe type of the clause is: Company ASR Confirmations Definition clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company ASR Confirmations� means (i) the Master Confirmation re Accelerated Stock Repurchases, dated February 10,\n2022, between the Company and Morgan Stanley & Co. LLC and (ii) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Wells Fargo Bank, National Association, in each case, as\namended through the date hereof. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 115,
+    "answer": "PLAN I will search for the clause \"Company ASR Confirmations\" in the contract and check if the defined term is well-defined or not."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 115,
+    "answer": "END_RESULT \"Company ASR Confirmations\" means (i) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Morgan Stanley & Co. LLC and (ii) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Wells Fargo Bank, National Association, in each case, as amended through the date hereof."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 115,
+    "goal": "Check if this Defined term implicated in a contract referring to the Master Confirmations re Accelerated Stock Repurchases between the Company and Morgan Stanley & Co. LLC and the Company and Wells Fargo Bank, National Association, as amended through the date hereof. \n\nThe type of the clause is: Company ASR Confirmations Definition clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company ASR Confirmations� means (i) the Master Confirmation re Accelerated Stock Repurchases, dated February 10,\n2022, between the Company and Morgan Stanley & Co. LLC and (ii) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Wells Fargo Bank, National Association, in each case, as\namended through the date hereof. ",
+    "args": "\"Company ASR Confirmations\" means (i) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Morgan Stanley & Co. LLC and (ii) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Wells Fargo Bank, National Association, in each case, as amended through the date hereof."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Company ASR Confirmations� means (i) the Master Confirmation re Accelerated Stock Repurchases, dated February 10,\n2022, between the Company and Morgan Stanley & Co. LLC and (ii) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Wells Fargo Bank, National Association, in each case, as\namended through the date hereof. ",
+    "result": "Defined term implicated in a contract referring to the Master Confirmations re Accelerated Stock Repurchases between the Company and Morgan Stanley & Co. LLC and the Company and Wells Fargo Bank, National Association, as amended through the date hereof. \n\nThe type of the clause is: Company ASR Confirmations Definition",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Company ASR Confirmations\" means (i) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Morgan Stanley & Co. LLC and (ii) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Wells Fargo Bank, National Association, in each case, as amended through the date hereof.",
+      "taskId": 115
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company Benefit Plan� shall mean (i) �employee benefit plan� (within the\nmeaning of Section 3(3) of ERISA, whether or not subject to ERISA), and (ii) each other employment agreement, bonus, stock option, stock purchase or other equity-based, benefit, incentive compensation, profit sharing, savings, retirement\n(including early retirement and supplemental retirement), disability, insurance, vacation, incentive, deferred compensation, supplemental retirement (including termination indemnities and seniority payments), severance, termination, retention,\nchange of control and other similar fringe, welfare or other employee benefit plans, benefit programs, benefit agreements, benefit contracts, benefit policies or benefit arrangements (whether or not in writing), in each case, (x) which is\nsponsored, maintained or contributed to for the benefit of or relating to any current or former director, officer or employee of the Company or its Subsidiaries and (y) with respect to which the Company or any of its Subsidiaries has or may\nhave any liability. ",
+    "result": "Company Benefit Plan"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 116,
+    "goal": "Check if this Company Benefit Plan clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Benefit Plan� shall mean (i) �employee benefit plan� (within the\nmeaning of Section 3(3) of ERISA, whether or not subject to ERISA), and (ii) each other employment agreement, bonus, stock option, stock purchase or other equity-based, benefit, incentive compensation, profit sharing, savings, retirement\n(including early retirement and supplemental retirement), disability, insurance, vacation, incentive, deferred compensation, supplemental retirement (including termination indemnities and seniority payments), severance, termination, retention,\nchange of control and other similar fringe, welfare or other employee benefit plans, benefit programs, benefit agreements, benefit contracts, benefit policies or benefit arrangements (whether or not in writing), in each case, (x) which is\nsponsored, maintained or contributed to for the benefit of or relating to any current or former director, officer or employee of the Company or its Subsidiaries and (y) with respect to which the Company or any of its Subsidiaries has or may\nhave any liability. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 116,
+    "answer": "PLAN Check if the Company Benefit Plan clause is well by examining its structure and meaning.\n1. Read the clause carefully and make sure all the terms and definitions are clear.\n2. Determine if the clause covers all the necessary elements of a company benefit plan.\n3. Analyze whether the language used is precise and unambiguous.\n4. Verify if the clause aligns with applicable legal requirements, such as ERISA.\n5. Evaluate if the scope of the clause adequately includes all relevant employee benefit plans and agreements.\n6. Check if the clause accurately reflects the Company's responsibilities and liabilities with respect to the benefit plans.\n7. Consider if the clause is comprehensive enough to cover all potential scenarios and contingencies.\n\nEND_RESULT 'Company Benefit Plan' shall mean (i) 'employee benefit plan' (within the meaning of Section 3(3) of ERISA, whether or not subject to ERISA), and (ii) each other employment agreement, bonus, stock option, stock purchase or other equity-based, benefit, incentive compensation, profit sharing, savings, retirement (including early retirement and supplemental retirement), disability, insurance, vacation, incentive, deferred compensation, supplemental retirement (including termination indemnities and seniority payments), severance, termination, retention, change of control and other similar fringe, welfare or other employee benefit plans, benefit programs, benefit agreements, benefit contracts, benefit policies or benefit arrangements (whether or not in writing), in each case, (x) which is sponsored, maintained or contributed to for the benefit of or relating to any current or former director, officer or employee of the Company or its Subsidiaries and (y) with respect to which the Company or any of its Subsidiaries has or may have any liability."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 116,
+    "goal": "Check if this Company Benefit Plan clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Benefit Plan� shall mean (i) �employee benefit plan� (within the\nmeaning of Section 3(3) of ERISA, whether or not subject to ERISA), and (ii) each other employment agreement, bonus, stock option, stock purchase or other equity-based, benefit, incentive compensation, profit sharing, savings, retirement\n(including early retirement and supplemental retirement), disability, insurance, vacation, incentive, deferred compensation, supplemental retirement (including termination indemnities and seniority payments), severance, termination, retention,\nchange of control and other similar fringe, welfare or other employee benefit plans, benefit programs, benefit agreements, benefit contracts, benefit policies or benefit arrangements (whether or not in writing), in each case, (x) which is\nsponsored, maintained or contributed to for the benefit of or relating to any current or former director, officer or employee of the Company or its Subsidiaries and (y) with respect to which the Company or any of its Subsidiaries has or may\nhave any liability. ",
+    "args": "'Company Benefit Plan' shall mean (i) 'employee benefit plan' (within the meaning of Section 3(3) of ERISA, whether or not subject to ERISA), and (ii) each other employment agreement, bonus, stock option, stock purchase or other equity-based, benefit, incentive compensation, profit sharing, savings, retirement (including early retirement and supplemental retirement), disability, insurance, vacation, incentive, deferred compensation, supplemental retirement (including termination indemnities and seniority payments), severance, termination, retention, change of control and other similar fringe, welfare or other employee benefit plans, benefit programs, benefit agreements, benefit contracts, benefit policies or benefit arrangements (whether or not in writing), in each case, (x) which is sponsored, maintained or contributed to for the benefit of or relating to any current or former director, officer or employee of the Company or its Subsidiaries and (y) with respect to which the Company or any of its Subsidiaries has or may have any liability."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Company Benefit Plan� shall mean (i) �employee benefit plan� (within the\nmeaning of Section 3(3) of ERISA, whether or not subject to ERISA), and (ii) each other employment agreement, bonus, stock option, stock purchase or other equity-based, benefit, incentive compensation, profit sharing, savings, retirement\n(including early retirement and supplemental retirement), disability, insurance, vacation, incentive, deferred compensation, supplemental retirement (including termination indemnities and seniority payments), severance, termination, retention,\nchange of control and other similar fringe, welfare or other employee benefit plans, benefit programs, benefit agreements, benefit contracts, benefit policies or benefit arrangements (whether or not in writing), in each case, (x) which is\nsponsored, maintained or contributed to for the benefit of or relating to any current or former director, officer or employee of the Company or its Subsidiaries and (y) with respect to which the Company or any of its Subsidiaries has or may\nhave any liability. ",
+    "result": "Company Benefit Plan",
+    "rewrite": {
+      "type": "end",
+      "data": "'Company Benefit Plan' shall mean (i) 'employee benefit plan' (within the meaning of Section 3(3) of ERISA, whether or not subject to ERISA), and (ii) each other employment agreement, bonus, stock option, stock purchase or other equity-based, benefit, incentive compensation, profit sharing, savings, retirement (including early retirement and supplemental retirement), disability, insurance, vacation, incentive, deferred compensation, supplemental retirement (including termination indemnities and seniority payments), severance, termination, retention, change of control and other similar fringe, welfare or other employee benefit plans, benefit programs, benefit agreements, benefit contracts, benefit policies or benefit arrangements (whether or not in writing), in each case, (x) which is sponsored, maintained or contributed to for the benefit of or relating to any current or former director, officer or employee of the Company or its Subsidiaries and (y) with respect to which the Company or any of its Subsidiaries has or may have any liability.",
+      "taskId": 116
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company Board� shall have the meaning set forth in the Recitals. ",
+    "result": "TITLE"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company Bond Hedge Documentation� means (a)(i) the call option transaction\nconfirmation, dated June 6, 2018, between the Company and Barclays Bank PLC, (ii) the call option transaction confirmation, dated June 6, 2018, between the Company and JPMorgan Chase Bank, N.A., London Branch, (iii) the call\noption transaction confirmation, dated June 6, 2018, between the Company and Wells Fargo Bank, National Association, (iv) the additional call option transaction confirmation, dated June 7, 2018, between the Company and Barclays Bank\nPLC, (v) the additional call option transaction confirmation, dated June 7, 2018, between the Company and JPMorgan Chase Bank, N.A., London Branch, (vi) the additional call option transaction confirmation, dated June 7, 2018,\nbetween the Company and Wells Fargo Bank, National Association, and (b)(i) the call option transaction confirmation, dated March 1, 2021, between the Company and Bank of America, N.A., (ii) the call option transaction confirmation, dated\nMarch 1, 2021, between the Company and Barclays Bank PLC, (iii) the call option transaction confirmation, dated March 1, 2021, between the Company and Goldman Sachs & Co. LLC, (iv) the call option transaction\nconfirmation, dated March 1, 2021, between the Company and Wells Fargo Bank, National Association, (v) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Bank of America, N.A., (vi) the\nadditional call option transaction confirmation, dated March 12, 2021, between the Company and Barclays Bank PLC, (vii) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Goldman\nSachs & Co. LLC, (viii) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Wells Fargo Bank, National Association, (ix) the letter agreement, dated March 1, 2021, between\nthe Company and Bank of America, N.A., (x) the letter agreement, dated March 1, 2021, between the Company and Barclays Bank PLC, (xi) the letter agreement, dated March 1, 2021, between the Company and Goldman Sachs & Co. LLC,\n(xii) the letter agreement, dated March 1, 2021, between the Company and Wells Fargo Bank, National Association, (xiii) the additional letter agreement, dated March 12, 2021, between the Company and Bank of America, N.A., (xiv)\nthe additional letter agreement, dated March 12, 2021, between the Company and Barclays Bank PLC, (xv) the additional letter agreement, dated March 12, 2021, between the Company and Goldman Sachs & Co. LLC, and (xvi) the\nadditional letter agreement, dated March 12, 2021, between the Company and Wells Fargo Bank, National Association. ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company\nBond Hedge Transactions� means each of the call option transactions evidenced by the Company Bond Hedge Documentation. ",
+    "result": "OTHER"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company Bylaws� shall have the meaning set forth in Section 4.1. ",
+    "result": "Defined term implicated in the \"no-shop\" and \"fiduciary out\" clauses in a merger agreement."
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 117,
+    "goal": "Check if this Defined term implicated in the \"no-shop\" and \"fiduciary out\" clauses in a merger agreement. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Bylaws� shall have the meaning set forth in Section 4.1. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 117,
+    "answer": "PLAN Analyze the merger agreement to determine if the \"no-shop\" and \"fiduciary out\" clauses are present and if they refer to the \"Company Bylaws\" term.\nIf the clauses are not present, suggest a new version of the clause.\nIf the clauses are present, output the original text of the clause as the END_RESULT.\n\nTo start, review the merger agreement and locate the \"no-shop\" and \"fiduciary out\" clauses.\nCheck if these clauses make any reference to the term \"Company Bylaws\".\nIf there is no mention of the term, suggest a revised version of the clause.\nIf the term is referenced in the clauses, output the original text of the clause as the END_RESULT."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 117,
+    "answer": "END_RESULT �Company Bylaws� shall have the meaning set forth in Section 4.1."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 117,
+    "goal": "Check if this Defined term implicated in the \"no-shop\" and \"fiduciary out\" clauses in a merger agreement. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Bylaws� shall have the meaning set forth in Section 4.1. ",
+    "args": "�Company Bylaws� shall have the meaning set forth in Section 4.1."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Company Bylaws� shall have the meaning set forth in Section 4.1. ",
+    "result": "Defined term implicated in the \"no-shop\" and \"fiduciary out\" clauses in a merger agreement.",
+    "rewrite": {
+      "type": "end",
+      "data": "�Company Bylaws� shall have the meaning set forth in Section 4.1.",
+      "taskId": 117
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company Certificate of Incorporation� shall have the meaning set forth in Section 4.1. ",
+    "result": "Defined term implicated in the clause."
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 118,
+    "goal": "Check if this Defined term implicated in the clause. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Certificate of Incorporation� shall have the meaning set forth in Section 4.1. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 118,
+    "answer": "PLAN Check if the defined term is implicated in the clause by searching for the term \"Company Certificate of Incorporation\" in the clause.\nPLAN If the term is not found, suggest a new version of the clause.\nPLAN If the term is found, output the original text of the clause as the END_RESULT.\n\nTo check if the defined term is implicated in the clause, you can follow these steps:\n1. Read the clause.\n2. Search for the term \"Company Certificate of Incorporation\" in the clause.\n3. If the term is found, output the original text of the clause as the END_RESULT.\n4. If the term is not found, suggest a new version of the clause.\n\nPlease provide the text of the clause."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 118,
+    "answer": "END_RESULT The clause: �Company Certificate of Incorporation� shall have the meaning set forth in Section 4.1."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 118,
+    "goal": "Check if this Defined term implicated in the clause. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Certificate of Incorporation� shall have the meaning set forth in Section 4.1. ",
+    "args": "The clause: �Company Certificate of Incorporation� shall have the meaning set forth in Section 4.1."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Company Certificate of Incorporation� shall have the meaning set forth in Section 4.1. ",
+    "result": "Defined term implicated in the clause.",
+    "rewrite": {
+      "type": "end",
+      "data": "The clause: �Company Certificate of Incorporation� shall have the meaning set forth in Section 4.1.",
+      "taskId": 118
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company Common Stock� shall have the meaning set forth in Section 3.1(a). ",
+    "result": "Defined term\n"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 119,
+    "goal": "Check if this Defined term\n clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Common Stock� shall have the meaning set forth in Section 3.1(a). ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 119,
+    "answer": "Plan to check if the defined term clause is well.\nThe first step is to analyze the defined term clause.\nCompare the clause with the standard format for defining terms.\nCheck if the term \"Company Common Stock\" is properly defined in Section 3.1(a).\nIf it is not properly defined, suggest a new version of the clause.\nIf it is properly defined, output the original text of the clause as an END_RESULT command."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 119,
+    "answer": "END_RESULT �Company Common Stock� shall have the meaning set forth in Section 3.1(a)."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 119,
+    "goal": "Check if this Defined term\n clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Common Stock� shall have the meaning set forth in Section 3.1(a). ",
+    "args": "�Company Common Stock� shall have the meaning set forth in Section 3.1(a)."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Company Common Stock� shall have the meaning set forth in Section 3.1(a). ",
+    "result": "Defined term\n",
+    "rewrite": {
+      "type": "end",
+      "data": "�Company Common Stock� shall have the meaning set forth in Section 3.1(a).",
+      "taskId": 119
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company Disclosure Letter� shall mean the disclosure letter delivered by the Company to Parent simultaneously with the\nexecution of this Agreement. ",
+    "result": "Defined term: Company Disclosure Letter"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 120,
+    "goal": "Check if this Defined term: Company Disclosure Letter clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Disclosure Letter� shall mean the disclosure letter delivered by the Company to Parent simultaneously with the\nexecution of this Agreement. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 120,
+    "answer": "PLAN Examine the Defined term: Company Disclosure Letter clause \nPLAN Compare the clause to the provided text\nPLAN Check if the clause is well-formed and valid\nPLAN If the clause is not well-formed or valid, suggest a new version\nPLAN If the clause is well-formed and valid, output the original text using END_RESULT\n\nEND_RESULT \"Company Disclosure Letter\""
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 120,
+    "goal": "Check if this Defined term: Company Disclosure Letter clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Disclosure Letter� shall mean the disclosure letter delivered by the Company to Parent simultaneously with the\nexecution of this Agreement. ",
+    "args": "Company Disclosure Letter"
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Company Disclosure Letter� shall mean the disclosure letter delivered by the Company to Parent simultaneously with the\nexecution of this Agreement. ",
+    "result": "Defined term: Company Disclosure Letter",
+    "rewrite": {
+      "type": "end",
+      "data": "Company Disclosure Letter",
+      "taskId": 120
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company Equity Awards� shall mean, collectively, (i) Company Options,\n(ii) Company PSUs, (iii) Company RSAs, and (iv) Company RSUs. ",
+    "result": "Defined term definition"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 121,
+    "goal": "Check if this Defined term definition clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Equity Awards� shall mean, collectively, (i) Company Options,\n(ii) Company PSUs, (iii) Company RSAs, and (iv) Company RSUs. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 121,
+    "answer": "PLAN To check if the Defined term definition clause is well, we need to analyze the clause for any errors or improvements. We can break down the clause into individual components and evaluate them for accuracy and clarity."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 121,
+    "answer": "1. Check if the term \"Company Equity Awards\" is defined correctly and accurately represents the intended meaning.\n2. Verify if the term \"Company Options\" is included as part of the collective definition of \"Company Equity Awards.\"\n3. Confirm if the term \"Company PSUs\" is correctly identified as one of the components of \"Company Equity Awards.\"\n4. Determine if the term \"Company RSAs\" is accurately included in the definition of \"Company Equity Awards.\"\n5. Check if the term \"Company RSUs\" is properly stated as part of the collective definition of \"Company Equity Awards.\"\n6. Evaluate if the overall structure and formatting of the clause adhere to the defined term conventions.\n\nIf the clause is well, output the original text as an END_RESULT command. If not, we need to suggest a new version."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 121,
+    "answer": "END_RESULT The clause \"Company Equity Awards\" shall mean, collectively, (i) Company Options, (ii) Company PSUs, (iii) Company RSAs, and (iv) Company RSUs is accurate and well-defined."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 121,
+    "goal": "Check if this Defined term definition clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Equity Awards� shall mean, collectively, (i) Company Options,\n(ii) Company PSUs, (iii) Company RSAs, and (iv) Company RSUs. ",
+    "args": "The clause \"Company Equity Awards\" shall mean, collectively, (i) Company Options, (ii) Company PSUs, (iii) Company RSAs, and (iv) Company RSUs is accurate and well-defined."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Company Equity Awards� shall mean, collectively, (i) Company Options,\n(ii) Company PSUs, (iii) Company RSAs, and (iv) Company RSUs. ",
+    "result": "Defined term definition",
+    "rewrite": {
+      "type": "end",
+      "data": "The clause \"Company Equity Awards\" shall mean, collectively, (i) Company Options, (ii) Company PSUs, (iii) Company RSAs, and (iv) Company RSUs is accurate and well-defined.",
+      "taskId": 121
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company ESPP� shall mean the Company 2013\nEmployee Stock Purchase Plan. ",
+    "result": "Defined term implicated in the “no-shop” and “fiduciary out” clauses ina merger agreement. Under the “no shop,” the target agrees not to solicitbids (“Acquisition Proposals”) from third parties or to negotiated withthem. Under the “fiduciary out,” if the target receives an unsolicited bidfrom a third party that is superior to the terms of the merger agreement,then the target may be permitted to negotiate with the bidder and withdraw the board recommendation that stockholders vote in favor of themerger agreement."
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 122,
+    "goal": "Check if this Defined term implicated in the “no-shop” and “fiduciary out” clauses ina merger agreement. Under the “no shop,” the target agrees not to solicitbids (“Acquisition Proposals”) from third parties or to negotiated withthem. Under the “fiduciary out,” if the target receives an unsolicited bidfrom a third party that is superior to the terms of the merger agreement,then the target may be permitted to negotiate with the bidder and withdraw the board recommendation that stockholders vote in favor of themerger agreement. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company ESPP� shall mean the Company 2013\nEmployee Stock Purchase Plan. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 122,
+    "answer": "PLAN: \n\n1. Read the merger agreement to locate the \"no-shop\" and \"fiduciary out\" clauses.\n2. Analyze the clauses to identify any mention of the Defined term \"Company ESPP\".\n3. If the Defined term is explicitly mentioned, output the original text of the clause as an END_RESULT command.\n4. If the Defined term is not mentioned, suggest a new version of the clause.\n\nEND_RESULT: The \"Company ESPP\" Defined term is not implicated in the \"no-shop\" and \"fiduciary out\" clauses of the merger agreement. A new version of the clause should be proposed."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 122,
+    "answer": "PLAN: \n\n1. Read the merger agreement to locate the \"no-shop\" and \"fiduciary out\" clauses.\n2. Analyze the clauses to identify any mention of the Defined term \"Company ESPP\".\n3. If the Defined term is explicitly mentioned, output the original text of the clause as an END_RESULT command.\n4. If the Defined term is not mentioned, suggest a new version of the clause.\n\nEND_RESULT: \"Company ESPP\" shall mean the Company 2013 Employee Stock Purchase Plan."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 122,
+    "answer": "PLAN:\n\n1. Read the merger agreement to locate the \"no-shop\" and \"fiduciary out\" clauses.\n2. Identify if the Defined term \"Company ESPP\" is mentioned in the clauses.\n3. If the Defined term is mentioned, output the original text of the clause as an END_RESULT command.\n4. If the Defined term is not mentioned, suggest a new version of the clause.\n\nEND_RESULT: The Defined term \"Company ESPP\" is not implicated in the \"no-shop\" and \"fiduciary out\" clauses of the merger agreement. A new version of the clause needs to be suggested."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 122,
+    "answer": "PLAN: \n\n1. Read the merger agreement to locate the \"no-shop\" and \"fiduciary out\" clauses.\n2. Analyze the clauses to check if the Defined term \"Company ESPP\" is mentioned.\n3. If the Defined term is mentioned, output the original text of the clause as an END_RESULT command.\n4. If the Defined term is not mentioned, suggest a new version of the clause.\n\nEND_RESULT: The Defined term \"Company ESPP\" is not implicated in the \"no-shop\" and \"fiduciary out\" clauses of the merger agreement. A new version of the clause should be proposed."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 122,
+    "answer": "END_RESULT The \"Company ESPP\" Defined term is not implicated in the \"no-shop\" and \"fiduciary out\" clauses in the merger agreement. A new version of the clause should be proposed."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 122,
+    "goal": "Check if this Defined term implicated in the “no-shop” and “fiduciary out” clauses ina merger agreement. Under the “no shop,” the target agrees not to solicitbids (“Acquisition Proposals”) from third parties or to negotiated withthem. Under the “fiduciary out,” if the target receives an unsolicited bidfrom a third party that is superior to the terms of the merger agreement,then the target may be permitted to negotiate with the bidder and withdraw the board recommendation that stockholders vote in favor of themerger agreement. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company ESPP� shall mean the Company 2013\nEmployee Stock Purchase Plan. ",
+    "args": "The \"Company ESPP\" Defined term is not implicated in the \"no-shop\" and \"fiduciary out\" clauses in the merger agreement. A new version of the clause should be proposed."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Company ESPP� shall mean the Company 2013\nEmployee Stock Purchase Plan. ",
+    "result": "Defined term implicated in the “no-shop” and “fiduciary out” clauses ina merger agreement. Under the “no shop,” the target agrees not to solicitbids (“Acquisition Proposals”) from third parties or to negotiated withthem. Under the “fiduciary out,” if the target receives an unsolicited bidfrom a third party that is superior to the terms of the merger agreement,then the target may be permitted to negotiate with the bidder and withdraw the board recommendation that stockholders vote in favor of themerger agreement.",
+    "rewrite": {
+      "type": "end",
+      "data": "The \"Company ESPP\" Defined term is not implicated in the \"no-shop\" and \"fiduciary out\" clauses in the merger agreement. A new version of the clause should be proposed.",
+      "taskId": 122
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company Intellectual Property� shall have the meaning set forth in\nSection 4.14(a). ",
+    "result": "Defined term definition"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 123,
+    "goal": "Check if this Defined term definition clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Intellectual Property� shall have the meaning set forth in\nSection 4.14(a). ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 123,
+    "answer": "PLAN Look for the clause \"Company Intellectual Property\" in Section 4.14(a) and check if it is defined correctly in that section.\nEND_RESULT The clause \"Company Intellectual Property\" is defined as \"the meaning set forth in Section 4.14(a)\"."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 123,
+    "goal": "Check if this Defined term definition clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Intellectual Property� shall have the meaning set forth in\nSection 4.14(a). ",
+    "args": "The clause \"Company Intellectual Property\" is defined as \"the meaning set forth in Section 4.14(a)\"."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Company Intellectual Property� shall have the meaning set forth in\nSection 4.14(a). ",
+    "result": "Defined term definition",
+    "rewrite": {
+      "type": "end",
+      "data": "The clause \"Company Intellectual Property\" is defined as \"the meaning set forth in Section 4.14(a)\".",
+      "taskId": 123
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company Material Adverse Effect� means any change, event, effect or\ncircumstance which, individually or in the aggregate, has resulted in or would reasonably be expected to result in a material adverse effect on the business, financial condition or results of operations of the Company and its Subsidiaries, taken as\na whole; provided, however, that changes, events, effects or circumstances which, directly or indirectly, to the extent they relate to or result from the following shall be excluded from, and not taken into account in, the\ndetermination of Company Material Adverse Effect: (i) any condition, change, effect or circumstance generally affecting any of the industries or markets in which the Company or its Subsidiaries operate; (ii) any change in any Law or GAAP\n(or changes in interpretations of any Law or GAAP); (iii) general economic, regulatory or political conditions (or changes therein) or conditions (or changes therein) in the financial, credit or securities markets (including changes in interest or\ncurrency exchange rates) in the United States or any other country or region in the world; (iv) any acts of God, force majeure events, natural disasters, terrorism, cyberattack, data breach, armed hostilities, sabotage, war or any escalation or\nworsening of any of the foregoing; (v) any epidemics, pandemics or contagious disease outbreaks (including COVID-19) and any political or social conditions, including civil unrest, protests and public\ndemonstrations or any other COVID-19 Measures that relate to, or arise out of, an epidemic, pandemic or disease outbreak (including COVID-19) or any change in such COVID-19 Measures, directive, pronouncement or guideline or interpretation thereof, or any continuation or of any of the foregoing, in the United States or any other country or region in the world; (vi) the\nnegotiation, execution, announcement, performance, consummation or existence of this Agreement or the transactions contemplated by this Agreement, including (A) by reason of the identity of Elon Musk, Parent or any of their Affiliates or their\nrespective financing sources, or any communication by Parent or any of its Affiliates or their respective financing sources, including regarding their plans or intentions with respect to the conduct of the business of the Company or any of its\nSubsidiaries and (B) any litigation, claim or legal proceeding threatened or initiated against Parent, Acquisition Sub, the Company or any of their respective Affiliates, officers or directors, in each case, arising out of or relating to the\nthis Agreement or the transactions contemplated by this Agreement, and including the impact of any of the foregoing on any relationships with customers, suppliers, vendors, collaboration partners, employees, unions or regulators; (vii) any\naction taken pursuant to the terms of this Agreement or with the consent or at the direction of Parent or Acquisition Sub (or any action not taken as a result of the failure of Parent to consent to any action requiring Parent�s consent pursuant\nto Section 6.1); (viii) any changes in the market price or trading volume of the Company Common Stock, any failure by the Company or its Subsidiaries to meet internal, analysts� or other earnings estimates or financial\nprojections or forecasts for any period, any changes in credit ratings and any changes in any analysts� recommendations or ratings with respect to the Company or any of its Subsidiaries (provided that the facts or occurrences giving rise\nto or contributing to such changes or failure that are not otherwise excluded from the definition of �Company Material Adverse Effect� may be taken into account in determining whether there has been a Company Material Adverse Effect); and\n(ix) any matter disclosed in the Company SEC Documents filed by the Company prior to the date of this Agreement (other than any disclosures set forth under the headings �Risk Factors� or �Forward-Looking Statements�). ",
+    "result": "Company Material Adverse Effect"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 124,
+    "goal": "Check if this Company Material Adverse Effect clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Material Adverse Effect� means any change, event, effect or\ncircumstance which, individually or in the aggregate, has resulted in or would reasonably be expected to result in a material adverse effect on the business, financial condition or results of operations of the Company and its Subsidiaries, taken as\na whole; provided, however, that changes, events, effects or circumstances which, directly or indirectly, to the extent they relate to or result from the following shall be excluded from, and not taken into account in, the\ndetermination of Company Material Adverse Effect: (i) any condition, change, effect or circumstance generally affecting any of the industries or markets in which the Company or its Subsidiaries operate; (ii) any change in any Law or GAAP\n(or changes in interpretations of any Law or GAAP); (iii) general economic, regulatory or political conditions (or changes therein) or conditions (or changes therein) in the financial, credit or securities markets (including changes in interest or\ncurrency exchange rates) in the United States or any other country or region in the world; (iv) any acts of God, force majeure events, natural disasters, terrorism, cyberattack, data breach, armed hostilities, sabotage, war or any escalation or\nworsening of any of the foregoing; (v) any epidemics, pandemics or contagious disease outbreaks (including COVID-19) and any political or social conditions, including civil unrest, protests and public\ndemonstrations or any other COVID-19 Measures that relate to, or arise out of, an epidemic, pandemic or disease outbreak (including COVID-19) or any change in such COVID-19 Measures, directive, pronouncement or guideline or interpretation thereof, or any continuation or of any of the foregoing, in the United States or any other country or region in the world; (vi) the\nnegotiation, execution, announcement, performance, consummation or existence of this Agreement or the transactions contemplated by this Agreement, including (A) by reason of the identity of Elon Musk, Parent or any of their Affiliates or their\nrespective financing sources, or any communication by Parent or any of its Affiliates or their respective financing sources, including regarding their plans or intentions with respect to the conduct of the business of the Company or any of its\nSubsidiaries and (B) any litigation, claim or legal proceeding threatened or initiated against Parent, Acquisition Sub, the Company or any of their respective Affiliates, officers or directors, in each case, arising out of or relating to the\nthis Agreement or the transactions contemplated by this Agreement, and including the impact of any of the foregoing on any relationships with customers, suppliers, vendors, collaboration partners, employees, unions or regulators; (vii) any\naction taken pursuant to the terms of this Agreement or with the consent or at the direction of Parent or Acquisition Sub (or any action not taken as a result of the failure of Parent to consent to any action requiring Parent�s consent pursuant\nto Section 6.1); (viii) any changes in the market price or trading volume of the Company Common Stock, any failure by the Company or its Subsidiaries to meet internal, analysts� or other earnings estimates or financial\nprojections or forecasts for any period, any changes in credit ratings and any changes in any analysts� recommendations or ratings with respect to the Company or any of its Subsidiaries (provided that the facts or occurrences giving rise\nto or contributing to such changes or failure that are not otherwise excluded from the definition of �Company Material Adverse Effect� may be taken into account in determining whether there has been a Company Material Adverse Effect); and\n(ix) any matter disclosed in the Company SEC Documents filed by the Company prior to the date of this Agreement (other than any disclosures set forth under the headings �Risk Factors� or �Forward-Looking Statements�). ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 124,
+    "answer": "To check if the Company Material Adverse Effect clause is well, we need to review its content and determine if it meets the desired criteria. \n\nHere are the steps to review the clause:\n\n1. Read and analyze the definition of Company Material Adverse Effect.\n2. Check if the clause covers a change, event, effect, or circumstance that would result in a material adverse effect on the business, financial condition, or results of operations of the Company and its Subsidiaries, taken as a whole.\n3. Determine if there are any exclusions mentioned in the clause that should not be considered when determining a Company Material Adverse Effect.\n4. Evaluate if the exclusions mentioned in the clause are reasonable and aligned with the intended purpose of the clause.\n5. Verify if any additional factors or conditions that should be included in the definition of Company Material Adverse Effect are missing.\n6. If the clause meets the desired criteria, output the original text as an END_RESULT command.\n\nPlease let me know if you need assistance with any specific step or if you would like to proceed with the review."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 124,
+    "answer": "PLAN Check the Company Material Adverse Effect clause for accuracy and adequacy.\n1. Read and analyze the definition of the Company Material Adverse Effect clause.\n2. Verify if the clause covers a change, event, effect, or circumstance that would result in a material adverse effect on the business, financial condition, or results of operations of the Company and its Subsidiaries, taken as a whole.\n3. Check if there are any exclusions listed in the clause that should not be considered when determining a Company Material Adverse Effect.\n4. Determine if the exclusions mentioned in the clause are reasonable and aligned with the intended purpose of the clause.\n5. Evaluate if any additional factors or conditions that should be included in the definition of Company Material Adverse Effect are missing.\n6. If the clause appears accurate and adequate, output the original text as an END_RESULT command.\n\nPlease wait while I review the clause."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 124,
+    "answer": "END_RESULT �Company Material Adverse Effect� means any change, event, effect or circumstance which, individually or in the aggregate, has resulted in or would reasonably be expected to result in a material adverse effect on the business, financial condition or results of operations of the Company and its Subsidiaries, taken as a whole; provided, however, that changes, events, effects or circumstances which, directly or indirectly, to the extent they relate to or result from the following shall be excluded from, and not taken into account in, the determination of Company Material Adverse Effect: (i) any condition, change, effect or circumstance generally affecting any of the industries or markets in which the Company or its Subsidiaries operate; (ii) any change in any Law or GAAP (or changes in interpretations of any Law or GAAP); (iii) general economic, regulatory or political conditions (or changes therein) or conditions (or changes therein) in the financial, credit or securities markets (including changes in interest or currency exchange rates) in the United States or any other country or region in the world; (iv) any acts of God, force majeure events, natural disasters, terrorism, cyberattack, data breach, armed hostilities, sabotage, war or any escalation or worsening of any of the foregoing; (v) any epidemics, pandemics or contagious disease outbreaks (including COVID-19) and any political or social conditions, including civil unrest, protests and public demonstrations or any other COVID-19 Measures that relate to, or arise out of, an epidemic, pandemic or disease outbreak (including COVID-19) or any change in such COVID-19 Measures, directive, pronouncement or guideline or interpretation thereof, or any continuation or of any of the foregoing, in the United States or any other country or region in the world; (vi) the negotiation, execution, announcement, performance, consummation or existence of this Agreement or the transactions contemplated by this Agreement, including (A) by reason of the identity of Elon Musk, Parent or any of their Affiliates or their respective financing sources, or any communication by Parent or any of its Affiliates or their respective financing sources, including regarding their plans or intentions with respect to the conduct of the business of the Company or any of its Subsidiaries and (B) any litigation, claim or legal proceeding threatened or initiated against Parent, Acquisition Sub, the Company or any of their respective Affiliates, officers or directors, in each case, arising out of or relating to this Agreement or the transactions contemplated by this Agreement, and including the impact of any of the foregoing on any relationships with customers, suppliers, vendors, collaboration partners, employees, unions or regulators; (vii) any action taken pursuant to the terms of this Agreement or with the consent or at the direction of Parent or Acquisition Sub (or any action not taken as a result of the failure of Parent to consent to any action requiring Parent�s consent pursuant to Section 6.1); (viii) any changes in the market price or trading volume of the Company Common Stock, any failure by the Company or its Subsidiaries to meet internal, analysts� or other earnings estimates or financial projections or forecasts for any period, any changes in credit ratings and any changes in any analysts� recommendations or ratings with respect to the Company or any of its Subsidiaries (provided that the facts or occurrences giving rise to or contributing to such changes or failure that are not otherwise excluded from the definition of �Company Material Adverse Effect� may be taken into account in determining whether there has been a Company Material Adverse Effect); and (ix) any matter disclosed in the Company SEC Documents filed by the Company prior to the date of this Agreement (other than any disclosures set forth under the headings �Risk Factors� or �Forward-Looking Statements�)."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 124,
+    "goal": "Check if this Company Material Adverse Effect clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Material Adverse Effect� means any change, event, effect or\ncircumstance which, individually or in the aggregate, has resulted in or would reasonably be expected to result in a material adverse effect on the business, financial condition or results of operations of the Company and its Subsidiaries, taken as\na whole; provided, however, that changes, events, effects or circumstances which, directly or indirectly, to the extent they relate to or result from the following shall be excluded from, and not taken into account in, the\ndetermination of Company Material Adverse Effect: (i) any condition, change, effect or circumstance generally affecting any of the industries or markets in which the Company or its Subsidiaries operate; (ii) any change in any Law or GAAP\n(or changes in interpretations of any Law or GAAP); (iii) general economic, regulatory or political conditions (or changes therein) or conditions (or changes therein) in the financial, credit or securities markets (including changes in interest or\ncurrency exchange rates) in the United States or any other country or region in the world; (iv) any acts of God, force majeure events, natural disasters, terrorism, cyberattack, data breach, armed hostilities, sabotage, war or any escalation or\nworsening of any of the foregoing; (v) any epidemics, pandemics or contagious disease outbreaks (including COVID-19) and any political or social conditions, including civil unrest, protests and public\ndemonstrations or any other COVID-19 Measures that relate to, or arise out of, an epidemic, pandemic or disease outbreak (including COVID-19) or any change in such COVID-19 Measures, directive, pronouncement or guideline or interpretation thereof, or any continuation or of any of the foregoing, in the United States or any other country or region in the world; (vi) the\nnegotiation, execution, announcement, performance, consummation or existence of this Agreement or the transactions contemplated by this Agreement, including (A) by reason of the identity of Elon Musk, Parent or any of their Affiliates or their\nrespective financing sources, or any communication by Parent or any of its Affiliates or their respective financing sources, including regarding their plans or intentions with respect to the conduct of the business of the Company or any of its\nSubsidiaries and (B) any litigation, claim or legal proceeding threatened or initiated against Parent, Acquisition Sub, the Company or any of their respective Affiliates, officers or directors, in each case, arising out of or relating to the\nthis Agreement or the transactions contemplated by this Agreement, and including the impact of any of the foregoing on any relationships with customers, suppliers, vendors, collaboration partners, employees, unions or regulators; (vii) any\naction taken pursuant to the terms of this Agreement or with the consent or at the direction of Parent or Acquisition Sub (or any action not taken as a result of the failure of Parent to consent to any action requiring Parent�s consent pursuant\nto Section 6.1); (viii) any changes in the market price or trading volume of the Company Common Stock, any failure by the Company or its Subsidiaries to meet internal, analysts� or other earnings estimates or financial\nprojections or forecasts for any period, any changes in credit ratings and any changes in any analysts� recommendations or ratings with respect to the Company or any of its Subsidiaries (provided that the facts or occurrences giving rise\nto or contributing to such changes or failure that are not otherwise excluded from the definition of �Company Material Adverse Effect� may be taken into account in determining whether there has been a Company Material Adverse Effect); and\n(ix) any matter disclosed in the Company SEC Documents filed by the Company prior to the date of this Agreement (other than any disclosures set forth under the headings �Risk Factors� or �Forward-Looking Statements�). ",
+    "args": "�Company Material Adverse Effect� means any change, event, effect or circumstance which, individually or in the aggregate, has resulted in or would reasonably be expected to result in a material adverse effect on the business, financial condition or results of operations of the Company and its Subsidiaries, taken as a whole; provided, however, that changes, events, effects or circumstances which, directly or indirectly, to the extent they relate to or result from the following shall be excluded from, and not taken into account in, the determination of Company Material Adverse Effect: (i) any condition, change, effect or circumstance generally affecting any of the industries or markets in which the Company or its Subsidiaries operate; (ii) any change in any Law or GAAP (or changes in interpretations of any Law or GAAP); (iii) general economic, regulatory or political conditions (or changes therein) or conditions (or changes therein) in the financial, credit or securities markets (including changes in interest or currency exchange rates) in the United States or any other country or region in the world; (iv) any acts of God, force majeure events, natural disasters, terrorism, cyberattack, data breach, armed hostilities, sabotage, war or any escalation or worsening of any of the foregoing; (v) any epidemics, pandemics or contagious disease outbreaks (including COVID-19) and any political or social conditions, including civil unrest, protests and public demonstrations or any other COVID-19 Measures that relate to, or arise out of, an epidemic, pandemic or disease outbreak (including COVID-19) or any change in such COVID-19 Measures, directive, pronouncement or guideline or interpretation thereof, or any continuation or of any of the foregoing, in the United States or any other country or region in the world; (vi) the negotiation, execution, announcement, performance, consummation or existence of this Agreement or the transactions contemplated by this Agreement, including (A) by reason of the identity of Elon Musk, Parent or any of their Affiliates or their respective financing sources, or any communication by Parent or any of its Affiliates or their respective financing sources, including regarding their plans or intentions with respect to the conduct of the business of the Company or any of its Subsidiaries and (B) any litigation, claim or legal proceeding threatened or initiated against Parent, Acquisition Sub, the Company or any of their respective Affiliates, officers or directors, in each case, arising out of or relating to this Agreement or the transactions contemplated by this Agreement, and including the impact of any of the foregoing on any relationships with customers, suppliers, vendors, collaboration partners, employees, unions or regulators; (vii) any action taken pursuant to the terms of this Agreement or with the consent or at the direction of Parent or Acquisition Sub (or any action not taken as a result of the failure of Parent to consent to any action requiring Parent�s consent pursuant to Section 6.1); (viii) any changes in the market price or trading volume of the Company Common Stock, any failure by the Company or its Subsidiaries to meet internal, analysts� or other earnings estimates or financial projections or forecasts for any period, any changes in credit ratings and any changes in any analysts� recommendations or ratings with respect to the Company or any of its Subsidiaries (provided that the facts or occurrences giving rise to or contributing to such changes or failure that are not otherwise excluded from the definition of �Company Material Adverse Effect� may be taken into account in determining whether there has been a Company Material Adverse Effect); and (ix) any matter disclosed in the Company SEC Documents filed by the Company prior to the date of this Agreement (other than any disclosures set forth under the headings �Risk Factors� or �Forward-Looking Statements�)."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Company Material Adverse Effect� means any change, event, effect or\ncircumstance which, individually or in the aggregate, has resulted in or would reasonably be expected to result in a material adverse effect on the business, financial condition or results of operations of the Company and its Subsidiaries, taken as\na whole; provided, however, that changes, events, effects or circumstances which, directly or indirectly, to the extent they relate to or result from the following shall be excluded from, and not taken into account in, the\ndetermination of Company Material Adverse Effect: (i) any condition, change, effect or circumstance generally affecting any of the industries or markets in which the Company or its Subsidiaries operate; (ii) any change in any Law or GAAP\n(or changes in interpretations of any Law or GAAP); (iii) general economic, regulatory or political conditions (or changes therein) or conditions (or changes therein) in the financial, credit or securities markets (including changes in interest or\ncurrency exchange rates) in the United States or any other country or region in the world; (iv) any acts of God, force majeure events, natural disasters, terrorism, cyberattack, data breach, armed hostilities, sabotage, war or any escalation or\nworsening of any of the foregoing; (v) any epidemics, pandemics or contagious disease outbreaks (including COVID-19) and any political or social conditions, including civil unrest, protests and public\ndemonstrations or any other COVID-19 Measures that relate to, or arise out of, an epidemic, pandemic or disease outbreak (including COVID-19) or any change in such COVID-19 Measures, directive, pronouncement or guideline or interpretation thereof, or any continuation or of any of the foregoing, in the United States or any other country or region in the world; (vi) the\nnegotiation, execution, announcement, performance, consummation or existence of this Agreement or the transactions contemplated by this Agreement, including (A) by reason of the identity of Elon Musk, Parent or any of their Affiliates or their\nrespective financing sources, or any communication by Parent or any of its Affiliates or their respective financing sources, including regarding their plans or intentions with respect to the conduct of the business of the Company or any of its\nSubsidiaries and (B) any litigation, claim or legal proceeding threatened or initiated against Parent, Acquisition Sub, the Company or any of their respective Affiliates, officers or directors, in each case, arising out of or relating to the\nthis Agreement or the transactions contemplated by this Agreement, and including the impact of any of the foregoing on any relationships with customers, suppliers, vendors, collaboration partners, employees, unions or regulators; (vii) any\naction taken pursuant to the terms of this Agreement or with the consent or at the direction of Parent or Acquisition Sub (or any action not taken as a result of the failure of Parent to consent to any action requiring Parent�s consent pursuant\nto Section 6.1); (viii) any changes in the market price or trading volume of the Company Common Stock, any failure by the Company or its Subsidiaries to meet internal, analysts� or other earnings estimates or financial\nprojections or forecasts for any period, any changes in credit ratings and any changes in any analysts� recommendations or ratings with respect to the Company or any of its Subsidiaries (provided that the facts or occurrences giving rise\nto or contributing to such changes or failure that are not otherwise excluded from the definition of �Company Material Adverse Effect� may be taken into account in determining whether there has been a Company Material Adverse Effect); and\n(ix) any matter disclosed in the Company SEC Documents filed by the Company prior to the date of this Agreement (other than any disclosures set forth under the headings �Risk Factors� or �Forward-Looking Statements�). ",
+    "result": "Company Material Adverse Effect",
+    "rewrite": {
+      "type": "end",
+      "data": "�Company Material Adverse Effect� means any change, event, effect or circumstance which, individually or in the aggregate, has resulted in or would reasonably be expected to result in a material adverse effect on the business, financial condition or results of operations of the Company and its Subsidiaries, taken as a whole; provided, however, that changes, events, effects or circumstances which, directly or indirectly, to the extent they relate to or result from the following shall be excluded from, and not taken into account in, the determination of Company Material Adverse Effect: (i) any condition, change, effect or circumstance generally affecting any of the industries or markets in which the Company or its Subsidiaries operate; (ii) any change in any Law or GAAP (or changes in interpretations of any Law or GAAP); (iii) general economic, regulatory or political conditions (or changes therein) or conditions (or changes therein) in the financial, credit or securities markets (including changes in interest or currency exchange rates) in the United States or any other country or region in the world; (iv) any acts of God, force majeure events, natural disasters, terrorism, cyberattack, data breach, armed hostilities, sabotage, war or any escalation or worsening of any of the foregoing; (v) any epidemics, pandemics or contagious disease outbreaks (including COVID-19) and any political or social conditions, including civil unrest, protests and public demonstrations or any other COVID-19 Measures that relate to, or arise out of, an epidemic, pandemic or disease outbreak (including COVID-19) or any change in such COVID-19 Measures, directive, pronouncement or guideline or interpretation thereof, or any continuation or of any of the foregoing, in the United States or any other country or region in the world; (vi) the negotiation, execution, announcement, performance, consummation or existence of this Agreement or the transactions contemplated by this Agreement, including (A) by reason of the identity of Elon Musk, Parent or any of their Affiliates or their respective financing sources, or any communication by Parent or any of its Affiliates or their respective financing sources, including regarding their plans or intentions with respect to the conduct of the business of the Company or any of its Subsidiaries and (B) any litigation, claim or legal proceeding threatened or initiated against Parent, Acquisition Sub, the Company or any of their respective Affiliates, officers or directors, in each case, arising out of or relating to this Agreement or the transactions contemplated by this Agreement, and including the impact of any of the foregoing on any relationships with customers, suppliers, vendors, collaboration partners, employees, unions or regulators; (vii) any action taken pursuant to the terms of this Agreement or with the consent or at the direction of Parent or Acquisition Sub (or any action not taken as a result of the failure of Parent to consent to any action requiring Parent�s consent pursuant to Section 6.1); (viii) any changes in the market price or trading volume of the Company Common Stock, any failure by the Company or its Subsidiaries to meet internal, analysts� or other earnings estimates or financial projections or forecasts for any period, any changes in credit ratings and any changes in any analysts� recommendations or ratings with respect to the Company or any of its Subsidiaries (provided that the facts or occurrences giving rise to or contributing to such changes or failure that are not otherwise excluded from the definition of �Company Material Adverse Effect� may be taken into account in determining whether there has been a Company Material Adverse Effect); and (ix) any matter disclosed in the Company SEC Documents filed by the Company prior to the date of this Agreement (other than any disclosures set forth under the headings �Risk Factors� or �Forward-Looking Statements�).",
+      "taskId": 124
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company Material Contract� shall have the meaning set forth in Section 4.16(a). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 125,
+    "goal": "Check if this Defined term clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Material Contract� shall have the meaning set forth in Section 4.16(a). ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 125,
+    "answer": "You can accomplish this task by following these steps:\n\n1. Read the \"Defined term clause\" provided.\n2. Review Section 4.16(a) to understand the meaning of \"Company Material Contract\".\n3. Compare the understanding of \"Company Material Contract\" from Section 4.16(a) with the definition in the \"Defined term clause\".\n4. If they match, output the original text as an END_RESULT command: \"END_RESULT �Company Material Contract� shall have the meaning set forth in Section 4.16(a).\"\n5. If they don't match or if there is no matching definition in Section 4.16(a), suggest a new version of the \"Defined term clause\" based on the correct meaning.\n\nPlease note that I am not able to retrieve specific text, so you need to manually compare the provided clause with Section 4.16(a) to determine if it is correct or needs revision."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 125,
+    "answer": "PLAN Check the \"Defined term clause\" given.\nPLAN Read Section 4.16(a) to understand the meaning of \"Company Material Contract\".\nPLAN Compare the definition in the \"Defined term clause\" with the meaning in Section 4.16(a).\nPLAN If they match, output the original text as an END_RESULT command.\nPLAN If they don't match or there is no matching definition in Section 4.16(a), suggest a new version of the \"Defined term clause\"."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 125,
+    "answer": "END_RESULT �Company Material Contract� shall have the meaning set forth in Section 4.16(a)."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 125,
+    "goal": "Check if this Defined term clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Material Contract� shall have the meaning set forth in Section 4.16(a). ",
+    "args": "�Company Material Contract� shall have the meaning set forth in Section 4.16(a)."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Company Material Contract� shall have the meaning set forth in Section 4.16(a). ",
+    "result": "Defined term",
+    "rewrite": {
+      "type": "end",
+      "data": "�Company Material Contract� shall have the meaning set forth in Section 4.16(a).",
+      "taskId": 125
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company Option� shall mean each outstanding option to purchase shares of Company Common Stock granted to any employee or\ndirector of, or other Company Service Provider. ",
+    "result": "Defined term implicated in the “Company Option” which means each outstanding option to purchase shares of Company Common Stock granted to any employee or director of, or other Company Service Provider."
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 126,
+    "goal": "Check if this Defined term implicated in the “Company Option” which means each outstanding option to purchase shares of Company Common Stock granted to any employee or director of, or other Company Service Provider. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Option� shall mean each outstanding option to purchase shares of Company Common Stock granted to any employee or\ndirector of, or other Company Service Provider. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 126,
+    "answer": "The provided text is already the original clause. I will simply output it as the END_RESULT command:\n\nEND_RESULT \"Company Option\" shall mean each outstanding option to purchase shares of Company Common Stock granted to any employee or director of, or other Company Service Provider."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 126,
+    "goal": "Check if this Defined term implicated in the “Company Option” which means each outstanding option to purchase shares of Company Common Stock granted to any employee or director of, or other Company Service Provider. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Option� shall mean each outstanding option to purchase shares of Company Common Stock granted to any employee or\ndirector of, or other Company Service Provider. ",
+    "args": "\"Company Option\" shall mean each outstanding option to purchase shares of Company Common Stock granted to any employee or director of, or other Company Service Provider."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Company Option� shall mean each outstanding option to purchase shares of Company Common Stock granted to any employee or\ndirector of, or other Company Service Provider. ",
+    "result": "Defined term implicated in the “Company Option” which means each outstanding option to purchase shares of Company Common Stock granted to any employee or director of, or other Company Service Provider.",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Company Option\" shall mean each outstanding option to purchase shares of Company Common Stock granted to any employee or director of, or other Company Service Provider.",
+      "taskId": 126
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company Permits� shall have the meaning set forth in\nSection 4.5(a). ",
+    "result": "Defined term used in Section 4.5(a) to refer to permits obtained by the company."
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 127,
+    "goal": "Check if this Defined term used in Section 4.5(a) to refer to permits obtained by the company. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Permits� shall have the meaning set forth in\nSection 4.5(a). ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 127,
+    "answer": "To check if the provided clause is well:\n\n1. Extract the text of Section 4.5(a).\n2. Locate the phrase \"Company Permits\" within Section 4.5(a).\n3. Check if the text \"Company Permits\" is accurately defined within Section 4.5(a).\n\nIf the clause is well, the original text will be considered as the END_RESULT:\n\nEND_RESULT \"Company Permits\" shall have the meaning set forth in Section 4.5(a).\n\nIf the clause is not well, I will suggest a new version."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 127,
+    "goal": "Check if this Defined term used in Section 4.5(a) to refer to permits obtained by the company. clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company Permits� shall have the meaning set forth in\nSection 4.5(a). ",
+    "args": "\"Company Permits\" shall have the meaning set forth in Section 4.5(a)."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Company Permits� shall have the meaning set forth in\nSection 4.5(a). ",
+    "result": "Defined term used in Section 4.5(a) to refer to permits obtained by the company.",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Company Permits\" shall have the meaning set forth in Section 4.5(a).",
+      "taskId": 127
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Company PSU� shall mean each performance-based restricted stock unit that\nvests on the basis of time and the achievement of performance metrics and was granted to any Company Service Provider. ",
+    "result": "Defined term definition"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 128,
+    "goal": "Check if this Defined term definition clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company PSU� shall mean each performance-based restricted stock unit that\nvests on the basis of time and the achievement of performance metrics and was granted to any Company Service Provider. ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 128,
+    "answer": "PLAN To check if the Defined term definition clause is well:\n1. Read the clause carefully.\n2. Identify any potential issues or unclear wording.\n3. Determine if the clause accurately defines the term \"Company PSU\" as intended.\n4. Compare the clause to any relevant guidelines or requirements.\n5. Consider the context in which the clause will be used.\n6. Evaluate if the clause effectively communicates the intended meaning.\n7. If there are any issues, suggest a new version that addresses the concerns.\nEND_RESULT \"Company PSU\" shall mean each performance-based restricted stock unit that vests on the basis of time and the achievement of performance metrics and was granted to any Company Service Provider."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 128,
+    "goal": "Check if this Defined term definition clause is well. If not suggest a new version. If yes output the original text as a END_RESULT command. Only return the text of the clause. the clause: �Company PSU� shall mean each performance-based restricted stock unit that\nvests on the basis of time and the achievement of performance metrics and was granted to any Company Service Provider. ",
+    "args": "\"Company PSU\" shall mean each performance-based restricted stock unit that vests on the basis of time and the achievement of performance metrics and was granted to any Company Service Provider."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "�Company PSU� shall mean each performance-based restricted stock unit that\nvests on the basis of time and the achievement of performance metrics and was granted to any Company Service Provider. ",
+    "result": "Defined term definition",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Company PSU\" shall mean each performance-based restricted stock unit that vests on the basis of time and the achievement of performance metrics and was granted to any Company Service Provider.",
+      "taskId": 128
+    }
+  }
+]

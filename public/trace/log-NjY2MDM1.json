@@ -1,0 +1,97 @@
+[
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "ARTICLE V REPRESENTATIONS AND WARRANTIES OF PARENT AND ACQUISITION SUB",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "THIS AGREEMENT AND PLAN OF MERGER, dated as of April 25, 2022 (this �Agreement�), is made by and among Twitter, Inc., a\nDelaware corporation (the �Company�), X Holdings I, Inc., a Delaware corporation (�Parent�), X Holdings II, Inc., a Delaware corporation and a direct wholly owned Subsidiary of Parent (�Acquisition\nSub�), and, solely for purposes of Sections 5.4, 6.2(d), 6.3, 6.8, 6.10, 6.11, 6.12 and 9.9 (the �Specified Provisions�), Elon R. Musk (the �Equity\nInvestor�). ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the parties desire for Parent to acquire the Company by way of a merger (the �Merger�) of Acquisition Sub with and\ninto the Company pursuant to the General Corporation Law of the State of Delaware (the �DGCL�) upon the terms and subject to the conditions set forth in this Agreement; ",
+    "result": "TITLE"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the board of directors of Acquisition Sub (the �Acquisition Sub Board�) has determined that it is advisable to, fair\nto and in the best interests of Acquisition Sub and its stockholders to effect the Merger of Acquisition Sub with and into the Company pursuant to the DGCL upon the terms and subject to the conditions set forth in this Agreement; ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the Company�s board of directors (the �Company Board�) has, by resolutions duly adopted by the unanimous vote\nof the directors at a duly held meeting (i) determined that the terms and conditions of this Agreement, the Merger and the other transactions contemplated by this Agreement are advisable and in the best interests of the Company and the\nCompany�s stockholders, (ii) authorized the execution and delivery of this Agreement and declared advisable and approved the consummation of the transactions contemplated by this Agreement, including the Merger, (iii) directed that\nthis Agreement be submitted for consideration at a meeting of the Company�s stockholders and (iv) subject to the terms of this Agreement, recommended that the Company�s stockholders adopt this Agreement and approve the transactions\ncontemplated by this Agreement, including the Merger (the �Company Board Recommendation�); ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the Acquisition Sub\nBoard has, by resolutions duly adopted, (i) determined that the terms and conditions of this Agreement, the Merger and the other transactions contemplated by this Agreement are advisable and in the best interests of the Acquisition Sub and\nParent, as the sole stockholder of Acquisition Sub; (ii) authorized the execution and delivery of this Agreement and declared advisable and approved the consummation of the transactions contemplated by this Agreement, including the Merger,\n(iii) directed that this Agreement be submitted for consideration by Parent, as the sole stockholder of Acquisition Sub and (iv) recommended that Parent, as the sole stockholder of Acquisition Sub approve the Merger, and Parent, as the\nsole stockholder of Acquisition Sub, has approved this Agreement and the consummation of the transactions contemplated by this Agreement, including the Merger; ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the board of directors of Parent (the �Parent Board�) has, by resolutions duly adopted by the unanimous vote of the\ndirectors, (i) adopted this Agreement and approved the consummation of the transactions contemplated by this Agreement, including the Merger and (ii) determined that this Agreement and the transactions contemplated by this Agreement are\nadvisable and in the best interests of Parent and Elon Musk, as the sole stockholder of Parent; ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, as a material inducement to, and as a condition to, the Company entering into this\nAgreement, concurrently with the execution of this Agreement, Elon Musk (the �Guarantor�) has entered into a limited guarantee, dated as of the date hereof, guaranteeing certain of Parent�s and Acquisition Sub�s\nobligations under this Agreement (the �Parent Guarantee�); and ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, each of Parent, Acquisition Sub and the Company\ndesires to make certain representations, warranties, covenants and agreements in connection with the Merger and also to prescribe various conditions to the Merger. ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "NOW, THEREFORE, in consideration of the foregoing and the representations, warranties and covenants and subject to the conditions herein\ncontained, and intending to be legally bound hereby, the parties hereto hereby agree as follows: ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "As\nused in this Agreement, the following terms shall have the respective meanings set forth or referenced below: ",
+    "result": "TITLE"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Acquisition\nSub� shall have the meaning set forth in the Preamble. ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Acquisition Sub Board� shall have the meaning set forth\nin the Recitals. ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "�Adverse Board Recommendation Change� shall have the meaning set forth in\nSection 6.5(d). ",
+    "result": "Title"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 101,
+    "goal": "Check if this Title clause is well written. If not suggest a new version. If yes output the original text. Only return the text of the clause. the clause: �Adverse Board Recommendation Change� shall have the meaning set forth in\nSection 6.5(d). ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 101,
+    "answer": "PLAN Analyze the clause to determine if it is well written.\nRETRIEVE clause"
+  }
+]

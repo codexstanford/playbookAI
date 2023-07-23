@@ -1,0 +1,17 @@
+[
+  {
+    "type": "NEW_TASK",
+    "taskId": 1,
+    "goal": "build an actuarial table for risk related to natural catastrophe for house in france"
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::ASK_CLARIFICATION What specific natural catastrophe risks are you interested in? (e.g. floods, earthquakes, storms)"
+  },
+  {
+    "type": "ASK_CLARIFICATION",
+    "taskId": 1,
+    "args": "What specific natural catastrophe risks are you interested in? (e.g. floods, earthquakes, storms)"
+  }
+]

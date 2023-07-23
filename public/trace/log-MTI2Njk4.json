@@ -1,0 +1,28 @@
+[
+  {
+    "type": "NEW_TASK",
+    "taskId": 1,
+    "goal": "For each country of the world identify their main legislation and where it can be access online (url). If the country have a federal organization, also identify each of the regulation of each state like administration.",
+    "parentTaskId": null
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "To identify the main legislation of each country and their online access, as well as the regulations of each state if applicable, we can follow these steps:\n\n1. Search for a reliable source that provides information on the legislation of each country.\n2. Create a list of countries.\n3. For each country in the list:\n   a. Search for the main legislation of the country.\n   b. Retrieve the online access URL for the main legislation.\n   c. If the country has a federal organization:\n      i. Retrieve the regulations for each state or administration.\n      ii. Retrieve the online access URLs for the regulations.\n4. Format the results in CSV format with the columns \"Country, Main Legislation, Main Legislation URL, State/Region, State/Region Legislation URL\" for each row.\n5. Output the formatted results."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "The task is too big to do all at once. Let's split it into subtasks.\n\n1. Search for a reliable source that provides information on the legislation of each country.\n2. Create a list of countries.\n3. For each country in the list:\n   a. Search for the main legislation of the country.\n   b. Retrieve the online access URL for the main legislation.\n   c. If the country has a federal organization:\n      i. Retrieve the regulations for each state or administration.\n      ii. Retrieve the online access URLs for the regulations.\n4. Format the results in CSV format with the columns \"Country, Main Legislation, Main Legislation URL, State/Region, State/Region Legislation URL\" for each row.\n5. Output the formatted results."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 1,
+    "answer": "::ASK_CLARIFICATION Which reliable source should I search for to obtain information on the legislation of each country?"
+  },
+  {
+    "type": "ASK_CLARIFICATION",
+    "taskId": 1,
+    "args": "Which reliable source should I search for to obtain information on the legislation of each country?"
+  }
+]

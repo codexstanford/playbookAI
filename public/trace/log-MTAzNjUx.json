@@ -1,0 +1,895 @@
+[
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "ARTICLE V REPRESENTATIONS AND WARRANTIES OF PARENT AND ACQUISITION SUB",
+    "result": "TITLE"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "THIS AGREEMENT AND PLAN OF MERGER, dated as of April 25, 2022 (this “Agreement”), is made by and among Twitter, Inc., a\nDelaware corporation (the “Company”), X Holdings I, Inc., a Delaware corporation (“Parent”), X Holdings II, Inc., a Delaware corporation and a direct wholly owned Subsidiary of Parent (“Acquisition\nSub”), and, solely for purposes of Sections 5.4, 6.2(d), 6.3, 6.8, 6.10, 6.11, 6.12 and 9.9 (the “Specified Provisions”), Elon R. Musk (the “Equity\nInvestor”). ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the parties desire for Parent to acquire the Company by way of a merger (the “Merger”) of Acquisition Sub with and\ninto the Company pursuant to the General Corporation Law of the State of Delaware (the “DGCL”) upon the terms and subject to the conditions set forth in this Agreement; ",
+    "result": "TITLE"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the board of directors of Acquisition Sub (the “Acquisition Sub Board”) has determined that it is advisable to, fair\nto and in the best interests of Acquisition Sub and its stockholders to effect the Merger of Acquisition Sub with and into the Company pursuant to the DGCL upon the terms and subject to the conditions set forth in this Agreement; ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the Company’s board of directors (the “Company Board”) has, by resolutions duly adopted by the unanimous vote\nof the directors at a duly held meeting (i) determined that the terms and conditions of this Agreement, the Merger and the other transactions contemplated by this Agreement are advisable and in the best interests of the Company and the\nCompany’s stockholders, (ii) authorized the execution and delivery of this Agreement and declared advisable and approved the consummation of the transactions contemplated by this Agreement, including the Merger, (iii) directed that\nthis Agreement be submitted for consideration at a meeting of the Company’s stockholders and (iv) subject to the terms of this Agreement, recommended that the Company’s stockholders adopt this Agreement and approve the transactions\ncontemplated by this Agreement, including the Merger (the “Company Board Recommendation”); ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the Acquisition Sub\nBoard has, by resolutions duly adopted, (i) determined that the terms and conditions of this Agreement, the Merger and the other transactions contemplated by this Agreement are advisable and in the best interests of the Acquisition Sub and\nParent, as the sole stockholder of Acquisition Sub; (ii) authorized the execution and delivery of this Agreement and declared advisable and approved the consummation of the transactions contemplated by this Agreement, including the Merger,\n(iii) directed that this Agreement be submitted for consideration by Parent, as the sole stockholder of Acquisition Sub and (iv) recommended that Parent, as the sole stockholder of Acquisition Sub approve the Merger, and Parent, as the\nsole stockholder of Acquisition Sub, has approved this Agreement and the consummation of the transactions contemplated by this Agreement, including the Merger; ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, the board of directors of Parent (the “Parent Board”) has, by resolutions duly adopted by the unanimous vote of the\ndirectors, (i) adopted this Agreement and approved the consummation of the transactions contemplated by this Agreement, including the Merger and (ii) determined that this Agreement and the transactions contemplated by this Agreement are\nadvisable and in the best interests of Parent and Elon Musk, as the sole stockholder of Parent; ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, as a material inducement to, and as a condition to, the Company entering into this\nAgreement, concurrently with the execution of this Agreement, Elon Musk (the “Guarantor”) has entered into a limited guarantee, dated as of the date hereof, guaranteeing certain of Parent’s and Acquisition Sub’s\nobligations under this Agreement (the “Parent Guarantee”); and ",
+    "result": "OTHER"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "WHEREAS, each of Parent, Acquisition Sub and the Company\ndesires to make certain representations, warranties, covenants and agreements in connection with the Merger and also to prescribe various conditions to the Merger. ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "NOW, THEREFORE, in consideration of the foregoing and the representations, warranties and covenants and subject to the conditions herein\ncontained, and intending to be legally bound hereby, the parties hereto hereby agree as follows: ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "As\nused in this Agreement, the following terms shall have the respective meanings set forth or referenced below: ",
+    "result": "TITLE"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Acquisition\nSub” shall have the meaning set forth in the Preamble. ",
+    "result": "NO_CONTEXT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Acquisition Sub Board” shall have the meaning set forth\nin the Recitals. ",
+    "result": "DEFINED TERM"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 101,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Acquisition Sub Board” shall have the meaning set forth\nin the Recitals. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 101,
+    "answer": "PLAN I will check if the clause is well written by examining its structure and grammar.\nEND_RESULT \"Acquisition Sub Board\" is well written."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 101,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Acquisition Sub Board” shall have the meaning set forth\nin the Recitals. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "\"Acquisition Sub Board\" is well written."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Acquisition Sub Board” shall have the meaning set forth\nin the Recitals. ",
+    "result": "DEFINED TERM",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Acquisition Sub Board\" is well written.",
+      "taskId": 101
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Adverse Board Recommendation Change” shall have the meaning set forth in\nSection 6.5(d). ",
+    "result": "Defined term, OTHER"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 102,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Adverse Board Recommendation Change” shall have the meaning set forth in\nSection 6.5(d). \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 102,
+    "answer": "PLAN Analyze the clause and check if it is well written.\nPLAN Check if the clause contains the phrase \"shall have the meaning set forth in\"\nPLAN Check if the clause contains the term \"Section\"\nPLAN If the clause is not well written, suggest a new version.\nEND_RESULT \"Adverse Board Recommendation Change\" shall have the meaning as set forth in Section 6.5(d)."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 102,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Adverse Board Recommendation Change” shall have the meaning set forth in\nSection 6.5(d). \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "\"Adverse Board Recommendation Change\" shall have the meaning as set forth in Section 6.5(d)."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Adverse Board Recommendation Change” shall have the meaning set forth in\nSection 6.5(d). ",
+    "result": "Defined term, OTHER",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Adverse Board Recommendation Change\" shall have the meaning as set forth in Section 6.5(d).",
+      "taskId": 102
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Affiliate” has the meaning set forth in Rule\n12b-2 of the Exchange Act. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 103,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Affiliate” has the meaning set forth in Rule\n12b-2 of the Exchange Act. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 103,
+    "answer": "PLAN First, analyze the structure of the clause.\nEND_RESULT \"Affiliate\" has the meaning set forth in Rule 12b-2 of the Exchange Act.\n"
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 103,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Affiliate” has the meaning set forth in Rule\n12b-2 of the Exchange Act. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "\"Affiliate\" has the meaning set forth in Rule 12b-2 of the Exchange Act."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Affiliate” has the meaning set forth in Rule\n12b-2 of the Exchange Act. ",
+    "result": "Defined term",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Affiliate\" has the meaning set forth in Rule 12b-2 of the Exchange Act.",
+      "taskId": 103
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Aggregate Merger Consideration” shall mean the\nproduct of (x) the number of shares of Company Common Stock issued and outstanding (other than those shares canceled or retired pursuant to Section 3.1(b)) immediately prior to the Effective Time multiplied by\n(y) the Merger Consideration. ",
+    "result": "Acquisition Proposal Definition"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 104,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Aggregate Merger Consideration” shall mean the\nproduct of (x) the number of shares of Company Common Stock issued and outstanding (other than those shares canceled or retired pursuant to Section 3.1(b)) immediately prior to the Effective Time multiplied by\n(y) the Merger Consideration. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 104,
+    "answer": "PLAN Check the clause to see if it is well written.\nEND_RESULT \"Aggregate Merger Consideration\" shall mean the product of (x) the number of shares of Company Common Stock issued and outstanding (other than those shares canceled or retired pursuant to Section 3.1(b)) immediately prior to the Effective Time multiplied by (y) the Merger Consideration."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 104,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Aggregate Merger Consideration” shall mean the\nproduct of (x) the number of shares of Company Common Stock issued and outstanding (other than those shares canceled or retired pursuant to Section 3.1(b)) immediately prior to the Effective Time multiplied by\n(y) the Merger Consideration. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "\"Aggregate Merger Consideration\" shall mean the product of (x) the number of shares of Company Common Stock issued and outstanding (other than those shares canceled or retired pursuant to Section 3.1(b)) immediately prior to the Effective Time multiplied by (y) the Merger Consideration."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Aggregate Merger Consideration” shall mean the\nproduct of (x) the number of shares of Company Common Stock issued and outstanding (other than those shares canceled or retired pursuant to Section 3.1(b)) immediately prior to the Effective Time multiplied by\n(y) the Merger Consideration. ",
+    "result": "Acquisition Proposal Definition",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Aggregate Merger Consideration\" shall mean the product of (x) the number of shares of Company Common Stock issued and outstanding (other than those shares canceled or retired pursuant to Section 3.1(b)) immediately prior to the Effective Time multiplied by (y) the Merger Consideration.",
+      "taskId": 104
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Alternative Financing” shall have the meaning set forth in Section 6.10(c). ",
+    "result": "Defined term implicated in the \"no-shop\" and \"fiduciary out\" clauses in a merger agreement."
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 105,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Alternative Financing” shall have the meaning set forth in Section 6.10(c). \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 105,
+    "answer": "PLAN Check the clause for proper syntax and wording.\nEND_RESULT The clause is well written."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 105,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Alternative Financing” shall have the meaning set forth in Section 6.10(c). \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "The clause is well written."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Alternative Financing” shall have the meaning set forth in Section 6.10(c). ",
+    "result": "Defined term implicated in the \"no-shop\" and \"fiduciary out\" clauses in a merger agreement.",
+    "rewrite": {
+      "type": "end",
+      "data": "The clause is well written.",
+      "taskId": 105
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Alternative Financing Debt Commitment Letter” shall have the meaning set forth in Section 6.10(c).\n",
+    "result": "Defined term implicated in the “no-shop” and “fiduciary out” clauses in a merger agreement."
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 106,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Alternative Financing Debt Commitment Letter” shall have the meaning set forth in Section 6.10(c).\n\n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 106,
+    "answer": "PLAN Examine the clause and determine if it is well written.\nEND_RESULT The clause is well written."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 106,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Alternative Financing Debt Commitment Letter” shall have the meaning set forth in Section 6.10(c).\n\n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "The clause is well written."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Alternative Financing Debt Commitment Letter” shall have the meaning set forth in Section 6.10(c).\n",
+    "result": "Defined term implicated in the “no-shop” and “fiduciary out” clauses in a merger agreement.",
+    "rewrite": {
+      "type": "end",
+      "data": "The clause is well written.",
+      "taskId": 106
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Antitrust Laws” shall have the meaning set forth in Section 4.4(b). ",
+    "result": "OTHER"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Bank Debt Commitment Letter” shall have the meaning set forth in Section 5.4. ",
+    "result": "Defined term implicated in the contract."
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 107,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Bank Debt Commitment Letter” shall have the meaning set forth in Section 5.4. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 107,
+    "answer": "PLAN 1. Remove the quotation marks from the clause.\n2. Check if the clause contains the correct term \"Bank Debt Commitment Letter\" and if it references Section 5.4.\n3. If the clause is not well written, suggest a new version.\n4. If the clause is well written, output \"well written\" after the END_RESULT keyword.\n\nEND_RESULT "
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 107,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Bank Debt Commitment Letter” shall have the meaning set forth in Section 5.4. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": ""
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Bank Debt Commitment Letter” shall have the meaning set forth in Section 5.4. ",
+    "result": "Defined term implicated in the contract.",
+    "rewrite": {
+      "type": "end",
+      "data": "",
+      "taskId": 107
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Bank Debt Financing” shall have the meaning set forth in\nSection 5.4. ",
+    "result": "Defined term implicated in the contract."
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 108,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Bank Debt Financing” shall have the meaning set forth in\nSection 5.4. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 108,
+    "answer": "PLAN Check if the clause is well written by analyzing its structure and grammar.\nEND_RESULT \"Bank Debt Financing\" is well written."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 108,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Bank Debt Financing” shall have the meaning set forth in\nSection 5.4. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "\"Bank Debt Financing\" is well written."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Bank Debt Financing” shall have the meaning set forth in\nSection 5.4. ",
+    "result": "Defined term implicated in the contract.",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Bank Debt Financing\" is well written.",
+      "taskId": 108
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Blue Sky Laws” shall mean state securities or “blue sky” laws. ",
+    "result": "IRRELEVANT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Book-Entry Shares” shall have the meaning set forth in Section 3.1(c). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 109,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Book-Entry Shares” shall have the meaning set forth in Section 3.1(c). \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 109,
+    "answer": "PLAN Check if the clause is well written by analyzing its structure and grammar.\nEND_RESULT The clause is well written."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 109,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Book-Entry Shares” shall have the meaning set forth in Section 3.1(c). \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "The clause is well written."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Book-Entry Shares” shall have the meaning set forth in Section 3.1(c). ",
+    "result": "Defined term",
+    "rewrite": {
+      "type": "end",
+      "data": "The clause is well written.",
+      "taskId": 109
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Business Day” shall mean any day other than a Saturday, Sunday or a day on which all banking institutions in San Francisco,\nCalifornia or New York, New York are authorized or obligated by Law or executive order to close. ",
+    "result": "Other"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 110,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Business Day” shall mean any day other than a Saturday, Sunday or a day on which all banking institutions in San Francisco,\nCalifornia or New York, New York are authorized or obligated by Law or executive order to close. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 110,
+    "answer": "PLAN Check if the clause is well written.\n1. Read the clause and analyze its structure.\n2. Identify any potential issues or errors in grammar, punctuation, or clarity.\n3. Cross-check any legal terms or requirements mentioned in the clause.\n4. Determine if the clause accurately conveys the intended meaning.\n5. If any issues are found, suggest a revised version of the clause.\nEND_RESULT \"Business Day shall mean any day other than a Saturday, Sunday, or a day on which all banking institutions in San Francisco, California or New York, New York are authorized or obligated by Law or executive order to close.\""
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 110,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Business Day” shall mean any day other than a Saturday, Sunday or a day on which all banking institutions in San Francisco,\nCalifornia or New York, New York are authorized or obligated by Law or executive order to close. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "Business Day shall mean any day other than a Saturday, Sunday, or a day on which all banking institutions in San Francisco, California or New York, New York are authorized or obligated by Law or executive order to close."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Business Day” shall mean any day other than a Saturday, Sunday or a day on which all banking institutions in San Francisco,\nCalifornia or New York, New York are authorized or obligated by Law or executive order to close. ",
+    "result": "Other",
+    "rewrite": {
+      "type": "end",
+      "data": "Business Day shall mean any day other than a Saturday, Sunday, or a day on which all banking institutions in San Francisco, California or New York, New York are authorized or obligated by Law or executive order to close.",
+      "taskId": 110
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Certificate of Merger” shall have the meaning set forth in\nSection 2.3(a). ",
+    "result": "Defined term implicated in the contract."
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 111,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Certificate of Merger” shall have the meaning set forth in\nSection 2.3(a). \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 111,
+    "answer": "PLAN Analyze the clause to determine if it is well written or if it needs to be revised.\nPLAN Identify any potential issues with the clause.\nPLAN Consider how the clause could be modified to improve clarity or accuracy.\nPLAN Output the revised clause if necessary, or output \"well written\" if no revisions are needed.\nEND_RESULT \"Certificate of Merger\" shall have the meaning set forth in Section 2.3(a)."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 111,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Certificate of Merger” shall have the meaning set forth in\nSection 2.3(a). \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "\"Certificate of Merger\" shall have the meaning set forth in Section 2.3(a)."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Certificate of Merger” shall have the meaning set forth in\nSection 2.3(a). ",
+    "result": "Defined term implicated in the contract.",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Certificate of Merger\" shall have the meaning set forth in Section 2.3(a).",
+      "taskId": 111
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Certificates” shall have the meaning set forth in\nSection 3.1(c). ",
+    "result": "Defined term definition"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 112,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Certificates” shall have the meaning set forth in\nSection 3.1(c). \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 112,
+    "answer": "PLAN Determine if the clause is well written by removing unnecessary words and characters and checking for clarity and correctness.\nEND_RESULT \"Certificates\" shall have the meaning set forth in Section 3.1(c)."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 112,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Certificates” shall have the meaning set forth in\nSection 3.1(c). \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "\"Certificates\" shall have the meaning set forth in Section 3.1(c)."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Certificates” shall have the meaning set forth in\nSection 3.1(c). ",
+    "result": "Defined term definition",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Certificates\" shall have the meaning set forth in Section 3.1(c).",
+      "taskId": 112
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Closing Date” shall have the meaning set forth in\nSection 2.2. ",
+    "result": "OTHER"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Code” shall mean the Internal Revenue Code of 1986, as amended. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 113,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Code” shall mean the Internal Revenue Code of 1986, as amended. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 113,
+    "answer": "PLAN Check if the clause is well written.\nEND_RESULT \"Code\" shall mean the Internal Revenue Code of 1986, as amended."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 113,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Code” shall mean the Internal Revenue Code of 1986, as amended. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "\"Code\" shall mean the Internal Revenue Code of 1986, as amended."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Code” shall mean the Internal Revenue Code of 1986, as amended. ",
+    "result": "Defined term",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Code\" shall mean the Internal Revenue Code of 1986, as amended.",
+      "taskId": 113
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company ASR Confirmations” means (i) the Master Confirmation re Accelerated Stock Repurchases, dated February 10,\n2022, between the Company and Morgan Stanley & Co. LLC and (ii) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Wells Fargo Bank, National Association, in each case, as\namended through the date hereof. ",
+    "result": "Defined term."
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 114,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company ASR Confirmations” means (i) the Master Confirmation re Accelerated Stock Repurchases, dated February 10,\n2022, between the Company and Morgan Stanley & Co. LLC and (ii) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Wells Fargo Bank, National Association, in each case, as\namended through the date hereof. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 114,
+    "answer": "PLAN Analyze the clause to determine if it is well written\nPLAN Check for any grammar, punctuation, or formatting errors\nPLAN Evaluate the clarity and coherence of the clause\nPLAN Identify any potential ambiguity or confusion in the clause\nPLAN If necessary, suggest a revised version of the clause\nEND_RESULT \"Company ASR Confirmations\" means (i) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Morgan Stanley & Co. LLC and (ii) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Wells Fargo Bank, National Association, in each case, as amended through the date hereof."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 114,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company ASR Confirmations” means (i) the Master Confirmation re Accelerated Stock Repurchases, dated February 10,\n2022, between the Company and Morgan Stanley & Co. LLC and (ii) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Wells Fargo Bank, National Association, in each case, as\namended through the date hereof. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "\"Company ASR Confirmations\" means (i) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Morgan Stanley & Co. LLC and (ii) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Wells Fargo Bank, National Association, in each case, as amended through the date hereof."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Company ASR Confirmations” means (i) the Master Confirmation re Accelerated Stock Repurchases, dated February 10,\n2022, between the Company and Morgan Stanley & Co. LLC and (ii) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Wells Fargo Bank, National Association, in each case, as\namended through the date hereof. ",
+    "result": "Defined term.",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Company ASR Confirmations\" means (i) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Morgan Stanley & Co. LLC and (ii) the Master Confirmation re Accelerated Stock Repurchases, dated February 10, 2022, between the Company and Wells Fargo Bank, National Association, in each case, as amended through the date hereof.",
+      "taskId": 114
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Benefit Plan” shall mean (i) “employee benefit plan” (within the\nmeaning of Section 3(3) of ERISA, whether or not subject to ERISA), and (ii) each other employment agreement, bonus, stock option, stock purchase or other equity-based, benefit, incentive compensation, profit sharing, savings, retirement\n(including early retirement and supplemental retirement), disability, insurance, vacation, incentive, deferred compensation, supplemental retirement (including termination indemnities and seniority payments), severance, termination, retention,\nchange of control and other similar fringe, welfare or other employee benefit plans, benefit programs, benefit agreements, benefit contracts, benefit policies or benefit arrangements (whether or not in writing), in each case, (x) which is\nsponsored, maintained or contributed to for the benefit of or relating to any current or former director, officer or employee of the Company or its Subsidiaries and (y) with respect to which the Company or any of its Subsidiaries has or may\nhave any liability. ",
+    "result": "Company Benefit Plan"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 115,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company Benefit Plan” shall mean (i) “employee benefit plan” (within the\nmeaning of Section 3(3) of ERISA, whether or not subject to ERISA), and (ii) each other employment agreement, bonus, stock option, stock purchase or other equity-based, benefit, incentive compensation, profit sharing, savings, retirement\n(including early retirement and supplemental retirement), disability, insurance, vacation, incentive, deferred compensation, supplemental retirement (including termination indemnities and seniority payments), severance, termination, retention,\nchange of control and other similar fringe, welfare or other employee benefit plans, benefit programs, benefit agreements, benefit contracts, benefit policies or benefit arrangements (whether or not in writing), in each case, (x) which is\nsponsored, maintained or contributed to for the benefit of or relating to any current or former director, officer or employee of the Company or its Subsidiaries and (y) with respect to which the Company or any of its Subsidiaries has or may\nhave any liability. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 115,
+    "answer": "The clause is well written. \nEND_RESULT well written"
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 115,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company Benefit Plan” shall mean (i) “employee benefit plan” (within the\nmeaning of Section 3(3) of ERISA, whether or not subject to ERISA), and (ii) each other employment agreement, bonus, stock option, stock purchase or other equity-based, benefit, incentive compensation, profit sharing, savings, retirement\n(including early retirement and supplemental retirement), disability, insurance, vacation, incentive, deferred compensation, supplemental retirement (including termination indemnities and seniority payments), severance, termination, retention,\nchange of control and other similar fringe, welfare or other employee benefit plans, benefit programs, benefit agreements, benefit contracts, benefit policies or benefit arrangements (whether or not in writing), in each case, (x) which is\nsponsored, maintained or contributed to for the benefit of or relating to any current or former director, officer or employee of the Company or its Subsidiaries and (y) with respect to which the Company or any of its Subsidiaries has or may\nhave any liability. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "well written"
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Company Benefit Plan” shall mean (i) “employee benefit plan” (within the\nmeaning of Section 3(3) of ERISA, whether or not subject to ERISA), and (ii) each other employment agreement, bonus, stock option, stock purchase or other equity-based, benefit, incentive compensation, profit sharing, savings, retirement\n(including early retirement and supplemental retirement), disability, insurance, vacation, incentive, deferred compensation, supplemental retirement (including termination indemnities and seniority payments), severance, termination, retention,\nchange of control and other similar fringe, welfare or other employee benefit plans, benefit programs, benefit agreements, benefit contracts, benefit policies or benefit arrangements (whether or not in writing), in each case, (x) which is\nsponsored, maintained or contributed to for the benefit of or relating to any current or former director, officer or employee of the Company or its Subsidiaries and (y) with respect to which the Company or any of its Subsidiaries has or may\nhave any liability. ",
+    "result": "Company Benefit Plan",
+    "rewrite": {
+      "type": "end",
+      "data": "well written",
+      "taskId": 115
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Board” shall have the meaning set forth in the Recitals. ",
+    "result": "IRREVELANT"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 116,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company Board” shall have the meaning set forth in the Recitals. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 116,
+    "answer": "PLAN Analyze the given clause and check if it is well-written.\nPLAN Identify any issues or errors in the clause.\nPLAN Suggest a revised version if necessary.\nEND_RESULT \"The clause is 'well written'.\""
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 116,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company Board” shall have the meaning set forth in the Recitals. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "The clause is 'well written'."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Company Board” shall have the meaning set forth in the Recitals. ",
+    "result": "IRREVELANT",
+    "rewrite": {
+      "type": "end",
+      "data": "The clause is 'well written'.",
+      "taskId": 116
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Bond Hedge Documentation” means (a)(i) the call option transaction\nconfirmation, dated June 6, 2018, between the Company and Barclays Bank PLC, (ii) the call option transaction confirmation, dated June 6, 2018, between the Company and JPMorgan Chase Bank, N.A., London Branch, (iii) the call\noption transaction confirmation, dated June 6, 2018, between the Company and Wells Fargo Bank, National Association, (iv) the additional call option transaction confirmation, dated June 7, 2018, between the Company and Barclays Bank\nPLC, (v) the additional call option transaction confirmation, dated June 7, 2018, between the Company and JPMorgan Chase Bank, N.A., London Branch, (vi) the additional call option transaction confirmation, dated June 7, 2018,\nbetween the Company and Wells Fargo Bank, National Association, and (b)(i) the call option transaction confirmation, dated March 1, 2021, between the Company and Bank of America, N.A., (ii) the call option transaction confirmation, dated\nMarch 1, 2021, between the Company and Barclays Bank PLC, (iii) the call option transaction confirmation, dated March 1, 2021, between the Company and Goldman Sachs & Co. LLC, (iv) the call option transaction\nconfirmation, dated March 1, 2021, between the Company and Wells Fargo Bank, National Association, (v) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Bank of America, N.A., (vi) the\nadditional call option transaction confirmation, dated March 12, 2021, between the Company and Barclays Bank PLC, (vii) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Goldman\nSachs & Co. LLC, (viii) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Wells Fargo Bank, National Association, (ix) the letter agreement, dated March 1, 2021, between\nthe Company and Bank of America, N.A., (x) the letter agreement, dated March 1, 2021, between the Company and Barclays Bank PLC, (xi) the letter agreement, dated March 1, 2021, between the Company and Goldman Sachs & Co. LLC,\n(xii) the letter agreement, dated March 1, 2021, between the Company and Wells Fargo Bank, National Association, (xiii) the additional letter agreement, dated March 12, 2021, between the Company and Bank of America, N.A., (xiv)\nthe additional letter agreement, dated March 12, 2021, between the Company and Barclays Bank PLC, (xv) the additional letter agreement, dated March 12, 2021, between the Company and Goldman Sachs & Co. LLC, and (xvi) the\nadditional letter agreement, dated March 12, 2021, between the Company and Wells Fargo Bank, National Association. ",
+    "result": "Acquisition Proposal Definition"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 117,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company Bond Hedge Documentation” means (a)(i) the call option transaction\nconfirmation, dated June 6, 2018, between the Company and Barclays Bank PLC, (ii) the call option transaction confirmation, dated June 6, 2018, between the Company and JPMorgan Chase Bank, N.A., London Branch, (iii) the call\noption transaction confirmation, dated June 6, 2018, between the Company and Wells Fargo Bank, National Association, (iv) the additional call option transaction confirmation, dated June 7, 2018, between the Company and Barclays Bank\nPLC, (v) the additional call option transaction confirmation, dated June 7, 2018, between the Company and JPMorgan Chase Bank, N.A., London Branch, (vi) the additional call option transaction confirmation, dated June 7, 2018,\nbetween the Company and Wells Fargo Bank, National Association, and (b)(i) the call option transaction confirmation, dated March 1, 2021, between the Company and Bank of America, N.A., (ii) the call option transaction confirmation, dated\nMarch 1, 2021, between the Company and Barclays Bank PLC, (iii) the call option transaction confirmation, dated March 1, 2021, between the Company and Goldman Sachs & Co. LLC, (iv) the call option transaction\nconfirmation, dated March 1, 2021, between the Company and Wells Fargo Bank, National Association, (v) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Bank of America, N.A., (vi) the\nadditional call option transaction confirmation, dated March 12, 2021, between the Company and Barclays Bank PLC, (vii) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Goldman\nSachs & Co. LLC, (viii) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Wells Fargo Bank, National Association, (ix) the letter agreement, dated March 1, 2021, between\nthe Company and Bank of America, N.A., (x) the letter agreement, dated March 1, 2021, between the Company and Barclays Bank PLC, (xi) the letter agreement, dated March 1, 2021, between the Company and Goldman Sachs & Co. LLC,\n(xii) the letter agreement, dated March 1, 2021, between the Company and Wells Fargo Bank, National Association, (xiii) the additional letter agreement, dated March 12, 2021, between the Company and Bank of America, N.A., (xiv)\nthe additional letter agreement, dated March 12, 2021, between the Company and Barclays Bank PLC, (xv) the additional letter agreement, dated March 12, 2021, between the Company and Goldman Sachs & Co. LLC, and (xvi) the\nadditional letter agreement, dated March 12, 2021, between the Company and Wells Fargo Bank, National Association. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 117,
+    "answer": "The clause is well written.\nEND_RESULT well written"
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 117,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company Bond Hedge Documentation” means (a)(i) the call option transaction\nconfirmation, dated June 6, 2018, between the Company and Barclays Bank PLC, (ii) the call option transaction confirmation, dated June 6, 2018, between the Company and JPMorgan Chase Bank, N.A., London Branch, (iii) the call\noption transaction confirmation, dated June 6, 2018, between the Company and Wells Fargo Bank, National Association, (iv) the additional call option transaction confirmation, dated June 7, 2018, between the Company and Barclays Bank\nPLC, (v) the additional call option transaction confirmation, dated June 7, 2018, between the Company and JPMorgan Chase Bank, N.A., London Branch, (vi) the additional call option transaction confirmation, dated June 7, 2018,\nbetween the Company and Wells Fargo Bank, National Association, and (b)(i) the call option transaction confirmation, dated March 1, 2021, between the Company and Bank of America, N.A., (ii) the call option transaction confirmation, dated\nMarch 1, 2021, between the Company and Barclays Bank PLC, (iii) the call option transaction confirmation, dated March 1, 2021, between the Company and Goldman Sachs & Co. LLC, (iv) the call option transaction\nconfirmation, dated March 1, 2021, between the Company and Wells Fargo Bank, National Association, (v) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Bank of America, N.A., (vi) the\nadditional call option transaction confirmation, dated March 12, 2021, between the Company and Barclays Bank PLC, (vii) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Goldman\nSachs & Co. LLC, (viii) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Wells Fargo Bank, National Association, (ix) the letter agreement, dated March 1, 2021, between\nthe Company and Bank of America, N.A., (x) the letter agreement, dated March 1, 2021, between the Company and Barclays Bank PLC, (xi) the letter agreement, dated March 1, 2021, between the Company and Goldman Sachs & Co. LLC,\n(xii) the letter agreement, dated March 1, 2021, between the Company and Wells Fargo Bank, National Association, (xiii) the additional letter agreement, dated March 12, 2021, between the Company and Bank of America, N.A., (xiv)\nthe additional letter agreement, dated March 12, 2021, between the Company and Barclays Bank PLC, (xv) the additional letter agreement, dated March 12, 2021, between the Company and Goldman Sachs & Co. LLC, and (xvi) the\nadditional letter agreement, dated March 12, 2021, between the Company and Wells Fargo Bank, National Association. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "well written"
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Company Bond Hedge Documentation” means (a)(i) the call option transaction\nconfirmation, dated June 6, 2018, between the Company and Barclays Bank PLC, (ii) the call option transaction confirmation, dated June 6, 2018, between the Company and JPMorgan Chase Bank, N.A., London Branch, (iii) the call\noption transaction confirmation, dated June 6, 2018, between the Company and Wells Fargo Bank, National Association, (iv) the additional call option transaction confirmation, dated June 7, 2018, between the Company and Barclays Bank\nPLC, (v) the additional call option transaction confirmation, dated June 7, 2018, between the Company and JPMorgan Chase Bank, N.A., London Branch, (vi) the additional call option transaction confirmation, dated June 7, 2018,\nbetween the Company and Wells Fargo Bank, National Association, and (b)(i) the call option transaction confirmation, dated March 1, 2021, between the Company and Bank of America, N.A., (ii) the call option transaction confirmation, dated\nMarch 1, 2021, between the Company and Barclays Bank PLC, (iii) the call option transaction confirmation, dated March 1, 2021, between the Company and Goldman Sachs & Co. LLC, (iv) the call option transaction\nconfirmation, dated March 1, 2021, between the Company and Wells Fargo Bank, National Association, (v) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Bank of America, N.A., (vi) the\nadditional call option transaction confirmation, dated March 12, 2021, between the Company and Barclays Bank PLC, (vii) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Goldman\nSachs & Co. LLC, (viii) the additional call option transaction confirmation, dated March 12, 2021, between the Company and Wells Fargo Bank, National Association, (ix) the letter agreement, dated March 1, 2021, between\nthe Company and Bank of America, N.A., (x) the letter agreement, dated March 1, 2021, between the Company and Barclays Bank PLC, (xi) the letter agreement, dated March 1, 2021, between the Company and Goldman Sachs & Co. LLC,\n(xii) the letter agreement, dated March 1, 2021, between the Company and Wells Fargo Bank, National Association, (xiii) the additional letter agreement, dated March 12, 2021, between the Company and Bank of America, N.A., (xiv)\nthe additional letter agreement, dated March 12, 2021, between the Company and Barclays Bank PLC, (xv) the additional letter agreement, dated March 12, 2021, between the Company and Goldman Sachs & Co. LLC, and (xvi) the\nadditional letter agreement, dated March 12, 2021, between the Company and Wells Fargo Bank, National Association. ",
+    "result": "Acquisition Proposal Definition",
+    "rewrite": {
+      "type": "end",
+      "data": "well written",
+      "taskId": 117
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company\nBond Hedge Transactions” means each of the call option transactions evidenced by the Company Bond Hedge Documentation. ",
+    "result": "DEFINED TERM"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 118,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company\nBond Hedge Transactions” means each of the call option transactions evidenced by the Company Bond Hedge Documentation. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 118,
+    "answer": "The clause is not well written. \nTo suggest a new version, I need more information about the desired outcome or purpose of the clause."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 118,
+    "answer": "PLAN Check each part of the clause for clarity and consistency.\nHint: Break down the clause into smaller parts for analysis."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 118,
+    "answer": "END_RESULT \"Company Bond Hedge Transactions\" means each call option transaction as evidenced by the Company Bond Hedge Documentation."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 118,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company\nBond Hedge Transactions” means each of the call option transactions evidenced by the Company Bond Hedge Documentation. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "\"Company Bond Hedge Transactions\" means each call option transaction as evidenced by the Company Bond Hedge Documentation."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Company\nBond Hedge Transactions” means each of the call option transactions evidenced by the Company Bond Hedge Documentation. ",
+    "result": "DEFINED TERM",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Company Bond Hedge Transactions\" means each call option transaction as evidenced by the Company Bond Hedge Documentation.",
+      "taskId": 118
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Bylaws” shall have the meaning set forth in Section 4.1. ",
+    "result": "IRRELEVANT"
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Certificate of Incorporation” shall have the meaning set forth in Section 4.1. ",
+    "result": "Defined term implicated in the contract. Type of clause: OTHER"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 119,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company Certificate of Incorporation” shall have the meaning set forth in Section 4.1. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 119,
+    "answer": "PLAN Check the clause for any issues or errors.\nEND_RESULT \"Company Certificate of Incorporation\""
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 119,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company Certificate of Incorporation” shall have the meaning set forth in Section 4.1. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "Company Certificate of Incorporation"
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Company Certificate of Incorporation” shall have the meaning set forth in Section 4.1. ",
+    "result": "Defined term implicated in the contract. Type of clause: OTHER",
+    "rewrite": {
+      "type": "end",
+      "data": "Company Certificate of Incorporation",
+      "taskId": 119
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Common Stock” shall have the meaning set forth in Section 3.1(a). ",
+    "result": "Defined term"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 120,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company Common Stock” shall have the meaning set forth in Section 3.1(a). \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 120,
+    "answer": "END_RESULT \"Company Common Stock\" shall have the meaning set forth in Section 3.1(a)."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 120,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company Common Stock” shall have the meaning set forth in Section 3.1(a). \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "\"Company Common Stock\" shall have the meaning set forth in Section 3.1(a)."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Company Common Stock” shall have the meaning set forth in Section 3.1(a). ",
+    "result": "Defined term",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Company Common Stock\" shall have the meaning set forth in Section 3.1(a).",
+      "taskId": 120
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Disclosure Letter” shall mean the disclosure letter delivered by the Company to Parent simultaneously with the\nexecution of this Agreement. ",
+    "result": "Defined term"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 121,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company Disclosure Letter” shall mean the disclosure letter delivered by the Company to Parent simultaneously with the\nexecution of this Agreement. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 121,
+    "answer": "PLAN Analyze the clause to determine if it is well written or needs revision.\nIf the clause is well written, output \"well written\" after the END_RESULT keyword.\nIf the clause needs revision, suggest a new version of the clause and output it after the END_RESULT keyword."
+  },
+  {
+    "type": "REASONING",
+    "taskId": 121,
+    "answer": "END_RESULT \"Company Disclosure Letter\" is a well written clause."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 121,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company Disclosure Letter” shall mean the disclosure letter delivered by the Company to Parent simultaneously with the\nexecution of this Agreement. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "\"Company Disclosure Letter\" is a well written clause."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Company Disclosure Letter” shall mean the disclosure letter delivered by the Company to Parent simultaneously with the\nexecution of this Agreement. ",
+    "result": "Defined term",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Company Disclosure Letter\" is a well written clause.",
+      "taskId": 121
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company Equity Awards” shall mean, collectively, (i) Company Options,\n(ii) Company PSUs, (iii) Company RSAs, and (iv) Company RSUs. ",
+    "result": "Defined term definition"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 122,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company Equity Awards” shall mean, collectively, (i) Company Options,\n(ii) Company PSUs, (iii) Company RSAs, and (iv) Company RSUs. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 122,
+    "answer": "PLAN Analyze the clause and determine if it is well written\nEND_RESULT \"Company Equity Awards\" shall mean, collectively, (i) Company Options, (ii) Company PSUs, (iii) Company RSAs, and (iv) Company RSUs."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 122,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company Equity Awards” shall mean, collectively, (i) Company Options,\n(ii) Company PSUs, (iii) Company RSAs, and (iv) Company RSUs. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "\"Company Equity Awards\" shall mean, collectively, (i) Company Options, (ii) Company PSUs, (iii) Company RSAs, and (iv) Company RSUs."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Company Equity Awards” shall mean, collectively, (i) Company Options,\n(ii) Company PSUs, (iii) Company RSAs, and (iv) Company RSUs. ",
+    "result": "Defined term definition",
+    "rewrite": {
+      "type": "end",
+      "data": "\"Company Equity Awards\" shall mean, collectively, (i) Company Options, (ii) Company PSUs, (iii) Company RSAs, and (iv) Company RSUs.",
+      "taskId": 122
+    }
+  },
+  {
+    "type": "CLASSIFY",
+    "taskId": 1,
+    "clause": "“Company ESPP” shall mean the Company 2013\nEmployee Stock Purchase Plan. ",
+    "result": "Defined Term"
+  },
+  {
+    "type": "NEW_TASK",
+    "taskId": 123,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company ESPP” shall mean the Company 2013\nEmployee Stock Purchase Plan. \n\nOnly return the text of the clause, no other text.\n      ",
+    "parentTaskId": 1
+  },
+  {
+    "type": "REASONING",
+    "taskId": 123,
+    "answer": "To check if the clause is well written, we need to ensure that it is clear and free from any ambiguity. Here are the steps to verify and suggest a new version if needed:\n\n1. Read and analyze the clause: \"Company ESPP\" shall mean the Company 2013 Employee Stock Purchase Plan.\n2. Check if the clause is clear and unambiguous.\n3. Check for any grammar or spelling errors.\n4. Determine if there is a better way to express the meaning of the clause.\n\nEND_RESULT If the clause is well written, display \"well written\"."
+  },
+  {
+    "type": "END_RESULT",
+    "taskId": 123,
+    "goal": "Check if this clause is well written. If it is not well written suggest a new version and output it after the keyword END_RESULT.\nIf the clause is ok output the string \"well written\" after the END_RESULT keyword. \n      \n  The clause is : \n      \n“Company ESPP” shall mean the Company 2013\nEmployee Stock Purchase Plan. \n\nOnly return the text of the clause, no other text.\n      ",
+    "args": "If the clause is well written, display \"well written\"."
+  },
+  {
+    "type": "REWRITE",
+    "taskId": 1,
+    "clause": "“Company ESPP” shall mean the Company 2013\nEmployee Stock Purchase Plan. ",
+    "result": "Defined Term",
+    "rewrite": {
+      "type": "end",
+      "data": "If the clause is well written, display \"well written\".",
+      "taskId": 123
+    }
+  }
+]
