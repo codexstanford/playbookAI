@@ -183,6 +183,14 @@ Return the clause and your reasoning for editing after the keyword END_RESULT. I
 btoa(new Date().getTime() * Math.random() + " ").substring(0, 8), 1);
   
     console.log(rewrite);
+    if (!rewrite.data) { 
+      return {
+        type: type,
+        info: "rewrite failed",
+        rewrite: rewrite
+      };
+
+    }
     if (rewrite.data.trim().length  
       && rewrite.data.toLowerCase().indexOf("well written :)") == -1 
       && rewrite.data.toLowerCase().indexOf("well-written :)") == -1 
