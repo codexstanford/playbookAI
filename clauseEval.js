@@ -182,7 +182,7 @@ ${clause}
 Return the clause and your reasoning for editing after the keyword END_RESULT. If you think the clause is not well written, propose a rewritte and a reasoning. DO not only say that it is not well written without justification! If a clause is well written do not forget the smilley :)`,
 btoa(new Date().getTime() * Math.random() + " ").substring(0, 8), 1);
   
-
+    console.log(rewrite);
     if (rewrite.data.trim().length  
       && rewrite.data.toLowerCase().indexOf("well written :)") == -1 
       && rewrite.data.toLowerCase().indexOf("well-written :)") == -1 
