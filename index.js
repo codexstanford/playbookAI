@@ -40,9 +40,16 @@ app.post('/api/evaluate', async (req, res) => {
     return;
   }
   console.log(req.body.clause);
-  let a = await clauseEval(req.body.clause);  
+  try {
+    let a = await clauseEval(req.body.clause);  
+    res.json(a);
+  }
+  catch (E) {
+    res.json({error: E, echo: req.body});
+    console.log(E);
+  }
 
-  res.json(a);
+ 
 });
 
 
