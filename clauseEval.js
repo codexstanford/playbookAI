@@ -10,7 +10,7 @@ const openai = new OpenAIApi(configuration);
 
 async function clauseEval(clause) {
 
-
+  console.log(clause);
 
   let systemPrompt = `You are a lawyer rewieving a extract of a contract (a clause). You are taks with determining the type of the clause:
 
