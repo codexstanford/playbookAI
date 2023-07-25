@@ -28,6 +28,10 @@ app.post('/api/agent', async (req, res) => {
 });
 
 app.post('/api/evaluate', async (req, res) => { 
+  if (!req.body.clause) {
+    res.json({error: "no clause", echo: req.body});
+    return;
+  }
   let a = await clauseEval(req.body.clause);  
 
   res.json(a);
