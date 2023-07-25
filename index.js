@@ -3,11 +3,12 @@ const express = require('express');
 const multer  = require('multer')
 const upload = multer({ dest: 'uploads/' })
 const app = express();
-const port = process.env.PORT || 3000; 
+const port = process.env.PORT || 3002; 
 
 const agent = require('./agent.js')
 
 const directedAgentMMA = require('./directedAgentMMA.js');
+const clauseEval = require('./clauseEval.js');
 app.use(express.static('public'));
 
 // parse body jon
@@ -25,6 +26,13 @@ app.post('/api/agent', async (req, res) => {
 
   //await agent.start(goal, agentID);
 });
+
+app.post('/api/evaluate', async (req, res) => { 
+  let a = await clauseEval(req.body.clause);  
+
+  res.json(a);
+});
+
 
 
 //server side express file upload
