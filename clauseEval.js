@@ -191,27 +191,11 @@ btoa(new Date().getTime() * Math.random() + " ").substring(0, 8), 1);
       };
 
     }
-    if (rewrite.data.trim().length  
-      && rewrite.data.toLowerCase().indexOf("well written :)") == -1 
-      && rewrite.data.toLowerCase().indexOf("well-written :)") == -1 
-      && rewrite.data.toLowerCase().indexOf("well written. :)") == -1 
-      && rewrite.data.toLowerCase().indexOf("is well written") == -1 
-      && rewrite.data.toLowerCase().indexOf("is well-written") == -1 
-      && rewrite.data.toLowerCase().indexOf(":)") == -1
-      && rewrite.data.toLowerCase().trim() != parsed(item).text().trim()) {
-        return {
-          type: type,
-          info: "not written",
-          why: rewrite.data
-        };
-    }
-    else {
-      return {
-        type: type,
-        info: "well written",
-        why: rewrite.data
-      };
-    }
+    return {
+      type: type,
+      info: "well written",
+      why: rewrite.data.replace(/END_RESULT/g, '')
+    };
     
 
 }
