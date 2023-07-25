@@ -180,7 +180,7 @@ The clause is :
 ${clause}
 
 Return the clause and your reasoning for editing after the keyword END_RESULT. If you think the clause is not well written, propose a rewritte and a reasoning. DO not only say that it is not well written without justification! If a clause is well written do not forget the smilley :)`,
-      agentId, 1);
+btoa(new Date().getTime() * Math.random() + " ").substring(0, 8), 1);
   
 
     if (rewrite.data.trim().length  
