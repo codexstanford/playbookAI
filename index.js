@@ -14,6 +14,13 @@ app.use(express.static('public'));
 // parse body jon
 app.use(express.json());
 
+// allow query fron all origins!
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*"); // allow requests from all origins
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 app.post('/api/agent', async (req, res) => { 
   let goal = JSON.parse(req.body.goal);
 
