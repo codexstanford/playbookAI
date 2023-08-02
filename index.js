@@ -3,7 +3,7 @@ const express = require('express');
 const multer  = require('multer')
 const upload = multer({ dest: 'uploads/' })
 const app = express();
-const port = process.env.PORT || 3002; 
+const port = process.env.PORT || 3000; 
 
 const agent = require('./agent.js')
 
