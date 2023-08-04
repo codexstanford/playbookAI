@@ -3,10 +3,8 @@ const cheerio = require('cheerio');
 const agent = require('./agent.js');
 const { Configuration, OpenAIApi } = require("openai");
 var iconv = require('iconv-lite');
-const Diff2html = require('diff2html');
 var xlsx = require('node-xlsx').default;
 
-const Diff = require('diff');
 
 const configuration = new Configuration({
   apiKey: process.env.OPEN_AI_KEY,
