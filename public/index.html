@@ -52,19 +52,20 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <div id="MainView">
-        <p>Upload a playbook (.xlsl). If no playbook is upload the default MNA demo playbook will be used (<a href="/playbookMNA.xlsx">sample</a>)</p>
+        <p>Upload a playbook (.xlsx). If no playbook is upload the default MNA demo playbook will be used (<a href="/playbookMNA.xlsx">sample</a>)</p>
         <div>
           <form action="/api/fileUpload"
           class="dropzone"
-          id="playbook-dropzone"><div class="dz-message" data-dz-message><span>Use a custom playbook. Upload your playbook file here</span></div>
+          id="playbook-dropzone"><div class="dz-message" data-dz-message><span>Use a custom playbook. Upload your playbook file (.xlsx) here</span></div>
         </form>
         </div>
 
-        <p>Upload an contract to review (either .docx or SEC EDGAR html format)</p>
+        <p>Upload an contract to review (either .docx or SEC EDGAR .html format)</p>
         <div>
           <form action="/api/fileUpload"
           class="dropzone"
           id="my-awesome-dropzone"></form>
+          <div class="dz-message" data-dz-message><span>Drag and drop the contract to review here.</span></div>
         </div>
       </div>
     
@@ -250,7 +251,9 @@
   <script>
 
     let PLAYBOOK = "MNA";
-    let myDropzone = new Dropzone("#my-awesome-dropzone", { /* options */ });
+    let myDropzone = new Dropzone("#my-awesome-dropzone", { 
+      // only doc and docx
+      acceptedFiles: ".docx,.htm,.html" });
     myDropzone.on("success", async file => {
       console.log("A file has been added");
       console.log(file);
@@ -275,7 +278,9 @@
       }, 1000);
     });
 
-    let playbookZone = new Dropzone("#playbook-dropzone", { /* options */ });
+    let playbookZone = new Dropzone("#playbook-dropzone", { /* options , only xlsx files*/ 
+      acceptedFiles: ".xlsx"
+    });
     myDropzone.on("success", async file => {
       console.log("A file has been added");
       console.log(file);

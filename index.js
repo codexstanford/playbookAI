@@ -87,17 +87,24 @@ app.post('/api/evaluatePlaybook', async (req, res) => {
 
 app.post('/api/fileUpload', upload.single('file'), async (req, res) => {
   let file = req.file; 
+  console.log('in', file);
+
+  if (file.originalname.indexOf('.docx') == file.originalname.length - 5
+  || file.originalname.indexOf('.doc') == file.originalname.length - 4) {
+    try {
+      const html = await mammoth.convertToHtml({path:`${__dirname}/uploads/${file.filename}`});
+      console.log(html);
+      fs.writeFileSync(`${__dirname}/uploads/${file.filename}.dx`, html.value);
+      res.json(`${file.filename}.dx`);
+    } catch (e) {
+      res.status(503);
+      res.send('Could not convert file');
+    }
   
-  if (file.originalname.indexOf('.docx') == file.originalname.length - 5) {
-    const html = await mammoth.convertToHtml({path:`${__dirname}/uploads/${file.filename}`});
-    console.log(html);
-    fs.writeFileSync(`${__dirname}/uploads/${file.filename}.dx`, html.value);
-    res.json(`${file.filename}.dx`);
   }else {
     res.json(file.filename);
   }
  
-  console.log(file);
 });
 
 

@@ -28,5 +28,5 @@ Temporary Items
 .apdisk
 
 uploads
-public/trace/
-public/html/
+public/trace/*
+public/html/*

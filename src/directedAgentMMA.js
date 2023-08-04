@@ -16,6 +16,7 @@ const logIt = require('./logIt.js');
 const openai = new OpenAIApi(configuration);
 
 function getPlayBook(path) {
+  console.log("loading playbook", path);
   let playBook = {
     classifier:  "",
     knowledgeMap : {}
