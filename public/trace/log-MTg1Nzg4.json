@@ -1,8 +1,0 @@
-[
-  {
-    "type": "NEW_TASK",
-    "taskId": 1,
-    "goal": "For each country of the world identify their main legislation and where it can be access online (url). If the country have a federal organization, also identify each of the regulation of each state like administration.",
-    "parentTaskId": null
-  }
-]

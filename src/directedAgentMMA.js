@@ -52,14 +52,14 @@ async function directedAgentMMA(id, agentId, playbookPath="MNA") {
     playBook= getPlayBook(`${__dirname}/playbookMNA.xlsx`)
   }
   else {
-    playBook = getPlayBook(`${__dirname}/${uploads}/${playbookPath}`);
+    playBook = getPlayBook(`${__dirname}/../uploads/${playbookPath}`);
   }
 
   if (id.indexOf('.dx')) {
-    data = fs.readFileSync('./uploads/' + id);
+    data = fs.readFileSync(`${__dirname}/../uploads/${id}`);
   }
   else {
-    data = iconv.decode(Buffer.from(fs.readFileSync('./uploads/' + id)), 'win1252');
+    data = iconv.decode(Buffer.from(fs.readFileSync(`${__dirname}/../uploads/${id}`)), 'win1252');
 
     data = data.replace(/�/g, '\'');
     data = data.replace(/�/g, '\'');
@@ -156,7 +156,7 @@ Return the clause and your reasoning for editing after the keyword END_RESULT. I
         </div><br/><div style='border-left: 2px solid #F33; padding-left : 10px'>
       ${rewrite.data.replace(/\n/g, '<br/>').replace(/END_RESULT/g, ' ')}
       </div>`);
-      fs.writeFileSync('./public/' + agentId + '.html', parsed.html().replace("windows-1252", "utf8"), 'utf8');
+      fs.writeFileSync(__dirname+ '/../public/html/' + agentId + '.html', parsed.html().replace("windows-1252", "utf8"), 'utf8');
     }
     
 

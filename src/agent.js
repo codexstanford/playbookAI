@@ -3,13 +3,13 @@
 const fs = require('fs');
 
 
-const search = require('./tools/googleSearch');
+const search = require('../tools/googleSearch');
 search.configure(process.env.GOOLE_API_KEY, "3359060177f7e45c6");
 
-const browse = require('./tools/browse');
+const browse = require('../tools/browse');
 const { AsyncResource } = require('async_hooks');
 
-const store = require('./tools/store');
+const store = require('../tools/store');
 
 
 const { Configuration, OpenAIApi } = require("openai");

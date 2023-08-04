@@ -37,7 +37,7 @@
 </head>
 <body>
   <nav class="blue-grey darken-4" role="navigation">
-    <a id="logo-container" href="#" class="brand-logo">M&amp;A Auto RedLine</a>
+    <a id="logo-container" href="/" class="brand-logo">M&amp;A Auto RedLine</a>
 
     <div class="nav-wrapper container">
       
@@ -109,107 +109,118 @@
 
 
     async function renderFlow(id) {
-      if (id) {
-        agentID = id;
-      }
-      let refresh = true;
-      MainView.style.display = 'none';
-      FlowView.style.display = 'block';
-      
-      let res = await fetch(`/trace/log-${agentID}.json`);
-      let data = await res.json();
 
-      let flowContent = document.getElementById('flowContent');
-      flowContent.innerHTML = '';
+      try {
 
-      let taskList = {
 
-      }
+        let refresh = true;
+    
+        if (id) {
+          agentID = id;
+        }
 
-      for (let item of data) {
-        let div = document.createElement('div');
-        div.className = 'collection-item';
+        MainView.style.display = 'none';
+        FlowView.style.display = 'block';
+        
+        let res = await fetch(`/trace/log-${agentID}.json`);
+        let data = await res.json();
 
-        div.innerHTML = `
-          <div class='actionType'>${item.type}</div>
-        `
+        let flowContent = document.getElementById('flowContent');
+        flowContent.innerHTML = '';
 
-        if (item.type === 'NEW_TASK') {
-          div.innerHTML += `
-            <div class='goal'>${item.goal}</div>
-          `
+        let taskList = {
+
         }
-        if (item.type === 'REWRITE') {
-          htmlOutput.innerHTML = `<a href="/${window.hash}.html" target="_blank">html output</a>`;
-          div.innerHTML += `
-            <div class='goal'>${item.rewrite.data}</div>
+
+        for (let item of data) {
+          let div = document.createElement('div');
+          div.className = 'collection-item';
+
+          div.innerHTML = `
+            <div class='actionType'>${item.type}</div>
           `
-        }
-        else if (item.type === 'REASONING') {
-          div.innerHTML += `
-            <pre class='reasoning'>${item.answer.replace(/::/g, "Do ")}</pre>
-          `
-        }
-        else if (item.type === 'SEARCH') {
-          div.innerHTML += `
-            <pre class='query'>${item.query}</pre>
-            <pre class='result'>${item.result}</pre>
-          `
-        }
-        else if (item.type === 'GET_PAGE') {
-          div.innerHTML += `
-            <pre class='url'>${item.query}</pre>
-            <div class='result'>${item.result}</div>
-          `
-        }
-        else if (item.type === 'CLASSIFY') {
-          div.innerHTML += `
-            <div class='result'><b>${item.result}</b></div>
-            <pre class='query'>${item.clause}</pre>
-            
-          `
-        }
-        else if (item.type === 'ASK_CLARIFICATION') {
-          div.innerHTML += `
-            <div>${item.args}</div>
-          `
-          if (!item.parentTaskId && item == data[data.length - 1]) {
+
+          if (item.type === 'NEW_TASK') {
             div.innerHTML += `
-            <input type='text' id='answer'>
-            <input type='button' value='Send' onclick="answer('${item.taskId}')">
+              <div class='goal'>${item.goal}</div>
             `
-            refresh = false;
           }
-        }
-        else {
-          div.innerHTML += `
-            <div class='JSON'><pre>${JSON.stringify(item, null, 2)}</pre></div>
-          `
-        }
-        if (item.type == "NEW_TASK") {
-          taskList[item.taskId] = div;
-          div.className = 'task';
-
-          if (item.parentTaskId) {
-            taskList[item.parentTaskId].appendChild(div);
+          if (item.type === 'REWRITE') {
+            htmlOutput.innerHTML = `<a href="/html/${window.hash}.html" target="_blank">html output</a>`;
+            div.innerHTML += `
+              <div class='goal'>${item.rewrite.data}</div>
+            `
+          }
+          else if (item.type === 'REASONING') {
+            div.innerHTML += `
+              <pre class='reasoning'>${item.answer.replace(/::/g, "Do ")}</pre>
+            `
+          }
+          else if (item.type === 'SEARCH') {
+            div.innerHTML += `
+              <pre class='query'>${item.query}</pre>
+              <pre class='result'>${item.result}</pre>
+            `
+          }
+          else if (item.type === 'GET_PAGE') {
+            div.innerHTML += `
+              <pre class='url'>${item.query}</pre>
+              <div class='result'>${item.result}</div>
+            `
+          }
+          else if (item.type === 'CLASSIFY') {
+            div.innerHTML += `
+              <div class='result'><b>${item.result}</b></div>
+              <pre class='query'>${item.clause}</pre>
+              
+            `
+          }
+          else if (item.type === 'ASK_CLARIFICATION') {
+            div.innerHTML += `
+              <div>${item.args}</div>
+            `
+            if (!item.parentTaskId && item == data[data.length - 1]) {
+              div.innerHTML += `
+              <input type='text' id='answer'>
+              <input type='button' value='Send' onclick="answer('${item.taskId}')">
+              `
+              refresh = false;
+            }
           }
           else {
-            flowContent.appendChild(div);
+            div.innerHTML += `
+              <div class='JSON'><pre>${JSON.stringify(item, null, 2)}</pre></div>
+            `
           }
-        }
-        else {
-          if (!taskList[item.taskId]) {
-            let ndiv = document.createElement('div');
-            ndiv.className = 'task';
+          if (item.type == "NEW_TASK") {
+            taskList[item.taskId] = div;
+            div.className = 'task';
 
-            taskList[item.taskId] = ndiv;
-            flowContent.appendChild(ndiv);
+            if (item.parentTaskId) {
+              taskList[item.parentTaskId].appendChild(div);
+            }
+            else {
+              flowContent.appendChild(div);
+            }
           }
-          taskList[item.taskId].appendChild(div);
+          else {
+            if (!taskList[item.taskId]) {
+              let ndiv = document.createElement('div');
+              ndiv.className = 'task';
+
+              taskList[item.taskId] = ndiv;
+              flowContent.appendChild(ndiv);
+            }
+            taskList[item.taskId].appendChild(div);
+          }
+          
         }
-        
+
+        if (refresh) {
+          setTimeout(renderFlow, 5000);
+        }
       }
-      if (refresh) {
+      catch (e) {
         setTimeout(renderFlow, 1000);
       }
     

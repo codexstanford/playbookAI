@@ -7,11 +7,11 @@ const upload = multer({ dest: 'uploads/'});
 const app = express();
 const port = process.env.PORT || 3000; 
 
-const agent = require('./agent.js')
+const agent = require('./src/agent.js')
 
-const directedAgentMMA = require('./directedAgentMMA.js');
-const clauseEval = require('./clauseEval.js');
-const playbookEval = require('./playBookEval.js');
+const directedAgentMMA = require('./src/directedAgentMMA.js');
+const clauseEval = require('./src/clauseEval.js');
+const playbookEval = require('./src/playBookEval.js');
 
 app.use(express.static('public'));
 
