@@ -3,13 +3,8 @@
 const fs = require('fs');
 
 
-const search = require('../tools/googleSearch');
-search.configure(process.env.GOOLE_API_KEY, "3359060177f7e45c6");
 
-const browse = require('../tools/browse');
-const { AsyncResource } = require('async_hooks');
 
-const store = require('../tools/store');
 
 
 const { Configuration, OpenAIApi } = require("openai");
@@ -32,30 +27,9 @@ let MESSAGES = {
 
 
 
-let retrieveFromUrl = {
-  instruction : "EXTRACT_DATA_FROM_URL <url> <description of the data to be extract> <output data format> retrieve information from a url and return it in the specified format. Be specific in what kind of information you want to extract and what it is. add some context",
-  keyword: "EXTRACT_DATA_FROM_URL",
-  do: async (args,  agentId, taskId) => {
 
-    args = args.replace(/\"/g, '');
-    let url = args.split(' ')[0];
-    let format = args.split(' ')[args.length - 1];
-    let instruct = args.split(' ').slice(1, args.length - 1).join(' ');
 
-    const res = await agent(`Get content from the url : ${url}, then extract the following information: ${instruct}. Return it in ${format}` , agentId, taskId, [...mainTools, browse]);
-    logIt({ 
-      type: "EXTRACT_DATA_FROM_URL",
-      taskId: taskId,
-      url: args,
-      result: res
-    }, agentId);
-   return res;
-  }
-}
-
-let mainTools = [search]
-
-let defaultTools = []// [search, retrieveFromUrl];
+let defaultTools = []
 
 async function agent(goal, agentId, parentTaskId=null, tools=defaultTools) {
   let taskId = ++ID;
@@ -233,9 +207,14 @@ ${args}`);
 async function prompt(messages) {
   let r = null;
   console.log("OPEN AI", messages);
+  let model = "gpt-3.5-turbo"
+  if (JSON.stringify(messages).length > 10000) {
+    model = "gpt-3.5-turbo-16k"
+  } 
+  console.log("Model", model)
   try {
     const response = await openai.createChatCompletion({
-      model: "gpt-3.5-turbo-16k",
+      model: model,
       messages:messages
     });
     r = response;

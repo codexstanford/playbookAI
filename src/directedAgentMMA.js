@@ -116,7 +116,7 @@ Only output the type of clause, no other text`
     });
 
     parsed(item).html(`
-    <div style='background-color: #666; color:#eee; padding: 8px 4px; border-radius: 4px;     display: inline-block;max-width: 200px;    position: absolute;    left: 64px;'>${type}</div>
+    <div style='background-color: #666; color:#eee; padding: 4px 2px; border-radius: 4px;display: inline-block;max-width: 200px; position: absolute; left: 64px; font-size: 12px'>${type}</div>
     ${parsed(item).html()}
     `);
   fs.writeFileSync(__dirname+ '/../public/html/' + agentId + '.html', parsed.html().replace("windows-1252", "utf8"), 'utf8');
