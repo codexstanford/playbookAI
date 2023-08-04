@@ -22,16 +22,23 @@ async function directedAgentMMA(id, agentId) {
   // read File
   id = id.replace(/\//g, '');
 
+  let data = "";
 
-  let data = iconv.decode(Buffer.from(fs.readFileSync('./uploads/' + id)), 'win1252');
+  if (id.indexOf('.dx')) {
+    data = fs.readFileSync('./uploads/' + id);
+  }
+  else {
+    data = iconv.decode(Buffer.from(fs.readFileSync('./uploads/' + id)), 'win1252');
 
-  data = data.replace(/�/g, '\'');
-  data = data.replace(/�/g, '\'');
+    data = data.replace(/�/g, '\'');
+    data = data.replace(/�/g, '\'');
+  }
+
   
   let parsed = cheerio.load(data);
 
   let p = parsed('p');
-
+  console.log(p);
   let collection = [];
 
   let systemPrompt = `You are a lawyer rewieving a extract of a contract (a clause). You are taks with determining the type of the clause:

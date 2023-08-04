@@ -1,7 +1,9 @@
-
+var mammoth = require("mammoth");
+const fs = require('fs');
 const express = require('express');
-const multer  = require('multer')
-const upload = multer({ dest: 'uploads/' })
+const multer  = require('multer');
+const upload = multer({ dest: 'uploads/'});
+
 const app = express();
 const port = process.env.PORT || 3000; 
 
@@ -9,6 +11,8 @@ const agent = require('./agent.js')
 
 const directedAgentMMA = require('./directedAgentMMA.js');
 const clauseEval = require('./clauseEval.js');
+const playbookEval = require('./playBookEval.js');
+
 app.use(express.static('public'));
 
 // parse body jon
@@ -23,7 +27,7 @@ app.use(function(req, res, next) {
 
 app.post('/api/agent', async (req, res) => { 
   let goal = JSON.parse(req.body.goal);
-
+  console.log(goal);
   let agentID = btoa(new Date().getTime() * Math.random() + " ").substring(0, 8);
 
   res.json({
@@ -52,6 +56,31 @@ app.post('/api/evaluate', async (req, res) => {
  
 });
 
+app.post('/api/evaluatePlaybook', async (req, res) => { 
+  if (!req.body.clause) {
+    res.json({error: "no clause", echo: req.body});
+    return;
+  }
+
+  if (!req.body.playBook) {
+    res.json({error: "no playbooks", echo: req.body});
+    return;
+  }
+
+  console.log(req.body.clause);
+  console.log(req.body.playBook);
+  
+  try {
+    let a = await playBookEval(req.body.clause, req.body.playBook);  
+    res.json(a);
+  }
+  catch (E) {
+    res.json({error: E, echo: req.body});
+    console.log(E);
+  }
+
+ 
+});
 
 
 //server side express file upload
@@ -59,9 +88,26 @@ app.post('/api/evaluate', async (req, res) => {
 app.post('/api/fileUpload', upload.single('file'), async (req, res) => {
   let file = req.file; 
   
+  if (file.originalname.indexOf('.docx') == file.originalname.length - 5) {
+    const html = await mammoth.convertToHtml({path:`${__dirname}/uploads/${file.filename}`});
+    console.log(html);
+    fs.writeFileSync(`${__dirname}/uploads/${file.filename}.dx`, html.value);
+    res.json(`${file.filename}.dx`);
+  }else {
+    res.json(file.filename);
+  }
+ 
+  console.log(file);
+});
+
+
+app.post('/api/playbookUpload', upload.single('file'), async (req, res) => {
+  let file = req.file; 
+  
   res.json(file.filename);
   console.log(file);
 });
+
 
 app.post('/api/agent/:agentId/:taskId', async (req, res) => { 
   let answer = req.body.answer;
@@ -74,6 +120,5 @@ app.post('/api/agent/:agentId/:taskId', async (req, res) => {
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
-}
-);
+});
 

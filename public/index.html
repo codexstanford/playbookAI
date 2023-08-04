@@ -47,8 +47,16 @@
 
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <div id="MainView"> 
-        <p>Upload an M&amp;A agreement downloaded from the SEC :</p>
+      <div id="MainView">
+        <p>Upload a playbook (.xlsl). If no playbook is upload the default MNA demo playbook will be used (<a href="">sample</a>)</p>
+        <div>
+          <form action="/api/fileUpload"
+          class="dropzone"
+          id="playbook-dropzone"><div class="dz-message" data-dz-message><span>Use a custom playbook. Upload your playbook file here</span></div>
+        </form>
+        </div>
+
+        <p>Upload an contract to review (either .docx or SEC EDGAR html format)</p>
         <div>
           <form action="/api/fileUpload"
           class="dropzone"
@@ -225,6 +233,8 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
 -->
   <script>
+
+    let PLAYBOOK = "MNA";
     let myDropzone = new Dropzone("#my-awesome-dropzone", { /* options */ });
     myDropzone.on("success", async file => {
       console.log("A file has been added");
@@ -237,7 +247,7 @@
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({goal: id})
+        body: JSON.stringify({goal: id, playbook: PLAYBOOK})
       });
 
       let data = await res.json();
@@ -248,6 +258,13 @@
       setTimeout(function() {
         window.location.reload();
       }, 1000);
+    });
+
+    let playbookZone = new Dropzone("#playbook-dropzone", { /* options */ });
+    myDropzone.on("success", async file => {
+      console.log("A file has been added");
+      console.log(file);
+      PLAYBOOK = file.xhr.response;      
     });
   </script>
 </body>
