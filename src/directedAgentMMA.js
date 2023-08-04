@@ -68,6 +68,12 @@ async function directedAgentMMA(id, agentId, playbookPath="MNA") {
   
   let parsed = cheerio.load(data);
 
+  let body = parsed('body');
+  for (let item of body) {
+    parsed(item).html(`<div style='padding-left: 350px; padding-right: 350px;'>
+  ${parsed(item).html()}
+    </div>`)
+  }
   let p = parsed('p');
   let collection = [];
 
@@ -108,6 +114,14 @@ Only output the type of clause, no other text`
       clause: parsed(item).text(),
       type: type
     });
+
+    parsed(item).html(`
+    <div style='background-color: #666; color:#eee; padding: 8px 4px; border-radius: 4px;     display: inline-block;max-width: 200px;    position: absolute;    left: 64px;'>${type}</div>
+    ${parsed(item).html()}
+    `);
+  fs.writeFileSync(__dirname+ '/../public/html/' + agentId + '.html', parsed.html().replace("windows-1252", "utf8"), 'utf8');
+
+
     if (type == "IRRELEVANT" || type == "NO_CONTEXT" || type == "TITLE" || type == "OTHER") { 
       continue;
     }
@@ -150,12 +164,21 @@ Return the clause and your reasoning for editing after the keyword END_RESULT. I
       && rewrite.data.toLowerCase().indexOf(":)") == -1
       && rewrite.data.toLowerCase().trim() != parsed(item).text().trim()) {
  
-      parsed(item).html(`<div style='border-left: 2px solid #aaa; background-color: #f8f8f8; padding: 8px; border-radius: 4px'>
-        <div style='border-left: 2px solid #33F; padding-left : 10px'>
-        ${parsed(item).html().replace(/\n/g, '<br/>').replace(/END_RESULT/g, ' ')}
-        </div><br/><div style='border-left: 2px solid #F33; padding-left : 10px'>
-      ${rewrite.data.replace(/\n/g, '<br/>').replace(/END_RESULT/g, ' ')}
-      </div>`);
+      parsed(item).html(`
+        <pre style='border-left: 4px solid #F33; padding-left : 10px; white-space: pre-wrap;white-space: pre-wrap; background-color: #fee; border-radius: 3px 3px 0px 0px; margin-bottom: 0px'>
+        ${parsed(item).html()}
+        </pre>
+        <pre style='border: 1px solid #eee; border-left: 4px solid #88F; border-radius: 0px 0px 3px 3px; padding-left : 10px; white-space: pre-wrap; background-color: #eef; margin-top: 0px'>
+      ${rewrite.data.replace(/END_RESULT/g, ' ')}
+      </pre>`);
+      fs.writeFileSync(__dirname+ '/../public/html/' + agentId + '.html', parsed.html().replace("windows-1252", "utf8"), 'utf8');
+    }
+    else {
+      parsed(item).html(`
+      <pre style='border-left: 4px solid #3f3; padding-left : 10px; white-space: pre-wrap;'>
+        ${parsed(item).html().replace(/END_RESULT/g, ' ')}
+      </pre>
+      `);
       fs.writeFileSync(__dirname+ '/../public/html/' + agentId + '.html', parsed.html().replace("windows-1252", "utf8"), 'utf8');
     }
     
