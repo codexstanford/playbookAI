@@ -1,0 +1,29 @@
+#MainView {
+  display: block;
+}
+#FlowView {
+  display: none;
+}
+
+.task {
+  padding: 8px;
+  border : 1px solid #eee;
+}
+
+.collection-item {
+  padding: 8px;
+  border : 1px solid #eee;
+}
+
+pre { white-space: pre-wrap;       /* css-3 */
+white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+white-space: -pre-wrap;      /* Opera 4-6 */
+white-space: -o-pre-wrap;    /* Opera 7 */
+word-wrap: break-word;  }
+
+.dropzone {
+  background-color : #fff;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  border-left: 4px solid #007bff;
+}

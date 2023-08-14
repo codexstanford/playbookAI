@@ -2,19 +2,7 @@
 
 const fs = require('fs');
 
-
-
-
-
-
-const { Configuration, OpenAIApi } = require("openai");
-
-const configuration = new Configuration({
-  apiKey: process.env.OPEN_AI_KEY,
-});
-
-
-const openai = new OpenAIApi(configuration);
+const prompt = require('./utils/prompt.js');
 
 const logIt = require('./logIt.js');
 
@@ -204,33 +192,6 @@ ${args}`);
 }
 
 
-async function prompt(messages) {
-  let r = null;
-  console.log("OPEN AI", messages);
-  let model = "gpt-3.5-turbo"
-  if (JSON.stringify(messages).length > 10000) {
-    model = "gpt-3.5-turbo-16k"
-  } 
-  console.log("Model", model)
-  try {
-    const response = await openai.createChatCompletion({
-      model: model,
-      messages:messages
-    });
-    r = response;
-    return response.data.choices[0].message.content;
-  }
-  catch (e) {
-    // sleep 
-
-    console.log("OPEN AI JAM, wait 10 sec")
-    if (r) {
-      console.log(r);
-    }
-    await new Promise(resolve => setTimeout(resolve, 10000));
-    return await prompt(messages);
-  }
-}
 
 module.exports = {
   start: agent,

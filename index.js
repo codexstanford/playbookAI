@@ -13,6 +13,8 @@ const directedAgentMMA = require('./src/directedAgentMMA.js');
 const clauseEval = require('./src/clauseEval.js');
 const playbookEval = require('./src/playBookEval.js');
 
+const convertContract = require('./src/convertContract.js');
+
 app.use(express.static('public'));
 
 // parse body jon
@@ -85,26 +87,25 @@ app.post('/api/evaluatePlaybook', async (req, res) => {
 
 //server side express file upload
 
-app.post('/api/fileUpload', upload.single('file'), async (req, res) => {
+app.post('/api/contractUpload', upload.single('file'), async (req, res) => {
   let file = req.file; 
-  console.log('in', file);
 
   if (file.originalname.indexOf('.docx') == file.originalname.length - 5
   || file.originalname.indexOf('.doc') == file.originalname.length - 4) {
     try {
-      const html = await mammoth.convertToHtml({path:`${__dirname}/uploads/${file.filename}`});
-      console.log(html);
-      fs.writeFileSync(`${__dirname}/uploads/${file.filename}.dx`, html.value);
-      res.json(`${file.filename}.dx`);
+      const html = await mammoth.convertToHtml({path:`${__dirname}/uploads/${file.filename}`});;
+      fs.writeFileSync(`${__dirname}/uploads/${file.filename}`, html.value);
+      res.json(`${file.filename}`);
     } catch (e) {
       res.status(503);
       res.send('Could not convert file');
     }
   
-  }else {
+  } else {
     res.json(file.filename);
   }
- 
+  
+  convertContract(file.filename, file.originalname);
 });
 
 
