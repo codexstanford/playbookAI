@@ -39,16 +39,17 @@ async function launchAgent() {
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({goal: id, playbook: PLAYBOOK})
+    body: JSON.stringify({goal: FILE_ID, playbook: PLAYBOOK})
   });
 
   let data = await res.json();
 
+  goButton.setAttribute('disable', true);
+  goButton.innerHTML = "Loading..."
   // add hashbang to urkl
   window.location.hash = data.agentID;
   renderFlow(data.agentID);
-  setTimeout(function() {
-    window.location.reload();
-  }, 1000);
-
 }
+
+
+goButton.onclick= launchAgent;

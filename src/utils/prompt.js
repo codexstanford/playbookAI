@@ -23,6 +23,7 @@ async function prompt(messages) {
       messages:messages
     });
     openaiResponse = response;
+    console.log(response.data.usage);
     return response.data.choices[0].message.content;
   }
   catch (e) {
@@ -32,6 +33,7 @@ async function prompt(messages) {
     if (openaiResponse) {
       console.log(openaiResponse);
     }
+    console.log(e);
     await new Promise(resolve => setTimeout(resolve, 10000));
     return await prompt(messages);
   }

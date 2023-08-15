@@ -29,16 +29,20 @@ app.use(function(req, res, next) {
 
 app.post('/api/agent', async (req, res) => { 
   let goal = JSON.parse(req.body.goal);
-  console.log(goal);
+  
   let agentID = btoa(new Date().getTime() * Math.random() + " ").substring(0, 8);
 
   res.json({
     agentID : agentID
   });
-  await directedAgentMMA(goal, agentID);  
+
+
+  await directedAgentMMA(goal, agentID);
+
 
   //await agent.start(goal, agentID);
 });
+
 
 app.post('/api/evaluate', async (req, res) => { 
   if (!req.body.clause) {
@@ -104,7 +108,7 @@ app.post('/api/contractUpload', upload.single('file'), async (req, res) => {
   } else {
     res.json(file.filename);
   }
-  
+
   convertContract(file.filename, file.originalname);
 });
 
