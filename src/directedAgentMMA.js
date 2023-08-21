@@ -76,12 +76,12 @@ Only output the type of clause, no other text`
   for (let item of contractData.data) {
    
     if (item.type == 'title' ) {
-      item.classifier = "bypass because title";
+      item.classifier = "TITLE";
       continue;
     }
 
     if (item.content.length < 64) {
-      item.classifier = "bypass because too short";
+      item.classifier = "SHORT_TEXT";
       continue;
     }
      
@@ -92,7 +92,7 @@ Only output the type of clause, no other text`
 
     console.log(type);
     item.classifier = type;
-    logIt({ 
+    await logIt.log({ 
       type: "CLASSIFY",
       taskId: 1,
       clause: item.content,
@@ -128,7 +128,7 @@ ${item.content}
 
 Return the clause and your reasoning for editing after the keyword END_RESULT. If you think the clause is not well written, propose a rewritte and a reasoning. DO not only say that it is not well written without justification! If a clause is well written do not forget the smilley :)`,
       agentId, 1);
-    logIt({ 
+    await logIt.log({ 
       type: "REWRITE",
       taskId: 1,
       clause: item.content,
@@ -147,14 +147,16 @@ Return the clause and your reasoning for editing after the keyword END_RESULT. I
       
       item.playbook = {
         status: "failed",
-        comment : rewrite.data
+        comment : rewrite.data,
+        logs: rewrite.logs
       }
 
     }
     else {
       item.playbook = {
         status: "success",
-        comment : rewrite.data
+        comment : rewrite.data,
+        logs: rewrite.logs
       }
     }
     

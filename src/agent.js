@@ -1,7 +1,5 @@
 
 
-const fs = require('fs');
-
 const prompt = require('./utils/prompt.js');
 
 const logIt = require('./logIt.js');
@@ -23,7 +21,7 @@ async function agent(goal, agentId, parentTaskId=null, tools=defaultTools) {
   let taskId = ++ID;
   console.log(`New Task (#${taskId}): ${goal}`);
 
-  await logIt({
+  await logIt.log({
     type: "NEW_TASK",
     taskId : taskId,
     goal : goal,
@@ -41,7 +39,7 @@ async function agentContinue(answer, agentId, taskId) {
 
   console.log(`NEW INFORMATION (#${taskId}): ${answer}`);
 
-  await logIt({
+  await logIt.log({
     type: "INFORMATION",
     taskId : taskId,
     answer : answer
@@ -95,7 +93,7 @@ You can only output one instruction. do not output multiple instructions.
     ms--;
     if (ms < 0) { 
       console.log("Timeout");
-      logIt({ 
+      await logIt.log({ 
         type: "END_RESULT",
         taskId: taskId,
         goal: goal,
@@ -110,7 +108,7 @@ You can only output one instruction. do not output multiple instructions.
     let answer = await(prompt([{"role": "system", "content": systemPrompt}, ...stack]));
     
     stack.push({"role": "assistant", "content": answer});
-    logIt({ 
+    await logIt.log({ 
       type: "REASONING",
       taskId: taskId,
       answer: answer
@@ -129,7 +127,7 @@ You can only output one instruction. do not output multiple instructions.
       for (let tool of tools) { 
         if (instruction === tool.keyword) {
           const res = await tool.do(args, agentId, taskId);
-          logIt({ 
+          await logIt.log({ 
             type: tool.keyword,
             taskId: taskId,
             query: args,
@@ -143,7 +141,7 @@ You can only output one instruction. do not output multiple instructions.
         console.log(`RETRIEVE ${args} from memory`)
         let key = args.split(' ')[0];
         let value = STORE[key];
-        logIt({ 
+        await logIt.log({ 
           type: "RETRIEVE",
           taskId: taskId,
           key: key,
@@ -154,7 +152,7 @@ You can only output one instruction. do not output multiple instructions.
 
       if (instruction === 'ASK') {
         const res = await agent(args, agentId, taskId);
-        logIt({ 
+        await logIt.log({ 
           type: "ASK",
           taskId: taskId,
           url: args,
@@ -170,7 +168,7 @@ You can only output one instruction. do not output multiple instructions.
     
       if (instruction === 'END_RESULT' || line.indexOf('END_RESULT') > -1) {
         args = answer.substring(answer.indexOf('END_RESULT') + 'END_RESULT'.length);
-        logIt({ 
+        await logIt.log({ 
           type: "END_RESULT",
           taskId: taskId,
           goal: goal,
@@ -181,6 +179,7 @@ ${args}`);
         return {
           type: 'end',
           data : args,
+          logs: stack,
           taskId: taskId
         };
       }

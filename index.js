@@ -28,6 +28,11 @@ app.use(function(req, res, next) {
 });
 
 app.post('/api/agent', async (req, res) => { 
+  console.log(req.body)
+  if (!req.body.goal) {
+    res.json({error: "no goal?"});
+    return;
+  }
   let goal = JSON.parse(req.body.goal);
   
   let agentID = btoa(new Date().getTime() * Math.random() + " ").substring(0, 8);

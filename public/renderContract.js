@@ -23,9 +23,14 @@ async function renderFlow(id) {
 
     let flowContent = document.getElementById('flowContent');
 
+    documentName.innerHTML = data.name;
     if (data.status.md) {
       // remove spinner if doc is complete
       document.getElementById('flowWaiting').innerHTML = "";
+    }
+    else {
+      document.getElementById('waitStatus').innerHTML = `Parsing chunk ${data.status.mdProgress + 1} /  ${data.status.mdProgressTotal}...`;
+      document.getElementById('waitStatus').innerHTML += renderMdLog(data.status.mdLogs);
     }
     let itemId = 0;
     for (let item of data.data) {
@@ -41,8 +46,30 @@ async function renderFlow(id) {
       if (hash.length) {
         renderFlow(hash);
       }
-    }, 2000);
+    }, 10000);
 }
+
+function renderMdLog(logs) {
+
+  let html= "";
+
+  for (let log of logs) {
+
+    html += `<div class='container mdLog'>`
+
+    for (let item of log) {
+      html += `<div class='row conversationLine'>
+        <div class='col-3'>${item.role}</div>
+        <div class='col-9 mdContent'>${item.content}</div>
+      </div>`
+    }
+
+    html += `</div>`
+  }
+
+  return html;
+}
+
 
 let pastElements = {};
 function renderItem(item) {
@@ -59,12 +86,13 @@ function renderItem(item) {
   else {
     div = document.createElement('div');
     div.id = item.id;
+    div.className = "item";
     flowContent.appendChild(div);
   }
   pastElements[item.id] = true;
   let html = `<div class='row'>`;
 
-  html += `<div class='col-3'></div>`;
+  html += `<div class='col-3 text-right'><p><div class='badge badge-info'>${item.classifier || "Queued..."}</div></p></div>`;
 
   html += `<div class='col-6'>`
 
@@ -72,14 +100,22 @@ function renderItem(item) {
     html += `<h${item.title}>${item.content}</h${item.titleLvl}>`;
   }
   if (item.type == 'content') {
-    html += `<p>${item.content}</p>`;
+    html += `<p><pre>${item.content}</pre></p>`;
   }
   if (item.type == 'table') {
-    html += `<p>${item.content}</p>`;
+
+    html += `<p>${marked.parse(item.content)}</p>`;
   }
+  if (item.playbook) {
+    html += `</div><div class='col-3 ${item.playbook.status}'>
+      <p><pre>${item.playbook.comment}</pre></p>
 
-  html += `</div><div class='col-3'></div>`
+    </div>`
+  }
+  else {
+    html += `</div><div class='col-3'></div>`
 
+  }
   html += '</div>'
   if (div.innerHTML != html) {
     div.innerHTML = html;

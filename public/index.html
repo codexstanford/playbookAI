@@ -17,10 +17,11 @@
   <body>
     <div class="container-fluid">
 
-      <nav class="navbar navbar-expand-lg container" role="navigation">
+      <nav class="navbar navbar-expand-lg" role="navigation">
         <a class="navbar-brand mb-0 h1 text-primary" href="/">
           Stanford Codex AI Playbook
         </a>
+        <a class="nav-link" id="documentName"></a>
       </nav>
 
       <div id="MainView" class="container">
@@ -67,12 +68,12 @@
       <div id="FlowView">
         <div id="htmlOutput"></div>
         <div id="flowContent">
-
+          
         </div>
 
         <div id="flowWaiting" style="width: 100%; text-align: center;">
           <div  class="lds-dual-ring"></div>
-          <div>Preparing document...</div>
+          <div id="waitStatus">Preparing document...</div>
         </div>
       </div>
 
@@ -92,8 +93,9 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script>
 
-    <script src="/mainPageLogic.js"></script>
-    <script src="/script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+      <script src="/mainPageLogic.js"></script>
+    <script src="/renderContract.js"></script>
   </body>
 
 </html>

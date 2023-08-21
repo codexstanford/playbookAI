@@ -10,16 +10,19 @@ let contractDropZone = new Dropzone("#contract-dropzone", {
   // only doc and docx
   maxFiles: 1,
   acceptedFiles: ".docx,.htm,.html" });
-  contractDropZone.on("success", async file => {
-  console.log("A file has been added");
-  console.log(file);
-  FILE_ID = file.xhr.response;
-  
-  goButton.setAttribute("disable", 'false');
-  $('#goButtonPopover').popover('dispose');
 
-  goButton.className = "btn btn-primary btn-lg";
-  // FETCH POST '/api/agent'
+contractDropZone.on("success", async file => {
+  // Let server breath
+  setTimeout(function () {
+    console.log("A file has been added");
+    console.log(file);
+    FILE_ID = file.xhr.response;
+    
+    goButton.setAttribute("disable", 'false');
+    $('#goButtonPopover').popover('dispose');
+  
+    goButton.className = "btn btn-primary btn-lg";
+  }, 3000);
 });
 
 let playbookZone = new Dropzone("#playbook-dropzone", { /* options , only xlsx files*/ 
@@ -34,6 +37,12 @@ playbookZone.on("success", async file => {
 });
 
 async function launchAgent() {
+  if (!FILE_ID) {
+    return;
+  }
+  goButton.setAttribute('disable', true);
+  goButton.innerHTML = "Loading..."
+ 
   let res = await fetch('/api/agent', {
     method: 'POST',
     headers: {
@@ -44,8 +53,6 @@ async function launchAgent() {
 
   let data = await res.json();
 
-  goButton.setAttribute('disable', true);
-  goButton.innerHTML = "Loading..."
   // add hashbang to urkl
   window.location.hash = data.agentID;
   renderFlow(data.agentID);
