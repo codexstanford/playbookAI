@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      textarea {
+        width: 100%;
+        height: 200px;
+      }
+
+      pre {
+        background-color: #eee;
+        padding: 10px;
+        width: 100%;
+        /* make pre break word, aka if line is longer than 100% add a line break; */
+        
+        white-space: pre-wrap;
+        word-break: break-word;
+
+      }
+
+      #button {
+        margin-top: 10px;
+      }
+
+      
+    </style>
+  </head>
+  <body>  
+
+    <h2>Original Clause</h2>
+    <textarea id="original">
+  The undersigned officer of the Corporation, in his capacity as President and CEO of the Corporation and not in his personal capacity, does hereby certify that attached as Schedule “A” and Schedule “B” hereto are a true copies of the resolutions passed by the directors of the Corporation on June [●]___, 2021 and that such resolutions have not been altered, amended, or rescinded and are of full force and effect as at the date hereof.
+    </textarea>
+    <h2>Edited Clause</h2>
+    <textarea id="edited">
+  The undersigned officer of the Corporation, in his capacity as President and CEO of the Corporation and not in his personal capacity, and without personal liability, does hereby certify that attached as Schedule “A” hereto is a true copy of the resolution passed by the directors of the Corporation on June [●]___, 2021 and that such resolution has not been altered, amended, or rescinded and is of full force and effect as at the date hereof.
+    </textarea>  
+    <input type="button"  id='button' value="Build Playbook" onclick="buildPlaybook()">
+    
+    <script>
+      async function buildPlaybook() {
+        var original = document.getElementById("original").value;
+        var edited = document.getElementById("edited").value;
+     
+        button.disabled = true;
+
+        let res = await fetch('/api/v1/playbook/build', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            original: original,
+            edited: edited
+          })
+        });
+
+        let result = await res.json();
+
+        let p = document.createElement("pre");
+        p.innerHTML = result.playbook;
+
+        document.body.appendChild(p); 
+
+        button.disabled = false;
+
+      }
+    </script>
+  </body>
+</html>

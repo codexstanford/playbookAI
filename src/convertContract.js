@@ -1,8 +1,10 @@
 
 const fs = require('fs/promises');
-const dataDir = `${__dirname}/../data`
+
 const prompt = require('./utils/prompt.js');
-const { title } = require('process');
+
+const dataDir = `${__dirname}/../data`
+
 
 const FragmentLength = 8000;
 async function convertContract(id, originalName) {

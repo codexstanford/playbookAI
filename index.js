@@ -12,6 +12,7 @@ const agent = require('./src/agent.js')
 const directedAgentMMA = require('./src/directedAgentMMA.js');
 const clauseEval = require('./src/clauseEval.js');
 const playbookEval = require('./src/playBookEval.js');
+const playbookBuild = require('./src/playbookBuild.js');
 
 const convertContract = require('./src/convertContract.js');
 
@@ -139,3 +140,15 @@ app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
 
+
+
+app.post('/api/v1/playbook/build', async (req, res) => { 
+  const original = req.body.original;
+  const edited = req.body.edited;
+  
+  const playbook = await playbookBuild(original, edited);
+ 
+  res.json({
+    playbook: playbook
+  })
+});

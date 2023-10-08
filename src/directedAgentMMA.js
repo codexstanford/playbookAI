@@ -53,7 +53,7 @@ async function directedAgentMMA(id, agentId, playbookPath="MNA") {
   while (contractData.status.md == false) {
     await new Promise(resolve => setTimeout(resolve, 10000));
 
-    contractData =  JSON.parse(await fs.readFile(`${__dirname}/../dara/${id}.json`));
+    contractData =  JSON.parse(await fs.readFile(`${__dirname}/../data/${id}.json`));
     await fs.writeFile(`${__dirname}/../public/trace/contract-${agentId}.json`, JSON.stringify(contractData, null, 2));
 
   }
