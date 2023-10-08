@@ -1,19 +1,34 @@
 
-const fs = require('fs');
+const fs = require('fs/promises');
 
-let logStack = [];
+let logStack = {};
 
 async function logIt(data, id) { 
 
-  if (fs.existsSync(`${__dirname}/../public/trace/log-${id}.json`)) {
-    logStack = JSON.parse(
-        fs.readFileSync(`${__dirname}/../public/trace/log-${id}.json`, 'utf8')
-        );
+  if (!logStack[id]) {
+    logStack[id] = [];
   }
-  logStack.push(data);
-  fs.writeFileSync(`${__dirname}/../public/trace/log-${id}.json`, 
-    JSON.stringify(logStack, null, 2)
+  /*if (await fs.exist(`${__dirname}/../public/trace/log-${id}.json`)) {
+    logStack[id] = JSON.parse(
+        await fs.readFile(`${__dirname}/../public/trace/log-${id}.json`, 'utf8')
+        );
+  }*/
+  logStack[id].push(data);
+  await fs.writeFile(`${__dirname}/../public/trace/log-${id}.json`, 
+    JSON.stringify(logStack[id], null, 2)
   );
 }
 
-module.exports = logIt;
+async function get(id) {
+  if (logStack[id]) {
+    return logStack[id];
+  }
+  /* else if (await fs.exist(`${__dirname}/../public/trace/log-${id}.json`)) { 
+    return await JSON.parse(fs.readFile(`${__dirname}/../public/trace/log-${id}.json`, 'utf8'));
+  }*/
+  return []
+}
+module.exports = {
+  log : logIt,
+  get : get
+}

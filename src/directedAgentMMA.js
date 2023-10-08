@@ -1,19 +1,10 @@
-const fs = require('fs');
-const cheerio = require('cheerio');
+const fs = require('fs/promises');
+const xlsx = require('node-xlsx').default;
+
+const prompt = require('./utils/prompt.js')
 const agent = require('./agent.js');
-const { Configuration, OpenAIApi } = require("openai");
-var iconv = require('iconv-lite');
-var xlsx = require('node-xlsx').default;
-
-
-const configuration = new Configuration({
-  apiKey: process.env.OPEN_AI_KEY,
-});
-
 const logIt = require('./logIt.js');
 
-
-const openai = new OpenAIApi(configuration);
 
 function getPlayBook(path) {
   console.log("loading playbook", path);
@@ -54,27 +45,18 @@ async function directedAgentMMA(id, agentId, playbookPath="MNA") {
     playBook = getPlayBook(`${__dirname}/../uploads/${playbookPath}`);
   }
 
-  if (id.indexOf('.dx')) {
-    data = fs.readFileSync(`${__dirname}/../uploads/${id}`);
-  }
-  else {
-    data = iconv.decode(Buffer.from(fs.readFileSync(`${__dirname}/../uploads/${id}`)), 'win1252');
-
-    data = data.replace(/�/g, '\'');
-    data = data.replace(/�/g, '\'');
-  }
-
   
-  let parsed = cheerio.load(data);
+  let contractData =  JSON.parse(await fs.readFile(`${__dirname}/../data/${id}.json`));
 
-  let body = parsed('body');
-  for (let item of body) {
-    parsed(item).html(`<div style='padding-left: 350px; padding-right: 350px;'>
-  ${parsed(item).html()}
-    </div>`)
+  await fs.writeFile(`${__dirname}/../public/trace/contract-${agentId}.json`, JSON.stringify(contractData, null, 2));
+  // wait the md process is over
+  while (contractData.status.md == false) {
+    await new Promise(resolve => setTimeout(resolve, 10000));
+
+    contractData =  JSON.parse(await fs.readFile(`${__dirname}/../data/${id}.json`));
+    await fs.writeFile(`${__dirname}/../public/trace/contract-${agentId}.json`, JSON.stringify(contractData, null, 2));
+
   }
-  let p = parsed('p');
-  let collection = [];
 
   let systemPrompt = `You are a lawyer rewieving a extract of a contract (a clause). You are taks with determining the type of the clause:
 
@@ -91,35 +73,35 @@ If it seems be classify in previously give category output: OTHER
 Only output the type of clause, no other text`
   
   
-  for (let item of p) {
+  for (let item of contractData.data) {
    
-    if (parsed(item).text().length < 64) {
+    if (item.type == 'title' ) {
+      item.classifier = "TITLE";
       continue;
-    } 
-    let type = await promptIt([
+    }
+
+    if (item.content.length < 64) {
+      item.classifier = "SHORT_TEXT";
+      continue;
+    }
+     
+    let type = await prompt([
       {"role": "system", "content": systemPrompt},
-      {"role": "user", "content": parsed(item).text()}
+      {"role": "user", "content": item.content}
     ]);
 
     console.log(type);
-
-    logIt({ 
+    item.classifier = type;
+    await logIt.log({ 
       type: "CLASSIFY",
       taskId: 1,
-      clause: parsed(item).text(),
+      clause: item.content,
       result: type
     }, agentId);
-    collection.push({
-      clause: parsed(item).text(),
-      type: type
-    });
 
-    parsed(item).html(`
-    <div style='background-color: #666; color:#eee; padding: 4px 2px; border-radius: 4px;display: inline-block;max-width: 200px; position: absolute; left: 64px; font-size: 12px'>${type}</div>
-    ${parsed(item).html()}
-    `);
-  fs.writeFileSync(__dirname+ '/../public/html/' + agentId + '.html', parsed.html().replace("windows-1252", "utf8"), 'utf8');
 
+
+    await fs.writeFile(`${__dirname}/../public/trace/contract-${agentId}.json`, JSON.stringify(contractData, null, 2));
 
     if (type == "IRRELEVANT" || type == "NO_CONTEXT" || type == "TITLE" || type == "OTHER") { 
       continue;
@@ -142,14 +124,14 @@ ${instruction}
  
 The clause is : 
       
-${parsed(item).text()}
+${item.content}
 
 Return the clause and your reasoning for editing after the keyword END_RESULT. If you think the clause is not well written, propose a rewritte and a reasoning. DO not only say that it is not well written without justification! If a clause is well written do not forget the smilley :)`,
       agentId, 1);
-    logIt({ 
+    await logIt.log({ 
       type: "REWRITE",
       taskId: 1,
-      clause: parsed(item).text(),
+      clause: item.content,
       result: type,
       rewrite: rewrite
     }, agentId);
@@ -161,60 +143,30 @@ Return the clause and your reasoning for editing after the keyword END_RESULT. I
       && rewrite.data.toLowerCase().indexOf("is well written") == -1 
       && rewrite.data.toLowerCase().indexOf("is well-written") == -1 
       && rewrite.data.toLowerCase().indexOf(":)") == -1
-      && rewrite.data.toLowerCase().trim() != parsed(item).text().trim()) {
- 
-      parsed(item).html(`
-        <pre style='border-left: 4px solid #F33; padding-left : 10px; white-space: pre-wrap;white-space: pre-wrap; background-color: #fee; border-radius: 3px 3px 0px 0px; margin-bottom: 0px'>
-        ${parsed(item).html()}
-        </pre>
-        <pre style='border: 1px solid #eee; border-left: 4px solid #88F; border-radius: 0px 0px 3px 3px; padding-left : 10px; white-space: pre-wrap; background-color: #eef; margin-top: 0px'>
-      ${rewrite.data.replace(/END_RESULT/g, ' ')}
-      </pre>`);
-      fs.writeFileSync(__dirname+ '/../public/html/' + agentId + '.html', parsed.html().replace("windows-1252", "utf8"), 'utf8');
+      && rewrite.data.toLowerCase().trim() != item.content.trim()) {
+      
+      item.playbook = {
+        status: "failed",
+        comment : rewrite.data,
+        logs: rewrite.logs
+      }
+
     }
     else {
-      parsed(item).html(`
-      <pre style='border-left: 4px solid #3f3; padding-left : 10px; white-space: pre-wrap;'>
-        ${parsed(item).html().replace(/END_RESULT/g, ' ')}
-      </pre>
-      `);
-      fs.writeFileSync(__dirname+ '/../public/html/' + agentId + '.html', parsed.html().replace("windows-1252", "utf8"), 'utf8');
+      item.playbook = {
+        status: "success",
+        comment : rewrite.data,
+        logs: rewrite.logs
+      }
     }
     
+  await fs.writeFile(`${__dirname}/../public/trace/contract-${agentId}.json`, JSON.stringify(contractData, null, 2));
 
 }
 
-  console.log(JSON.stringify(collection, null, 2));
-
-
+  await fs.writeFile(`${__dirname}/../public/trace/contract-${agentId}.json`, JSON.stringify(contractData, null, 2));
 
 
 }
-
-
-
-async function promptIt(messages) {
-  let r = null;
-  console.log("OPEN AI", messages);
-  try {
-    const response = await openai.createChatCompletion({
-      model: "gpt-3.5-turbo-16k",
-      messages:messages
-    });
-    r = response;
-    return response.data.choices[0].message.content;
-  }
-  catch (e) {
-    // sleep 
-
-    console.log("OPEN AI JAM, wait 10 sec")
-    if (r) {
-      console.log(r);
-    }
-    await new Promise(resolve => setTimeout(resolve, 10000));
-    return await prompt(messages);
-  }
-}
-
 
 module.exports = directedAgentMMA;

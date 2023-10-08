@@ -27,6 +27,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-uploads
+uploads/*
 public/trace/*
 public/html/*
+data/*
